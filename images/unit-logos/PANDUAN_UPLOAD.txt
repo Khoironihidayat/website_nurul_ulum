@@ -1,0 +1,116 @@
+================================================================================
+PANDUAN UPLOAD LOGO SETIAP UNIT
+================================================================================
+
+🏫 FOLDER UNTUK: Logo Unit PP Nurul Ulum (TK, MI, MTS, MA, KB)
+
+📋 DAFTAR UNIT DAN LOGO:
+1. TK (Taman Kanak-kanak)
+   - Nama file: tk-logo.png atau tk-logo.jpg
+   - Ukuran: 200x200px atau 300x300px
+
+2. MI (Madrasah Ibtidaiyah)
+   - Nama file: mi-logo.png atau mi-logo.jpg
+   - Ukuran: 200x200px atau 300x300px
+
+3. MTS (Madrasah Tsanawiyah)
+   - Nama file: mts-logo.png atau mts-logo.jpg
+   - Ukuran: 200x200px atau 300x300px
+
+4. MA (Madrasah Aliyah)
+   - Nama file: ma-logo.png atau ma-logo.jpg
+   - Ukuran: 200x200px atau 300x300px
+
+5. KB (Kelompok Bermain)
+   - Nama file: kb-logo.png atau kb-logo.jpg
+   - Ukuran: 200x200px atau 300x300px
+
+📊 SPESIFIKASI LOGO:
+✅ FORMAT:
+   - Lebih baik: PNG (untuk background transparan)
+   - Alternatif: JPG (untuk background solid)
+
+✅ UKURAN RESOLUSI:
+   - Optimal: 300x300px atau 400x400px
+   - Minimum: 200x200px
+   - Maksimum: 1000x1000px
+
+✅ UKURAN FILE:
+   - Maksimal: 500KB per file
+   - Disarankan: 50-200KB
+
+✅ WARNA:
+   - Full color (RGB)
+   - Untuk PNG: Gunakan transparency jika perlu
+
+📋 CARA UPLOAD:
+1. Siapkan logo setiap unit dalam format PNG/JPG
+2. Letakkan di folder ini dengan nama yang sesuai
+3. Contoh:
+   - tk-logo.png
+   - mi-logo.png
+   - mts-logo.png
+   - ma-logo.png
+   - kb-logo.png
+
+🔧 CARA MENGGUNAKAN LOGO DI HALAMAN:
+File-file berikut secara otomatis menggunakan logo dari folder ini:
+- index.html (halaman beranda)
+- profil.html (halaman profil)
+- unit-tk.html, unit-mi.html, unit-mts.html, unit-ma.html, unit-kb.html
+
+Struktur kode referensi logo:
+```html
+<img src="images/unit-logos/tk-logo.png" alt="Logo TK">
+<img src="images/unit-logos/mi-logo.png" alt="Logo MI">
+<img src="images/unit-logos/mts-logo.png" alt="Logo MTS">
+<img src="images/unit-logos/ma-logo.png" alt="Logo MA">
+<img src="images/unit-logos/kb-logo.png" alt="Logo KB">
+```
+
+💡 TIPS DESAIN LOGO:
+- Pastikan logo terlihat jelas di ukuran kecil
+- Gunakan warna yang tidak terlalu banyak
+- Untuk PNG: Berikan padding/margin di sekitar logo
+- Logo sebaiknya square (1:1 aspect ratio)
+- Hindari teks yang terlalu kecil
+
+📝 CONTOH STRUKTUR:
+unit-logos/
+├── tk-logo.png
+├── mi-logo.png
+├── mts-logo.png
+├── ma-logo.png
+├── kb-logo.png
+└── PANDUAN_UPLOAD.txt (file ini)
+
+🔄 UPDATE LOGO:
+1. Ganti file lama dengan yang baru (gunakan nama file yang sama)
+2. Clear cache browser (Ctrl+Shift+Del)
+3. Refresh halaman website
+4. Logo akan langsung terupdate
+
+❓ TROUBLESHOOTING:
+Q: Logo tidak muncul di halaman?
+A: Pastikan:
+   - Nama file sesuai (tk-logo.png, mi-logo.png, dll)
+   - File berada di folder /images/unit-logos/
+   - Path di HTML benar
+
+Q: Logo terlihat terlalu besar/kecil?
+A: Ubah ukuran CSS di file HTML (biasanya width dan height)
+
+Q: Logo transparan jadi putih?
+A: Gunakan format PNG, bukan JPG
+
+🎨 REKOMENDASI APLIKASI:
+- Photoshop
+- GIMP (gratis)
+- Figma (online, gratis)
+- Canva (online, gratis)
+- CorelDRAW
+
+================================================================================
+Terakhir diperbarui: 2024-01-15
+Untuk bantuan lebih lanjut hubungi admin website
+================================================================================

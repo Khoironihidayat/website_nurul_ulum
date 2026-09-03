@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Unit Pendidikan MTs - Pesantren Nurul Ulum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#00513b",
+                    "surface-container": "#edeef0",
+                    "secondary-fixed-dim": "#c6c6c7",
+                    "on-secondary-container": "#616363",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-primary-container": "#8bd6b7",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "surface": "#f8f9fb",
+                    "secondary-container": "#dfe0e0",
+                    "on-surface-variant": "#3f4944",
+                    "primary-container": "#065f46",
+                    "tertiary-fixed": "#ffe088",
+                    "surface-dim": "#d9dadc",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#bec9c2",
+                    "surface-container-highest": "#e1e2e4",
+                    "on-tertiary-container": "#4f3d00",
+                    "surface-bright": "#f8f9fb",
+                    "on-primary": "#ffffff",
+                    "primary": "#004532",
+                    "secondary": "#5d5f5f",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-background": "#191c1e",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-low": "#f3f4f6",
+                    "on-surface": "#191c1e",
+                    "background": "#f8f9fb",
+                    "surface-variant": "#e1e2e4",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#a6f2d1",
+                    "primary-fixed-dim": "#8bd6b6",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "on-primary-fixed": "#002116",
+                    "surface-container-high": "#e7e8ea",
+                    "tertiary-container": "#cca730",
+                    "on-secondary-fixed-variant": "#454747",
+                    "on-tertiary-fixed": "#241a00",
+                    "inverse-primary": "#8bd6b6",
+                    "tertiary": "#735c00",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#e2e2e2",
+                    "on-error-container": "#93000a",
+                    "outline": "#6f7973",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#1b6b51"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-sm": [
+                            "Montserrat"
+                    ],
+                    "headline-md": [
+                            "Montserrat"
+                    ],
+                    "display-lg-mobile": [
+                            "Montserrat"
+                    ],
+                    "body-lg": [
+                            "\"Source Sans 3\""
+                    ],
+                    "body-md": [
+                            "\"Source Sans 3\""
+                    ],
+                    "label-caps": [
+                            "\"Source Sans 3\""
+                    ],
+                    "display-lg": [
+                            "Montserrat"
+                    ]
+            },
+            "fontSize": {
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "30px",
+                            {
+                                    "lineHeight": "38px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body { background-color: #f8f9fb; color: #191c1e; }
+        .glass-nav { background: rgba(248, 249, 251, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .islamic-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23065f46' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .shadow-ambient { box-shadow: 0 4px 24px -4px rgba(6, 95, 70, 0.08); }
+        .hover-gold-accent:hover { border-top-color: #cca730; transform: translateY(-2px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md bg-background text-on-background antialiased islamic-pattern">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<button aria-label="Menu" class="md:hidden text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu</span>
+</button>
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-primary dark:text-primary-fixed">NURUL ULUM</div>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-body-md text-body-md" href="#">Beranda</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-body-md text-body-md" href="#">Tentang Kami</a>
+<a class="text-primary dark:text-primary-fixed font-semibold hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-body-md text-body-md opacity-70 transition-all" href="#">Unit Pendidikan</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-body-md text-body-md" href="#">Pendaftaran</a>
+</nav>
+</div>
+</header>
+<!-- Mobile Drawer (Hidden by default) -->
+<aside class="fixed inset-y-0 left-0 z-[60] flex flex-col py-6 bg-primary dark:bg-primary-container h-full w-80 rounded-r-xl shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden" id="mobileDrawer">
+<div class="px-6 mb-8">
+<h2 class="font-headline-sm text-headline-sm text-tertiary-fixed">Pesantren Nurul Ulum</h2>
+</div>
+<nav class="flex-1 flex flex-col gap-2 px-2">
+<a class="flex items-center gap-4 text-on-primary/80 dark:text-on-primary-container/80 mx-2 my-1 px-4 py-3 rounded-lg hover:bg-primary-fixed-variant/20 scale-95 active:scale-90 transition-transform font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined">home</span>
+                Beranda
+            </a>
+<a class="flex items-center gap-4 text-on-primary/80 dark:text-on-primary-container/80 mx-2 my-1 px-4 py-3 rounded-lg hover:bg-primary-fixed-variant/20 scale-95 active:scale-90 transition-transform font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined">mosque</span>
+                Tentang Kami
+            </a>
+<a class="flex items-center gap-4 bg-tertiary-container text-on-tertiary-container rounded-full mx-2 my-1 px-4 py-3 hover:bg-primary-fixed-variant/20 scale-95 active:scale-90 transition-transform font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+                Unit Pendidikan
+            </a>
+<a class="flex items-center gap-4 text-on-primary/80 dark:text-on-primary-container/80 mx-2 my-1 px-4 py-3 rounded-lg hover:bg-primary-fixed-variant/20 scale-95 active:scale-90 transition-transform font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined">assignment</span>
+                Pendaftaran
+            </a>
+<a class="flex items-center gap-4 text-on-primary/80 dark:text-on-primary-container/80 mx-2 my-1 px-4 py-3 rounded-lg hover:bg-primary-fixed-variant/20 scale-95 active:scale-90 transition-transform font-body-lg text-body-lg" href="#">
+<span class="material-symbols-outlined">contact_support</span>
+                Kontak
+            </a>
+</nav>
+</aside>
+<main class="pt-28 pb-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Hero Section -->
+<section class="mb-16 md:mb-24 text-center">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Madrasah Tsanawiyah (MTs)</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Membentuk generasi qurani yang unggul dalam sains, teknologi, dan berakhlak mulia dengan nilai-nilai kepesantrenan modern.</p>
+</section>
+<!-- Bento Grid Highlights -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-24">
+<!-- Achievement Card (Spans 2 columns on desktop) -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl shadow-ambient border-t-4 border-transparent hover-gold-accent transition-all duration-300 overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 to-primary-container/40 z-10 p-8 flex flex-col justify-end">
+<span class="material-symbols-outlined text-tertiary-fixed mb-2 text-4xl">emoji_events</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Prestasi &amp; Penghargaan</h3>
+<p class="font-body-md text-body-md text-on-primary/80">Jelajahi deretan medali dan penghargaan yang diraih santri MTs kami di tingkat nasional dan internasional.</p>
+</div>
+<img class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A group of Indonesian junior high school students in modern Islamic school uniforms (green and white) proudly holding gold medals and a trophy. They are standing in front of a modern, well-lit school building with subtle geometric Islamic architecture. The mood is joyful, proud, and bright, with natural sunlight highlighting their achievements. The overall aesthetic is professional, inspiring, and high-quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARG6BOKNuw1KsDLPSmlgfhS-ey48Xmrmoggw9MNXqaF5wamleoh_deQ0UOkyOaG2gWBz3uQblQo2kMe7MYsIh_LC-zlnSyCy50AyH7ZCp2kMtgvMzUrj9I43mzCgAbDEuMqvr5ZNwu12J9j-KAPpf-o1tjZvepPoPOtCkAoVf3KDPThkheL2Ac-rPfu_mXDFfv1AnHZgsQzOK1n-RqulqeqOhf5IeMmeYN1Ht-IMPBe3_U2HJ9gHzbJQ"/>
+</div>
+<!-- Facilities Stack -->
+<div class="flex flex-col gap-gutter">
+<!-- Lab Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-ambient p-6 flex-1 flex flex-col justify-between border-t-4 border-transparent hover-gold-accent transition-all duration-300">
+<div>
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Laboratorium Sains</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Fasilitas lab modern untuk eksplorasi biologi, fisika, dan kimia terapan.</p>
+</div>
+</div>
+<!-- Dorm Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-ambient p-6 flex-1 flex flex-col justify-between border-t-4 border-transparent hover-gold-accent transition-all duration-300">
+<div>
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bed</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Asrama Modern</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Lingkungan asrama yang bersih, nyaman, dan mendukung program tahfidz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="mb-24">
+<h2 class="font-headline-md text-headline-md text-primary mb-8 text-center">Fasilitas Unggulan</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="rounded-lg overflow-hidden shadow-ambient">
+<img class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" data-alt="A brightly lit, modern science laboratory in an Islamic junior high school in Indonesia. Students in uniform are looking through microscopes. The room is equipped with modern lab benches and safety equipment. The lighting is clean, bright, and professional, reflecting a high-quality educational environment with a modern color palette of white, steel, and emerald green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZGPJ4Zc9naNUTA_u-giAt74HA6Jry28LgAD5wKG340oM3krhDB0OT9PAEK35r-_K4srUUm9W7A56oAzhEEkgnAHU9RGuwJMugnh8A4NQErzZ4Jhem_cTtI2VNQVODsygqH6x-YeqjnJnYuHm-uZeV58Ia9JUAZFhVZiQlvmmbuAhxqBm2axkAaIDJEXp0x12VccVb95rE4mtidmtoIDD1z2TXrw8zlaYnU8YGEaruCF7sGdSmz5Zz2Q"/>
+</div>
+<div class="rounded-lg overflow-hidden shadow-ambient">
+<img class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" data-alt="A clean, modern dormitory room for students in an Indonesian boarding school. The room features neatly made wooden bunk beds, sturdy study desks, and ample natural light streaming through large windows. The walls are painted a calming light gray, and there are subtle green accents on the bedding. The atmosphere is tidy, serene, and organized." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh9jZtU97OIWx-fYUAMY4Z8rGGpCBfpDRL2J51_eorvvohEC1jQisOnU3obptyL_oPkUz_2vuGTKqQkeeDohLeFMt5YFPIRpDIuuQ6eTnBZcixKr1czSes3XbdwdwqpmdYE5sFNgc-H57eesmK7fLkx2OIHIavvXyhQ2Op2DEpXKpkxPMJ-O6x9-VVvoQz2mCcxwMw7akaVzJuIHy5FaNTjezO8Qof0yH6cHBfU4I7k5IBx3KL5J1Ncg"/>
+</div>
+<div class="rounded-lg overflow-hidden shadow-ambient md:col-span-2">
+<img class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" data-alt="A panoramic view of a spacious, modern school library within an Islamic boarding school. Wide aisles separate tall bookshelves filled with academic and religious texts. Groups of students are sitting at large wooden tables, reading and discussing quietly. The room features high ceilings, modern pendant lighting, and large windows that let in soft, diffused daylight. The dominant colors are warm wood tones, crisp white, and deep emerald green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFq972jj8qD8f1ka4CX5fya9PmDmm5GLAnvtuLD8jxQbNK4XH_Od_ReqyXFhj5o-fB5GTG13B2nZiT7B5WlihrESCUJXBg6CZznXXafRL245cn3Xt8JsnCvOtHvXLol8Vjd_XkXl48CxMiXZBFMPdzglde2JoUVu4V1Bz30IwjmUtLMjqj6u_f5JSEn66cxrFRMxZ2Ae1OQSr-kJ7V2Crwm-tIbCdcB2Ni9CFSmLC3CNbu6o37c9p1Qg"/>
+</div>
+</div>
+</section>
+<!-- Syarat Pendaftaran Standar Section -->
+<section class="py-16 my-8" id="pendaftaran">
+<div class="bg-gradient-to-br from-primary to-primary-container rounded-3xl p-8 md:p-12 text-on-primary shadow-2xl relative overflow-hidden">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+
+<div class="text-center max-w-2xl mx-auto mb-10">
+    <div class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+        <span class="material-symbols-outlined text-[16px]">how_to_reg</span> PPDB MTs 2025/2026
+    </div>
+    <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-tertiary-fixed mb-3">Syarat Pendaftaran Santri Baru</h2>
+    <p class="text-surface-container/90 text-sm md:text-base">Persyaratan penerimaan santri baru untuk unit Madrasah Tsanawiyah (MTs) Nurul Ulum:</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">1</div>
+        <div>
+            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Formulir Pendaftaran</h4>
+            <p class="text-xs text-white/80">Mengisi formulir pendaftaran secara online melalui WhatsApp atau langsung di sekretariat MTs.</p>
+        </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">2</div>
+        <div>
+            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Fotokopi Kartu Keluarga</h4>
+            <p class="text-xs text-white/80">Menyerahkan 2 lembar fotokopi Kartu Keluarga (KK) calon santri yang masih berlaku.</p>
+        </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">3</div>
+        <div>
+            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Fotokopi KTP Orang Tua</h4>
+            <p class="text-xs text-white/80">Menyerahkan 2 lembar fotokopi KTP kedua orang tua atau wali santri.</p>
+        </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">4</div>
+        <div>
+            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Fotokopi Akta Kelahiran</h4>
+            <p class="text-xs text-white/80">Menyerahkan 2 lembar fotokopi Akta Kelahiran calon santri.</p>
+        </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">5</div>
+        <div>
+            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Pas Foto Berwarna</h4>
+            <p class="text-xs text-white/80">Menyerahkan 3 lembar pas foto berwarna terbaru santri ukuran 3x4 cm.</p>
+        </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
+        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">6</div>
+        <div>
+            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Ijazah / SKL / Rapor SD/MI</h4>
+            <p class="text-xs text-white/80">Fotokopi Ijazah / Surat Keterangan Lulus / Legalisir Rapor SD/MI kelas 4-6.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Call to action WhatsApp Khusus MTs -->
+<div class="bg-surface-container-lowest text-on-surface rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+    <div>
+        <span class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Layanan Pendaftaran Cepat</span>
+        <h3 class="text-xl md:text-2xl font-bold text-primary mb-1">Daftar Melalui WhatsApp Unit MTs</h3>
+        <p class="text-sm text-on-surface-variant">Hubungi Admin Unit MTs di <strong>0812-3456-7894</strong> untuk informasi syarat masuk & pendaftaran asrama.</p>
+    </div>
+    <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20MTs%20Nurul%20Ulum,%20saya%20ingin%20mendaftarkan%20putra/putri%20saya%20ke%20Madrasah%20Tsanawiyah" target="_blank" class="shrink-0 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:-translate-y-0.5 transition-all">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.82 2.796.821 3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.767-5.768-5.767zm7.502 5.765c-.002 4.137-3.364 7.5-7.502 7.5-1.319 0-2.565-.347-3.655-.953l-4.376 1.147 1.168-4.266c-.7-1.156-1.077-2.488-1.077-3.854.002-4.137 3.365-7.5 7.503-7.5 4.138 0 7.501 3.363 7.501 7.5zm-3.666 3.013c-.198-.1-.403-.1-.58-.1-.176 0-.353 0-.53.1-.176.1-.353.3-.53.5-.177.2-.353.4-.53.6-.177.2-.353.4-.53.5-.176.1-.353.2-.53.1-.176-.1-.353-.2-.53-.4-.53-.4-1.06-.9-1.5-1.5-.44-.6-.79-1.2-1.06-1.8-.18-.4-.09-.7.09-.9.18-.2.35-.4.53-.6.18-.2.27-.4.35-.6.09-.2.09-.4 0-.6-.09-.2-.53-1.3-.71-1.7-.18-.4-.35-.4-.53-.4h-.44c-.18 0-.35 0-.53.1-.18.1-.35.3-.53.5-.18.2-.53.6-.53 1.5 0 .9.62 1.8 1.41 2.8 1.06 1.3 2.39 2.4 3.97 3.1.53.2 1.06.4 1.59.4.53 0 1.06-.1 1.5-.4.44-.3.71-.7.71-1.2.09-.5.09-.9 0-1.1-.09-.1-.27-.2-.44-.3z"/></svg>
+        Hubungi WhatsApp MTs (0812-3456-7894)
+    </a>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl shadow-ambient p-8 md:p-12 border border-surface-variant mb-16">
+<div class="flex flex-col md:flex-row gap-10">
+<div class="flex-1">
+<span class="text-tertiary font-bold tracking-wider text-xs uppercase block mb-1">Kontak Langsung</span>
+<h2 class="font-headline-md text-2xl font-bold text-primary mb-3">Hubungi Unit MTs</h2>
+<p class="font-body-md text-sm text-on-surface-variant mb-6">Punya pertanyaan seputar kurikulum, fasilitas asrama, atau pendaftaran santri MTs? Kami siap membantu.</p>
+<div class="space-y-4 text-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container mt-0.5">phone_iphone</span>
+<div>
+<strong class="text-primary block">WhatsApp Admin MTs:</strong>
+<span class="text-on-surface-variant font-semibold">+62 812-3456-7894</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container mt-0.5">mail</span>
+<div>
+<strong class="text-primary block">Email MTs:</strong>
+<span class="text-on-surface-variant">mts@pesantrennurululum.sch.id</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary-container mt-0.5">location_on</span>
+<div>
+<strong class="text-primary block">Lokasi:</strong>
+<span class="text-on-surface-variant">Kompleks Pendidikan Nurul Ulum, Gedung D Lantai 1-3</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex-1">
+<form class="space-y-4">
+<div>
+<label class="block font-label-caps text-xs font-semibold text-on-surface-variant mb-1">NAMA LENGKAP</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary" type="text" placeholder="Masukkan nama lengkap"/>
+</div>
+<div>
+<label class="block font-label-caps text-xs font-semibold text-on-surface-variant mb-1">NOMOR WHATSAPP</label>
+<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary" type="tel" placeholder="Contoh: 08123456789"/>
+</div>
+<div>
+<label class="block font-label-caps text-xs font-semibold text-on-surface-variant mb-1">PESAN / PERTANYAAN</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary resize-none" rows="3" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary rounded-lg py-3 font-semibold text-sm shadow-md hover:-translate-y-0.5 transition-transform duration-200 flex items-center justify-center gap-2" type="button">
+<span>KIRIM PESAN</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-xl bg-surface-container-highest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed mb-4">NURUL ULUM</div>
+<p class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim">© 2024 Pondok Pesantren Nurul Ulum Gili Raja. All Rights Reserved.</p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-6 md:justify-end items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300 font-body-md text-body-md" href="#">Sejarah</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300 font-body-md text-body-md" href="#">Program Tahfidz</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300 font-body-md text-body-md" href="#">Ekstrakurikuler</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300 font-body-md text-body-md" href="#">Lokasi</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300 font-body-md text-body-md" href="#">Hubungi Kami</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple drawer toggle logic
+        document.querySelector('button[aria-label="Menu"]').addEventListener('click', function() {
+            const drawer = document.getElementById('mobileDrawer');
+            if(drawer.classList.contains('-translate-x-full')) {
+                drawer.classList.remove('-translate-x-full');
+            } else {
+                drawer.classList.add('-translate-x-full');
+            }
+        });
+    </script>
+</body></html>

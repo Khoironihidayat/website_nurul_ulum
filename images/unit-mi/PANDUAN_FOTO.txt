@@ -1,0 +1,6 @@
+# FOLDER: images/unit-mi
+
+Foto-foto untuk Halaman Unit MI (Kegiatan belajar Madrasah Ibtidaiyah, tahfidz).
+
+Cara mengganti:
+Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).

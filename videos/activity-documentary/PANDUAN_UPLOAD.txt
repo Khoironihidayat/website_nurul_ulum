@@ -1,0 +1,74 @@
+================================================================================
+PANDUAN UPLOAD VIDEO PROFIL & SUASANA KEGIATAN PESANTREN
+================================================================================
+
+🎬 FOLDER UNTUK: Video Profil & Suasana Kegiatan Pesantren PP Nurul Ulum
+
+📋 CARA MENGGUNAKAN:
+1. Letakkan file video MP4 di folder ini
+2. Format nama file yang direkomendasikan:
+   - suasana-pesantren.mp4
+   - kegiatan-pesantren.mp4
+   - dokumentasi-santri.mp4
+   - aktivitas-santri.mp4
+
+📊 SPESIFIKASI VIDEO:
+- Format: MP4 (H.264)
+- Resolusi: Minimal 1080p (1920x1080) untuk hasil terbaik
+- Bitrate: 5000-8000 kbps
+- Frame Rate: 30fps atau 60fps
+- Audio: AAC, Stereo, 128kbps
+
+📦 UKURAN FILE:
+- Ukuran maksimal: Sesuaikan dengan storage server
+- Disarankan: Kurang dari 500MB per file
+
+🎞️ PROSES UPLOAD:
+1. Simpan file video MP4 di folder ini
+2. Buka halaman: http://localhost:3000/manage-videos.html
+3. Pilih kategori: "Video Profil & Suasana Kegiatan Pesantren"
+4. Isi form:
+   - Judul: Nama video
+   - Deskripsi: Deskripsi singkat kegiatan
+   - Pilih file: Ambil dari folder ini
+   - Pilih thumbnail: Gambar cover (JPG/PNG)
+5. Klik "Tambah"
+
+💡 TIPS:
+- Buat thumbnail/cover yang menarik (resolusi 1280x720)
+- Pastikan audio jernih dan tidak terlalu keras
+- Dokumentasikan kegiatan menarik pesantren
+- Gunakan subtitle jika ada penjelasan
+- Compress video jika file terlalu besar
+
+📝 CONTOH STRUKTUR:
+activity-documentary/
+├── suasana-pesantren.mp4
+├── kegiatan-pesantren.mp4
+├── dokumentasi-santri.mp4
+├── aktivitas-santri.mp4
+└── PANDUAN_UPLOAD.txt (file ini)
+
+❓ PERTANYAAN UMUM:
+Q: File video tidak muncul?
+A: Pastikan format MP4 dan path benar di manage-videos.html
+
+Q: Thumbnail tidak muncul?
+A: Letakkan thumbnail di folder /images/videos/ dan pastikan path benar
+
+Q: Video loading lama?
+A: Compress video atau gunakan resolusi lebih rendah
+
+🎥 JENIS KONTEN YANG COCOK:
+- Dokumentasi kegiatan harian pesantren
+- Suasana pembelajaran santri
+- Kegiatan ekstrakurikuler
+- Acara-acara pesantren
+- Testimoni santri dan alumni
+- Liburan santri
+- Gotong royong dan kebersamaan
+
+================================================================================
+Terakhir diperbarui: 2024-01-15
+Untuk bantuan lebih lanjut hubungi admin website
+================================================================================

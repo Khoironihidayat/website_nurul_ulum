@@ -1,0 +1,26 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "category": "profile-documentary",
+      "categoryLabel": "Video Profil & Dokumenter Pesantren",
+      "title": "Profil PP Nurul Ulum",
+      "description": "Video profil dan dokumenter pesantren",
+      "thumbnail": "images/videos/profile-documentary-thumb.jpg",
+      "videoUrl": "videos/profile-documentary.mp4",
+      "duration": "5:30",
+      "uploadDate": "2024-01-15"
+    },
+    {
+      "id": 2,
+      "category": "activity-documentary",
+      "categoryLabel": "Video Profil & Suasana Kegiatan Pesantren",
+      "title": "Suasana Kegiatan Pesantren",
+      "description": "Video dokumentasi kegiatan dan suasana di pesantren",
+      "thumbnail": "images/videos/activity-documentary-thumb.jpg",
+      "videoUrl": "videos/activity-documentary.mp4",
+      "duration": "7:45",
+      "uploadDate": "2024-01-20"
+    }
+  ]
+}

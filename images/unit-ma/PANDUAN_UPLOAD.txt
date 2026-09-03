@@ -1,0 +1,18 @@
+FOLDER UPLOAD FOTO KEPALA SEKOLAH - UNIT MA
+
+Nama file yang dipakai oleh halaman:
+- kepala-sekolah.png
+
+Cara upload:
+1. Siapkan foto kepala sekolah dalam format PNG.
+2. Simpan file dengan nama kepala-sekolah.png.
+3. Letakkan file di folder ini.
+4. Refresh halaman unit MA.
+
+Rekomendasi:
+- Resolusi: 800x800 px atau lebih.
+- Background: bersih / warna netral.
+- Format: PNG agar lebih rapi.
+
+Catatan:
+File ini otomatis dipakai oleh halaman Unit MA.

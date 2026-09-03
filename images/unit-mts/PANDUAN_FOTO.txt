@@ -1,0 +1,6 @@
+# FOLDER: images/unit-mts
+
+Foto-foto untuk Halaman Unit MTs (Kegiatan belajar Madrasah Tsanawiyah, asrama).
+
+Cara mengganti:
+Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).

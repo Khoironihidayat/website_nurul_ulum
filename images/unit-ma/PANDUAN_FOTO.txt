@@ -1,0 +1,6 @@
+# FOLDER: images/unit-ma
+
+Foto-foto untuk Halaman Unit MA (Kegiatan Madrasah Aliyah, laboratorium, kelas unggulan).
+
+Cara mengganti:
+Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).

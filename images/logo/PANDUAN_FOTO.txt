@@ -1,0 +1,6 @@
+# FOLDER: images/logo
+
+Simpan file logo.png atau logo.svg di sini untuk logo Pesantren di Navbar dan Footer.
+
+Cara mengganti:
+Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).

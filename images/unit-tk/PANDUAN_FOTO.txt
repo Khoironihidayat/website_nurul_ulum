@@ -1,0 +1,6 @@
+# FOLDER: images/unit-tk
+
+Foto-foto untuk Halaman Unit TK / RA (Kegiatan anak, kelas, sarana bermain).
+
+Cara mengganti:
+Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).

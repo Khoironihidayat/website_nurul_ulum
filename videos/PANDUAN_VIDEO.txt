@@ -1,0 +1,19 @@
+# FOLDER: videos/
+
+Folder ini khusus untuk menyimpan file Video Profil Lembaga Pondok Pesantren Nurul Ulum.
+
+File Utama:
+- `videos/profil-lembaga.mp4` -> Video profil resmi lembaga yang diputar secara otomatis di halaman Profil dan Beranda.
+
+Cara Mengganti Video:
+1. Siapkan file video Anda dalam format .MP4 (direkomendasikan resolusi 1080p atau 720p).
+2. Ubah nama file video Anda menjadi: profil-lembaga.mp4
+3. Salin / Timpa (Replace) ke dalam folder ini (c:\Downloads\website nurul ulum\videos\).
+4. Refresh browser Anda (Ctrl + F5). Video profil di website akan langsung berganti dan memutar video baru Anda secara otomatis!
+
+Fitur Pemutar Video di Website:
+- Autoplay (otomatis berputar saat halaman dibuka)
+- Muted loop (suara nonaktif secara default agar browser tidak memblokir autoplay)
+- Tombol Aktifkan Suara / Unmute
+- Tombol Layar Penuh (Fullscreen)
+- Kontrol pemutar lengkap (Play, Pause, Timeline)

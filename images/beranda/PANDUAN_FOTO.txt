@@ -1,0 +1,6 @@
+# FOLDER: images/beranda
+
+Foto-foto untuk Halaman Beranda (Hero banner, Tentang Kami, Fasilitas, dll).
+
+Cara mengganti:
+Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).

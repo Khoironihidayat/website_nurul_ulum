@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profil - Pesantren Nurul Ulum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#00513b",
+                        "surface-container": "#edeef0",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-secondary-container": "#616363",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-primary-container": "#8bd6b7",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface": "#f8f9fb",
+                        "secondary-container": "#dfe0e0",
+                        "on-surface-variant": "#3f4944",
+                        "primary-container": "#065f46",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-dim": "#d9dadc",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#bec9c2",
+                        "surface-container-highest": "#e1e2e4",
+                        "on-tertiary-container": "#4f3d00",
+                        "surface-bright": "#f8f9fb",
+                        "on-primary": "#ffffff",
+                        "primary": "#004532",
+                        "secondary": "#5d5f5f",
+                        "inverse-on-surface": "#f0f1f3",
+                        "on-background": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "surface-container-low": "#f3f4f6",
+                        "on-surface": "#191c1e",
+                        "background": "#f8f9fb",
+                        "surface-variant": "#e1e2e4",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#a6f2d1",
+                        "primary-fixed-dim": "#8bd6b6",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-primary-fixed": "#002116",
+                        "surface-container-high": "#e7e8ea",
+                        "tertiary-container": "#cca730",
+                        "on-secondary-fixed-variant": "#454747",
+                        "on-tertiary-fixed": "#241a00",
+                        "inverse-primary": "#8bd6b6",
+                        "tertiary": "#735c00",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "outline": "#6f7973",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#1b6b51"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "body-lg": ["\"Source Sans 3\""],
+                        "body-md": ["\"Source Sans 3\""],
+                        "label-caps": ["\"Source Sans 3\""],
+                        "display-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .pattern-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23065f46' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .ambient-shadow {
+            box-shadow: 0 4px 20px rgba(6, 95, 70, 0.08);
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #cca730; /* tertiary-container gold */
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: 20px;
+                transform: none;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen relative overflow-x-hidden">
+<!-- TopAppBar (Web) -->
+<header class="hidden md:flex justify-between items-center px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="menu">menu</span>
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-primary">NURUL ULUM</span>
+</div>
+<nav class="flex gap-6">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Beranda</a>
+<a class="text-primary font-semibold font-body-md text-body-md" href="#">Tentang Kami</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Unit Pendidikan</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Pendaftaran</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-200" href="#">Kontak</a>
+</nav>
+</header>
+<!-- NavigationDrawer (Mobile Overlay, Hidden by default, representing the shell structure) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col py-6 h-full w-80 rounded-r-xl bg-primary text-on-primary shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden" id="mobile-nav">
+<div class="px-6 pb-6 border-b border-primary-fixed-dim/20 mb-4">
+<h2 class="font-headline-sm text-headline-sm text-tertiary-fixed">Pesantren Nurul Ulum</h2>
+</div>
+<nav class="flex flex-col gap-2 font-body-lg text-body-lg">
+<a class="flex items-center gap-4 text-on-primary/80 mx-2 my-1 px-4 py-3 hover:bg-primary-fixed-variant/20 rounded-full transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+                Beranda
+            </a>
+<a class="flex items-center gap-4 bg-tertiary-container text-on-tertiary-container rounded-full mx-2 my-1 px-4 py-3 scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="mosque" style="font-variation-settings: 'FILL' 1;">mosque</span>
+                Tentang Kami
+            </a>
+<a class="flex items-center gap-4 text-on-primary/80 mx-2 my-1 px-4 py-3 hover:bg-primary-fixed-variant/20 rounded-full transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+                Unit Pendidikan
+            </a>
+<a class="flex items-center gap-4 text-on-primary/80 mx-2 my-1 px-4 py-3 hover:bg-primary-fixed-variant/20 rounded-full transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+                Pendaftaran
+            </a>
+<a class="flex items-center gap-4 text-on-primary/80 mx-2 my-1 px-4 py-3 hover:bg-primary-fixed-variant/20 rounded-full transition-transform active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+                Kontak
+            </a>
+</nav>
+</div>
+<!-- Mobile Top Bar for Hamburger -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile h-20 bg-surface/90 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm">
+<button class="p-2 text-primary" id="menu-btn">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">NURUL ULUM</span>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow pt-24 md:pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full relative">
+<div class="absolute inset-0 pattern-overlay -z-10"></div>
+<!-- Hero / Pengasuh Section (Bento style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-24">
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl ambient-shadow p-8 flex flex-col justify-center border-t-4 border-transparent hover:border-tertiary-container transition-all duration-300">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Membangun Generasi Rabbani di Bumi Gili Raja</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
+                    Pondok Pesantren Nurul Ulum hadir sebagai mercusuar ilmu pengetahuan dan adab, memadukan tradisi keislaman yang kuat dengan semangat kemajuan zaman modern, berakar kuat di tengah masyarakat maritim Madura.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all">Sejarah Kami</button>
+<button class="border border-primary text-primary font-label-caps text-label-caps px-6 py-3 rounded-lg hover:bg-primary/5 transition-colors">Program Pendidikan</button>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl ambient-shadow p-6 flex flex-col items-center text-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="w-48 h-48 rounded-full mb-6 border-4 border-tertiary-container overflow-hidden z-10">
+<img class="w-full h-full object-cover" data-alt="A highly detailed, professional portrait photograph of a revered Indonesian Islamic scholar (Kiai) wearing a traditional peci (cap) and a clean, formal baju koko (tunic). The lighting is soft and natural, suggesting a bright morning. The background is slightly blurred but features traditional wooden architectural elements and lush greenery, conveying wisdom, calm, and spiritual authority in a modern, light-mode setting with emerald and warm white tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV3rKeosybmsoEoz9vcPYnxXqY5SximtZIlxw1TXeG4IFASIo9BYuqcQpux5W-LDdi445NX6Sd3f5e4jSgcOzFj0hmOdtnBMQPmvZfu6T1nbPyCIT3C6BcvH14aCEis6XhgSNqMNAIIOzms_byaiN0M_LBaUP4Thq7qG1COgdZr8WxhyDqXgs5PCVkGZPk0zleOBl7sbLi_6gPZAbPS-Z0T8HKIda5730i558PyReKkuQ5IYHZ9JJMRw"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1 z-10">K.H. Ahmad Fauzan</h3>
+<p class="font-label-caps text-label-caps text-tertiary z-10">Pengasuh Pondok Pesantren</p>
+</div>
+</section>
+
+<!-- Video Profil Lembaga Section -->
+<section id="video-profil" class="mb-24 bg-surface-container-lowest p-8 md:p-12 rounded-2xl ambient-shadow border-t-4 border-tertiary-container relative overflow-hidden">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+            <div class="inline-flex items-center gap-2 text-tertiary font-label-caps text-label-caps uppercase tracking-widest mb-2">
+                <span class="w-8 h-px bg-tertiary"></span> Video Dokumenter Resmi
+            </div>
+            <h2 class="font-headline-md text-headline-md text-primary font-bold">Video Profil & Dokumenter Pesantren</h2>
+            <p class="font-body-md text-on-surface-variant mt-1">Simak perjalanan, kurikulum kepesantrenan, dan aktivitas harian para santri di Pondok Pesantren Nurul Ulum.</p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+            <button id="video-unmute-btn" class="inline-flex items-center gap-2 bg-primary/10 text-primary hover:bg-primary hover:text-on-primary px-4 py-2 rounded-lg text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer">
+                <span id="video-sound-icon" class="material-symbols-outlined text-[18px]">volume_off</span>
+                <span id="video-sound-text">Suara: Mati</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Video Player Container -->
+    <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black border-2 border-primary/20 aspect-video max-w-4xl mx-auto group">
+        <video id="institution-video" class="w-full h-full object-cover" autoplay muted loop playsinline controls poster="images/profil/profil-foto-1.jpg">
+            <source src="videos/profil-lembaga.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutar video HTML5.
+        </video>
+    </div>
+</section>
+
+<!-- Visi & Misi (Grid) -->
+<section class="mb-24">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary inline-flex flex-col items-center">
+                    Visi &amp; Misi
+                    <span class="w-16 h-1 bg-tertiary-container mt-2 rounded-full"></span>
+</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow border-t-4 border-primary hover:-translate-y-1 transition-transform">
+<div class="flex items-center gap-4 mb-6">
+<div class="p-3 bg-primary-container/10 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Visi</h3>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                        "Terwujudnya generasi muslim yang tafaqquh fiddin, berakhlakul karimah, unggul dalam penguasaan ilmu pengetahuan dan teknologi, serta berjiwa mandiri."
+                    </p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow border-t-4 border-tertiary-container hover:-translate-y-1 transition-transform">
+<div class="flex items-center gap-4 mb-6">
+<div class="p-3 bg-tertiary-container/10 rounded-lg text-tertiary">
+<span class="material-symbols-outlined text-3xl" data-icon="flag">flag</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Misi</h3>
+</div>
+<ul class="font-body-md text-body-md text-on-surface-variant space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Menyelenggarakan pendidikan Islam berbasis kitab kuning (salaf) dan pendidikan formal modern.
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Membina karakter santri melalui pembiasaan ibadah dan akhlakul karimah dalam kehidupan asrama.
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Membekali santri dengan keterampilan hidup (life skill) untuk kemandirian ekonomi umat.
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Sejarah (Timeline) -->
+<section class="mb-24">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary inline-flex flex-col items-center">
+                    Jejak Sejarah
+                    <span class="w-16 h-1 bg-tertiary-container mt-2 rounded-full"></span>
+</h2>
+</div>
+<div class="relative timeline-line max-w-4xl mx-auto py-8">
+<!-- Event 1 -->
+<div class="relative flex md:justify-between items-center w-full mb-16 pl-12 md:pl-0">
+<div class="hidden md:block w-5/12"></div>
+<div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center"></div>
+<div class="w-full md:w-5/12 bg-surface-container-lowest p-6 rounded-xl ambient-shadow relative md:text-right">
+<div class="font-label-caps text-label-caps text-tertiary mb-2">1995</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Peletakan Batu Pertama</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">K.H. Ahmad Fauzan merintis majelis taklim kecil di sebuah langgar panggung di desa pesisir Gili Raja.</p>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative flex md:justify-between items-center w-full mb-16 pl-12 md:pl-0">
+<div class="w-full md:w-5/12 bg-surface-container-lowest p-6 rounded-xl ambient-shadow relative">
+<div class="font-label-caps text-label-caps text-tertiary mb-2">2001</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Pendirian Madrasah Diniyah</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Sistem pendidikan mulai terstruktur dengan berdirinya Madrasah Diniyah Awwaliyah untuk memfasilitasi antusiasme masyarakat.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center"></div>
+<div class="hidden md:block w-5/12"></div>
+</div>
+<!-- Event 3 -->
+<div class="relative flex md:justify-between items-center w-full pl-12 md:pl-0">
+<div class="hidden md:block w-5/12"></div>
+<div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-surface z-10 flex items-center justify-center"></div>
+<div class="w-full md:w-5/12 bg-surface-container-lowest p-6 rounded-xl ambient-shadow relative md:text-right">
+<div class="font-label-caps text-label-caps text-tertiary mb-2">2010 - Sekarang</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Pendidikan Formal Terintegrasi</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Pembukaan jenjang SMP dan SMA berbasis pesantren, menjadikan Nurul Ulum pusat pendidikan terpadu di kepulauan Sumenep.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-xl bg-surface-container-highest border-t border-outline-variant flat no shadows grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto">
+<div class="md:col-span-1 mb-8 md:mb-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary mb-4 block">NURUL ULUM</span>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Pusat pendidikan Islam pesisir yang memadukan tradisi salaf dan modernitas di Gili Raja.</p>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-label-caps text-label-caps text-primary mb-4">Tautan</h4>
+<nav class="flex flex-col gap-3 font-body-md text-body-md">
+<a class="text-tertiary font-bold hover:text-primary underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300" href="#">Sejarah</a>
+<a class="text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300" href="#">Program Tahfidz</a>
+<a class="text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300" href="#">Ekstrakurikuler</a>
+<a class="text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300" href="#">Lokasi</a>
+<a class="text-on-surface-variant hover:text-primary underline decoration-2 underline-offset-4 hover:-translate-y-0.5 transition-transform duration-300" href="#">Hubungi Kami</a>
+</nav>
+</div>
+<div class="md:col-span-2 text-left md:text-right mt-8 md:mt-0 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant pt-auto mt-auto">© 2024 Pondok Pesantren Nurul Ulum Gili Raja. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('-translate-x-full');
+        });
+    </script>
+</body></html>
