@@ -1,714 +1,1106 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Ekstrakurikuler - Pondok Pesantren Nurul Ulum</title>
-    <meta name="description" content="Kegiatan Ekstrakurikuler Santri Pondok Pesantren Nurul Ulum: Pramuka, Kursus Bahasa Arab & Bahasa Inggris, dan Majelis Sholawat Nurul Ulum."/>
+    <meta name="description"
+        content="Kegiatan Ekstrakurikuler Santri Pondok Pesantren Nurul Ulum: Pramuka, Kursus Bahasa Arab & Bahasa Inggris, dan Majelis Sholawat Nurul Ulum." />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#004532","primary-container": "#065f46","primary-fixed": "#a6f2d1",
-                        "primary-fixed-dim": "#8bd6b6","on-primary": "#ffffff","on-primary-container": "#8bd6b7",
-                        "tertiary": "#735c00","tertiary-container": "#cca730","tertiary-fixed": "#ffe088",
-                        "tertiary-fixed-dim": "#e9c349","on-tertiary": "#ffffff","on-tertiary-container": "#4f3d00",
-                        "surface": "#f8f9fb","surface-container-lowest": "#ffffff","surface-container-low": "#f3f4f6",
-                        "surface-container": "#edeef0","on-surface": "#191c1e","on-surface-variant": "#3f4944",
+                        "primary": "#004532", "primary-container": "#065f46", "primary-fixed": "#a6f2d1",
+                        "primary-fixed-dim": "#8bd6b6", "on-primary": "#ffffff", "on-primary-container": "#8bd6b7",
+                        "tertiary": "#735c00", "tertiary-container": "#cca730", "tertiary-fixed": "#ffe088",
+                        "tertiary-fixed-dim": "#e9c349", "on-tertiary": "#ffffff", "on-tertiary-container": "#4f3d00",
+                        "surface": "#f8f9fb", "surface-container-lowest": "#ffffff", "surface-container-low": "#f3f4f6",
+                        "surface-container": "#edeef0", "on-surface": "#191c1e", "on-surface-variant": "#3f4944",
                         "outline-variant": "#bec9c2"
                     },
-                    spacing: { "margin-desktop": "40px","container-max": "1280px","margin-mobile": "16px" },
+                    spacing: { "margin-desktop": "40px", "container-max": "1280px", "margin-mobile": "16px" },
                     fontFamily: {
-                        "headline-sm": ["Montserrat","sans-serif"],"headline-md": ["Montserrat","sans-serif"],
-                        "body-md": ['"Source Sans 3"',"sans-serif"],"label-caps": ['"Source Sans 3"',"sans-serif"]
+                        "headline-sm": ["Montserrat", "sans-serif"], "headline-md": ["Montserrat", "sans-serif"],
+                        "body-md": ['"Source Sans 3"', "sans-serif"], "label-caps": ['"Source Sans 3"', "sans-serif"]
                     },
                     fontSize: {
-                        "headline-sm": ["24px",{"lineHeight":"32px","fontWeight":"600"}],
-                        "headline-md": ["30px",{"lineHeight":"38px","fontWeight":"600"}],
-                        "body-md": ["16px",{"lineHeight":"24px","fontWeight":"400"}]
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
                     }
                 }
             }
         }
     </script>
     <style>
-        .material-symbols-outlined{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;vertical-align:middle}
-        .shadow-ambient{box-shadow:0 4px 20px rgba(6,95,70,.08)}
-        .pattern-bg{background-image:url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'><path d='M20 0l20 20-20 20L0 20z' fill='rgba(6,95,70,0.03)'/></svg>")}
-        header{transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s ease}
-        .header-shrunk{box-shadow:0 4px 20px -2px rgba(0,69,50,.08);backdrop-filter:blur(24px) saturate(180%)}
-        @keyframes fadeUp{from{opacity:0;transform:translateY(32px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
-        .fade-up{opacity:0;animation:fadeUp .9s cubic-bezier(.16,1,.3,1) .1s forwards}
-        *, *::before, *::after{-webkit-font-smoothing:antialiased}
-        html{scroll-behavior:smooth}
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle
+        }
+
+        .shadow-ambient {
+            box-shadow: 0 4px 20px rgba(6, 95, 70, .08)
+        }
+
+        .pattern-bg {
+            background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'><path d='M20 0l20 20-20 20L0 20z' fill='rgba(6,95,70,0.03)'/></svg>")
+        }
+
+        header {
+            transition: transform .45s cubic-bezier(.16, 1, .3, 1), box-shadow .45s ease
+        }
+
+        .header-shrunk {
+            box-shadow: 0 4px 20px -2px rgba(0, 69, 50, .08);
+            backdrop-filter: blur(24px) saturate(180%)
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(32px);
+                filter: blur(6px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+                filter: none
+            }
+        }
+
+        .fade-up {
+            opacity: 0;
+            animation: fadeUp .9s cubic-bezier(.16, 1, .3, 1) .1s forwards
+        }
+
+        *,
+        *::before,
+        *::after {
+            -webkit-font-smoothing: antialiased
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
         .gallery-item {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .gallery-item:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 30px rgba(0, 69, 50, 0.15);
         }
     </style>
 </head>
+
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pattern-bg antialiased">
 
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 transition-all duration-300">
-    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
-        <div class="flex items-center gap-3">
-            <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden text-primary p-1.5 rounded-lg hover:bg-primary/5 focus:outline-none transition-colors">
-                <span class="material-symbols-outlined text-[28px]">menu</span>
-            </button>
-            <a href="index.html" class="flex items-center gap-2.5 group">
-                <div class="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform overflow-hidden border border-primary/10">
-                    <img src="images/profil/logo-yayasan.png" alt="Logo Nurul Ulum" class="w-full h-full object-contain p-1">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 transition-all duration-300">
+        <div
+            class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+            <div class="flex items-center gap-3">
+                <button id="mobile-menu-btn" aria-label="Buka Menu"
+                    class="md:hidden text-primary p-1.5 rounded-lg hover:bg-primary/5 focus:outline-none transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                </button>
+                <a href="index.html" class="flex items-center gap-2.5 group">
+                    <div
+                        class="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform overflow-hidden border border-primary/10">
+                        <img src="images/profil/logo-yayasan.png" alt="Logo Nurul Ulum"
+                            class="w-full h-full object-contain p-1">
+                    </div>
+                    <div>
+                        <span
+                            class="font-headline-md text-xl md:text-2xl font-bold tracking-tight text-primary block leading-none">NURUL
+                            ULUM</span>
+                        <span
+                            class="text-[10px] md:text-xs text-tertiary font-medium tracking-wider uppercase block">Pesantren
+                            &amp; Madrasah</span>
+                    </div>
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="index.html"
+                    class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Beranda</a>
+                <a href="profil.html"
+                    class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Profil
+                    &amp; Sejarah</a>
+
+                <!-- Unit Pendidikan -->
+                <div class="relative group py-2">
+                    <button
+                        class="font-semibold text-sm flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
+                        Unit Pendidikan <span
+                            class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-1 w-64 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                        <a href="unit-kb.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">toys</span>
+                            <div>
+                                <div class="font-semibold">Kelompok Bermain (KB)</div>
+                                <div class="text-[11px] text-on-surface-variant">Pendidikan Usia 2-4 Tahun</div>
+                            </div>
+                        </a>
+                        <a href="unit-tk.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">child_care</span>
+                            <div>
+                                <div class="font-semibold">TK / RA</div>
+                                <div class="text-[11px] text-on-surface-variant">Pendidikan Usia Dini</div>
+                            </div>
+                        </a>
+                        <a href="unit-mi.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">local_library</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Ibtidaiyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Setingkat SD</div>
+                            </div>
+                        </a>
+                        <a href="unit-mts.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Tsanawiyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Setingkat SMP</div>
+                            </div>
+                        </a>
+                        <a href="unit-ma.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">school</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Aliyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Setingkat SMA / Aliyah</div>
+                            </div>
+                        </a>
+                        <div class="border-t border-outline-variant/20 my-1"></div>
+                        <a href="madrasah-diniyah.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">mosque</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Diniyah Ta'miliyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Pendidikan Keagamaan</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <span class="font-headline-md text-xl md:text-2xl font-bold tracking-tight text-primary block leading-none">NURUL ULUM</span>
-                    <span class="text-[10px] md:text-xs text-tertiary font-medium tracking-wider uppercase block">Pesantren &amp; Madrasah</span>
+
+                <!-- Organisasi -->
+                <div class="relative group py-2">
+                    <button
+                        class="font-semibold text-sm flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
+                        Organisasi <span
+                            class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-1 w-72 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                        <a href="organisasi.html#ikanu"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">groups</span>
+                            <div>
+                                <div class="font-semibold">IKSANU</div>
+                                <div class="text-[11px] text-on-surface-variant">Ikatan Santri &amp; Alumni Nurul Ulum
+                                </div>
+                            </div>
+                        </a>
+                        <a href="organisasi.html#osim-mts"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+                            <div>
+                                <div class="font-semibold">OSIM MTs Nurul Ulum</div>
+                                <div class="text-[11px] text-on-surface-variant">Org. Siswa Intra Madrasah MTs</div>
+                            </div>
+                        </a>
+                        <a href="organisasi.html#osim-ma"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+                            <div>
+                                <div class="font-semibold">OSIM MA Nurul Ulum</div>
+                                <div class="text-[11px] text-on-surface-variant">Org. Siswa Intra Madrasah MA</div>
+                            </div>
+                        </a>
+                        <a href="organisasi.html#pramuka"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">emoji_nature</span>
+                            <div>
+                                <div class="font-semibold">Pramuka Pangkalan Nurul Ulum</div>
+                                <div class="text-[11px] text-on-surface-variant">Gerakan Pramuka Santri</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </a>
+
+                <!-- Ekstrakurikuler (Active) -->
+                <div class="relative group py-2">
+                    <button class="font-semibold text-sm flex items-center gap-1.5 text-primary">
+                        Ekstrakurikuler <span
+                            class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-1 w-72 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                        <a href="#pramuka" onclick="filterGallery('pramuka')"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">emoji_nature</span>
+                            <div>
+                                <div class="font-semibold">Pramuka</div>
+                                <div class="text-[11px] text-on-surface-variant">Kegiatan Kepramukaan Santri</div>
+                            </div>
+                        </a>
+                        <a href="#bahasa" onclick="filterGallery('bahasa')"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">translate</span>
+                            <div>
+                                <div class="font-semibold">Kursus Bahasa Arab &amp; Inggris</div>
+                                <div class="text-[11px] text-on-surface-variant">Penguasaan Bahasa Internasional</div>
+                            </div>
+                        </a>
+                        <a href="#sholawat" onclick="filterGallery('sholawat')"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span
+                                class="material-symbols-outlined text-primary text-[20px]">music_note</span>
+                            <div>
+                                <div class="font-semibold">Majelis Sholawat Nurul Ulum</div>
+                                <div class="text-[11px] text-on-surface-variant">Kegiatan Seni Islam &amp; Sholawat
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#kontak"
+                    class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Kontak</a>
+            </nav>
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://wa.me/6287866186894" target="_blank"
+                    class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:-translate-y-0.5 transition-all">
+                    <span class="material-symbols-outlined text-[18px]">how_to_reg</span> Pendaftaran Santri
+                </a>
+            </div>
         </div>
-        <nav class="hidden md:flex items-center gap-6">
-            <a href="index.html" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Beranda</a>
-            <a href="profil.html" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Profil &amp; Sejarah</a>
-            
-            <!-- Unit Pendidikan -->
-            <div class="relative group py-2">
-                <button class="font-semibold text-sm flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
-                    Unit Pendidikan <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+    </header>
+
+    <!-- Mobile Backdrop -->
+    <div id="drawer-backdrop"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300 md:hidden">
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer"
+        class="fixed inset-y-0 left-0 z-[70] flex flex-col py-6 bg-primary h-full w-80 shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+        <div class="px-6 pb-5 border-b border-primary-fixed/20 mb-4 flex justify-between items-center">
+            <div class="flex items-center gap-2.5">
+                <div
+                    class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[18px]">mosque</span></div>
+                <h2 class="font-headline-sm text-lg font-bold text-tertiary-fixed">PP. Nurul Ulum</h2>
+            </div>
+            <button id="mobile-close-btn" class="text-on-primary p-1 rounded-lg hover:bg-white/10"
+                aria-label="Tutup Menu"><span class="material-symbols-outlined text-[24px]">close</span></button>
+        </div>
+        <nav class="flex flex-col px-3 font-body-md text-base space-y-1">
+            <a href="index.html"
+                class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span
+                    class="material-symbols-outlined text-[22px]">home</span> Beranda</a>
+            <a href="profil.html"
+                class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span
+                    class="material-symbols-outlined text-[22px]">account_balance</span> Profil &amp; Sejarah</a>
+
+            <!-- Unit Pendidikan Accordion -->
+            <div>
+                <button id="mobile-unit-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                    <div class="flex items-center gap-3.5"><span
+                            class="material-symbols-outlined text-[22px]">school</span> Unit Pendidikan</div>
+                    <span id="mobile-unit-arrow"
+                        class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
                 </button>
-                <div class="absolute top-full left-0 mt-1 w-64 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
-                    <a href="unit-kb.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">toys</span><div><div class="font-semibold">Kelompok Bermain (KB)</div><div class="text-[11px] text-on-surface-variant">Pendidikan Usia 2-4 Tahun</div></div></a>
-                    <a href="unit-tk.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">child_care</span><div><div class="font-semibold">TK / RA</div><div class="text-[11px] text-on-surface-variant">Pendidikan Usia Dini</div></div></a>
-                    <a href="unit-mi.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">local_library</span><div><div class="font-semibold">Madrasah Ibtidaiyah</div><div class="text-[11px] text-on-surface-variant">Setingkat SD</div></div></a>
-                    <a href="unit-mts.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">menu_book</span><div><div class="font-semibold">Madrasah Tsanawiyah</div><div class="text-[11px] text-on-surface-variant">Setingkat SMP</div></div></a>
-                    <a href="unit-ma.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">school</span><div><div class="font-semibold">Madrasah Aliyah</div><div class="text-[11px] text-on-surface-variant">Setingkat SMA / Aliyah</div></div></a>
-                    <div class="border-t border-outline-variant/20 my-1"></div>
-                    <a href="madrasah-diniyah.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">mosque</span><div><div class="font-semibold">Madrasah Diniyah Ta'limiyah</div><div class="text-[11px] text-on-surface-variant">Pendidikan Keagamaan</div></div></a>
+                <div id="mobile-unit-submenu" class="pl-6 pr-2 py-1 space-y-1 hidden">
+                    <a href="unit-kb.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">toys</span> KB Nurul Ulum</a>
+                    <a href="unit-tk.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">child_care</span> TK / RA</a>
+                    <a href="unit-mi.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">local_library</span> MI Nurul Ulum</a>
+                    <a href="unit-mts.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">menu_book</span> MTs Nurul Ulum</a>
+                    <a href="unit-ma.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">school</span> MA Nurul Ulum</a>
+                    <a href="madrasah-diniyah.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">mosque</span> Madrasah Diniyah Ta'miliyah</a>
                 </div>
             </div>
 
-            <!-- Organisasi -->
-            <div class="relative group py-2">
-                <button class="font-semibold text-sm flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
-                    Organisasi <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+            <!-- Organisasi Accordion -->
+            <div>
+                <button id="mobile-org-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                    <div class="flex items-center gap-3.5"><span
+                            class="material-symbols-outlined text-[22px]">groups</span> Organisasi</div>
+                    <span id="mobile-org-arrow"
+                        class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
                 </button>
-                <div class="absolute top-full left-0 mt-1 w-72 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
-                    <a href="organisasi.html#ikanu" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">groups</span><div><div class="font-semibold">IKANU</div><div class="text-[11px] text-on-surface-variant">Ikatan Santri &amp; Alumni Nurul Ulum</div></div></a>
-                    <a href="organisasi.html#osim-mts" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">account_balance</span><div><div class="font-semibold">OSIM MTs Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Org. Siswa Intra Madrasah MTs</div></div></a>
-                    <a href="organisasi.html#osim-ma" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">account_balance</span><div><div class="font-semibold">OSIM MA Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Org. Siswa Intra Madrasah MA</div></div></a>
-                    <a href="organisasi.html#pramuka" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">emoji_nature</span><div><div class="font-semibold">Pramuka Pangkalan Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Gerakan Pramuka Santri</div></div></a>
+                <div id="mobile-org-submenu" class="pl-6 pr-2 py-1 space-y-1 hidden">
+                    <a href="organisasi.html#ikanu"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">groups</span> IKANU</a>
+                    <a href="organisasi.html#osim-mts"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MTs</a>
+                    <a href="organisasi.html#osim-ma"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MA</a>
+                    <a href="organisasi.html#pramuka"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka Pangkalan</a>
                 </div>
             </div>
 
-            <!-- Ekstrakurikuler (Active) -->
-            <div class="relative group py-2">
-                <button class="font-semibold text-sm flex items-center gap-1.5 text-primary">
-                    Ekstrakurikuler <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+            <!-- Ekstrakurikuler Accordion -->
+            <div>
+                <button id="mobile-ekskul-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 rounded-lg bg-white/15 text-tertiary-fixed font-semibold">
+                    <div class="flex items-center gap-3.5"><span
+                            class="material-symbols-outlined text-[22px]">star</span> Ekstrakurikuler</div>
+                    <span id="mobile-ekskul-arrow"
+                        class="material-symbols-outlined text-[20px] transition-transform duration-200 rotate-180">expand_more</span>
                 </button>
-                <div class="absolute top-full left-0 mt-1 w-72 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
-                    <a href="#pramuka" onclick="filterGallery('pramuka')" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">emoji_nature</span><div><div class="font-semibold">Pramuka</div><div class="text-[11px] text-on-surface-variant">Kegiatan Kepramukaan Santri</div></div></a>
-                    <a href="#bahasa" onclick="filterGallery('bahasa')" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">translate</span><div><div class="font-semibold">Kursus Bahasa Arab &amp; Inggris</div><div class="text-[11px] text-on-surface-variant">Penguasaan Bahasa Internasional</div></div></a>
-                    <a href="#sholawat" onclick="filterGallery('sholawat')" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">music_note</span><div><div class="font-semibold">Majelis Sholawat Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Kegiatan Seni Islam &amp; Sholawat</div></div></a>
+                <div id="mobile-ekskul-submenu" class="pl-6 pr-2 py-1 space-y-1">
+                    <a href="#pramuka" onclick="filterGallery('pramuka')"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka</a>
+                    <a href="#bahasa" onclick="filterGallery('bahasa')"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">translate</span> Kursus Bahasa</a>
+                    <a href="#sholawat" onclick="filterGallery('sholawat')"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span
+                            class="material-symbols-outlined text-[18px]">music_note</span> Majelis Sholawat</a>
                 </div>
             </div>
 
-            <a href="#kontak" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Kontak</a>
+            <a href="#kontak"
+                class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span
+                    class="material-symbols-outlined text-[22px]">contact_support</span> Kontak &amp; Lokasi</a>
         </nav>
-        <div class="hidden md:flex items-center gap-3">
-            <a href="https://wa.me/6287866186894" target="_blank" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:-translate-y-0.5 transition-all">
-                <span class="material-symbols-outlined text-[18px]">how_to_reg</span> Pendaftaran Santri
+        <div class="mt-auto px-5 pt-6 border-t border-primary-fixed/20">
+            <a href="https://wa.me/6287866186894" target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-tertiary-container text-on-tertiary-container font-bold text-sm uppercase py-3 rounded-xl shadow-lg">
+                <span class="material-symbols-outlined text-[20px]">how_to_reg</span> Pendaftaran Santri
             </a>
         </div>
     </div>
-</header>
 
-<!-- Mobile Backdrop -->
-<div id="drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300 md:hidden"></div>
-
-<!-- Mobile Drawer -->
-<div id="mobile-drawer" class="fixed inset-y-0 left-0 z-[70] flex flex-col py-6 bg-primary h-full w-80 shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
-    <div class="px-6 pb-5 border-b border-primary-fixed/20 mb-4 flex justify-between items-center">
-        <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">mosque</span></div>
-            <h2 class="font-headline-sm text-lg font-bold text-tertiary-fixed">PP. Nurul Ulum</h2>
-        </div>
-        <button id="mobile-close-btn" class="text-on-primary p-1 rounded-lg hover:bg-white/10" aria-label="Tutup Menu"><span class="material-symbols-outlined text-[24px]">close</span></button>
-    </div>
-    <nav class="flex flex-col px-3 font-body-md text-base space-y-1">
-        <a href="index.html" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span class="material-symbols-outlined text-[22px]">home</span> Beranda</a>
-        <a href="profil.html" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span class="material-symbols-outlined text-[22px]">account_balance</span> Profil &amp; Sejarah</a>
-        
-        <!-- Unit Pendidikan Accordion -->
-        <div>
-            <button id="mobile-unit-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
-                <div class="flex items-center gap-3.5"><span class="material-symbols-outlined text-[22px]">school</span> Unit Pendidikan</div>
-                <span id="mobile-unit-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
-            </button>
-            <div id="mobile-unit-submenu" class="pl-6 pr-2 py-1 space-y-1 hidden">
-                <a href="unit-kb.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">toys</span> KB Nurul Ulum</a>
-                <a href="unit-tk.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">child_care</span> TK / RA</a>
-                <a href="unit-mi.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">local_library</span> MI Nurul Ulum</a>
-                <a href="unit-mts.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">menu_book</span> MTs Nurul Ulum</a>
-                <a href="unit-ma.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">school</span> MA Nurul Ulum</a>
-                <a href="madrasah-diniyah.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">mosque</span> Madrasah Diniyah Ta'limiyah</a>
+    <main class="flex-1 pt-20">
+        <!-- Hero Banner -->
+        <section
+            class="relative bg-gradient-to-br from-primary via-[#044c37] to-[#012f20] py-20 md:py-28 overflow-hidden">
+            <div
+                class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-tertiary-container/15 blur-3xl pointer-events-none">
             </div>
-        </div>
-
-        <!-- Organisasi Accordion -->
-        <div>
-            <button id="mobile-org-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
-                <div class="flex items-center gap-3.5"><span class="material-symbols-outlined text-[22px]">groups</span> Organisasi</div>
-                <span id="mobile-org-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
-            </button>
-            <div id="mobile-org-submenu" class="pl-6 pr-2 py-1 space-y-1 hidden">
-                <a href="organisasi.html#ikanu" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">groups</span> IKANU</a>
-                <a href="organisasi.html#osim-mts" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MTs</a>
-                <a href="organisasi.html#osim-ma" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MA</a>
-                <a href="organisasi.html#pramuka" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka Pangkalan</a>
+            <div
+                class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none">
             </div>
-        </div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+                <div class="fade-up">
+                    <span
+                        class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5 shadow-md">
+                        <span class="material-symbols-outlined text-[16px]">stars</span> Minat &amp; Bakat Santri
+                    </span>
+                    <h1
+                        class="font-headline-md text-3xl md:text-5xl font-extrabold text-on-primary mb-4 tracking-tight leading-tight">
+                        Ekstrakurikuler Santri<br class="hidden md:block" /> Pondok Pesantren Nurul Ulum
+                    </h1>
+                    <p class="text-on-primary/80 text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-8">
+                        Mengembangkan kecakapan hidup, kemandirian karakter, keahlian bahasa internasional, serta
+                        kecintaan syi'ar seni Islam shalawat kepada Nabi Muhammad SAW.
+                    </p>
 
-        <!-- Ekstrakurikuler Accordion -->
-        <div>
-            <button id="mobile-ekskul-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg bg-white/15 text-tertiary-fixed font-semibold">
-                <div class="flex items-center gap-3.5"><span class="material-symbols-outlined text-[22px]">star</span> Ekstrakurikuler</div>
-                <span id="mobile-ekskul-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200 rotate-180">expand_more</span>
-            </button>
-            <div id="mobile-ekskul-submenu" class="pl-6 pr-2 py-1 space-y-1">
-                <a href="#pramuka" onclick="filterGallery('pramuka')" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka</a>
-                <a href="#bahasa" onclick="filterGallery('bahasa')" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">translate</span> Kursus Bahasa</a>
-                <a href="#sholawat" onclick="filterGallery('sholawat')" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">music_note</span> Majelis Sholawat</a>
+                    <!-- Interactive Quick Click Filters - "ketika di klik itu langsung muncul foto kegiatannya" -->
+                    <div
+                        class="inline-flex flex-wrap justify-center gap-2 p-1.5 bg-black/25 backdrop-blur-md rounded-2xl border border-white/15 shadow-xl max-w-full">
+                        <button id="tab-btn-all" onclick="filterGallery('all')"
+                            class="ekskul-tab active-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-tertiary-container text-on-tertiary-container shadow-md flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-[18px]">grid_view</span> Semua Foto Kegiatan
+                        </button>
+                        <button id="tab-btn-pramuka" onclick="filterGallery('pramuka')"
+                            class="ekskul-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-[18px]">emoji_nature</span> 🏕️ Pramuka
+                        </button>
+                        <button id="tab-btn-bahasa" onclick="filterGallery('bahasa')"
+                            class="ekskul-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-[18px]">translate</span> 🗣️ Kursus Bahasa
+                        </button>
+                        <button id="tab-btn-sholawat" onclick="filterGallery('sholawat')"
+                            class="ekskul-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-[18px]">music_note</span> 🎵 Majelis Sholawat
+                        </button>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Content Sections -->
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 space-y-24">
+
+            <!-- 1. PRAMUKA PANGKALAN NURUL ULUM -->
+            <section id="pramuka" class="scroll-mt-28 ekskul-section" data-category="pramuka">
+                <div
+                    class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                    <!-- Header Banner -->
+                    <div
+                        class="bg-gradient-to-r from-[#735c00] via-[#8c7000] to-[#b88b14] p-8 md:p-10 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div class="flex items-center gap-5">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-white text-[#735c00] flex items-center justify-center shadow-xl shrink-0">
+                                <span class="material-symbols-outlined text-4xl">emoji_nature</span>
+                            </div>
+                            <div>
+                                <div
+                                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider mb-1">
+                                    Gerakan Pramuka Santri
+                                </div>
+                                <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold">
+                                    Pramuka Gugus Depan Pangkalan Nurul Ulum
+                                </h2>
+                                <p class="text-white/85 text-xs md:text-sm mt-0.5">
+                                    Menumbuhkan kedisiplinan, ketangkasan fisik, jiwa korsa, dan kepemimpinan santri
+                                    mandiri.
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="filterGallery('pramuka')"
+                            class="shrink-0 px-4 py-2 rounded-xl bg-white text-[#735c00] font-bold text-xs shadow-md hover:bg-white/90 flex items-center gap-1.5 transition-all">
+                            <span class="material-symbols-outlined text-[16px]">photo_camera</span> Tampilkan Foto
+                            Pramuka
+                        </button>
+                    </div>
+
+                    <div class="p-8 md:p-10 space-y-8">
+                        <!-- Penjelasan Kegiatan -->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                            <div class="lg:col-span-2">
+                                <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                    <strong class="text-primary">Ekstrakurikuler Pramuka</strong> di Pondok Pesantren
+                                    Nurul Ulum membina santri dari jenjang MI, MTs, hingga MA. Mengusung nilai Tri Satya
+                                    dan Dasa Dharma, kegiatan ini dikolaborasikan dengan adab dan akhlakul karimah
+                                    santri pesantren.
+                                </p>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">
+                                    Program rutin mencakup latihan baris-berbaris (PBB), keterampilan tali-temali
+                                    (pioneering), sandi dan semaphore, survival lapangan, penjelajahan alam (hiking),
+                                    hingga kemah tahunan santri. Santri Nurul Ulum rutin meraih kejuaraan dalam lomba
+                                    tingkat kepramukaan.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/20 flex flex-col justify-center space-y-2.5">
+                                <div class="flex items-center gap-2 text-xs font-bold text-tertiary uppercase">
+                                    <span class="material-symbols-outlined text-[18px]">calendar_month</span> Waktu
+                                    Latihan
+                                </div>
+                                <div class="font-bold text-primary text-base">Setiap Hari Jumat Siang</div>
+                                <div class="text-xs text-on-surface-variant">Pukul 13.30 - 16.30 WIB di Lapangan
+                                    Pesantren</div>
+                                <div
+                                    class="pt-2 border-t border-outline-variant/20 flex items-center gap-2 text-xs text-primary font-semibold">
+                                    <span class="material-symbols-outlined text-[16px]">military_tech</span> Pembina
+                                    Bersertifikasi KMD/KML
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Galeri Foto Pramuka -->
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-headline-sm text-lg font-bold text-primary flex items-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary text-[22px]">photo_library</span>
+                                    Galeri Foto Kegiatan Pramuka
+                                </h3>
+                                <span class="text-xs text-on-surface-variant">Klik foto untuk memperbesar</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <!-- Foto 1 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-3.jpg', 'Perkemahan Santri Pramuka', 'Kegiatan perkemahan sabtu-minggu (Persami) melatih kemandirian, kekompakan regu, dan kecintaan pada alam terbuka.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-3.jpg" alt="Perkemahan Santri Pramuka"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#b88b14)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span> Kemah
+                                            Santri
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Perkemahan Tahunan Santri</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Latihan mendirikan
+                                            tenda, api unggun inspiratif, dan penjelajahan alam beregu.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 2 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-4.jpg', 'Latihan Keterampilan Tali Temali & Pioneering', 'Santri mempraktikkan simpul dan ikatan dalam membuat menara pandang serta jembatan darurat.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-4.jpg" alt="Latihan Pioneering Pramuka"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#b88b14,#735c00)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                                            Keterampilan Lapangan
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Pioneering &amp; Tali Temali
+                                        </h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Mengasah kecerdasan
+                                            spasial dan ketangkasan membuat konstruksi tali dan bambu.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 3 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group sm:col-span-2 lg:col-span-1"
+                                    onclick="openLightbox('images/unit-mts/mts-hero-banner.jpg', 'Upacara Pembukaan Latihan & PBB', 'Latihan baris berbaris membiasakan santri untuk sigap, disiplin, dan patuh pada instruksi pemimpin.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-hero-banner.jpg" alt="Upacara & Latihan PBB"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#524200)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                                            Baris-Berbaris (PBB)
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Kedisiplinan Baris Berbaris</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Membentuk postur tegak,
+                                            kesigapan, dan mental pantang menyerah santri.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. KURSUS BAHASA ARAB & BAHASA INGGRIS -->
+            <section id="bahasa" class="scroll-mt-28 ekskul-section" data-category="bahasa">
+                <div
+                    class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                    <!-- Header Banner -->
+                    <div
+                        class="bg-gradient-to-r from-[#004532] via-[#065f46] to-[#1b6b51] p-8 md:p-10 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div class="flex items-center gap-5">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-xl shrink-0">
+                                <span class="material-symbols-outlined text-4xl">translate</span>
+                            </div>
+                            <div>
+                                <div
+                                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider mb-1">
+                                    Penguasaan Bahasa Internasional
+                                </div>
+                                <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold">
+                                    Kursus Bahasa Arab &amp; Bahasa Inggris
+                                </h2>
+                                <p class="text-white/85 text-xs md:text-sm mt-0.5">
+                                    Muhadatsah harian, English club, pidato tiga bahasa, dan penguasaan literatur
+                                    global.
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="filterGallery('bahasa')"
+                            class="shrink-0 px-4 py-2 rounded-xl bg-tertiary-container text-on-tertiary-container font-bold text-xs shadow-md hover:bg-tertiary-fixed flex items-center gap-1.5 transition-all">
+                            <span class="material-symbols-outlined text-[16px]">photo_camera</span> Tampilkan Foto
+                            Bahasa
+                        </button>
+                    </div>
+
+                    <div class="p-8 md:p-10 space-y-8">
+                        <!-- Penjelasan Kegiatan -->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                            <div class="lg:col-span-2">
+                                <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                    <strong class="text-primary">Kursus Bahasa Arab &amp; Bahasa Inggris (LPB - Lembaga
+                                        Pengembangan Bahasa)</strong> dirancang khusus untuk membekali santri Nurul Ulum
+                                    agar mampu berkomunikasi aktif dalam percakapan sehari-hari dan terampil
+                                    menyampaikan pidato (public speaking) dalam forum resmi.
+                                </p>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">
+                                    Metode yang diterapkan memadukan pembiasaan kosakata harian (ilqa'ul mufrodat &amp;
+                                    vocabulary building), muhadatsah pagi bersama tutor asrama, debat bahasa, hingga
+                                    storytelling. Bahasa Arab memperdalam akses santri ke kitab turots dan komunikasi
+                                    Timur Tengah, sedangkan Bahasa Inggris membuka wawasan ilmu pengetahuan global.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/20 flex flex-col justify-center space-y-2.5">
+                                <div class="flex items-center gap-2 text-xs font-bold text-primary uppercase">
+                                    <span class="material-symbols-outlined text-[18px]">forum</span> Program Harian
+                                </div>
+                                <div class="font-bold text-primary text-base">Muhadatsah &amp; Conversation Club</div>
+                                <div class="text-xs text-on-surface-variant">Pagi setelah subuh &amp; sore sebelum ashar
+                                    secara bergantian bahasa</div>
+                                <div
+                                    class="pt-2 border-t border-outline-variant/20 flex items-center gap-2 text-xs text-tertiary font-semibold">
+                                    <span class="material-symbols-outlined text-[16px]">record_voice_over</span>
+                                    Khitobah / Speech 3 Bahasa
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Galeri Foto Bahasa -->
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-headline-sm text-lg font-bold text-primary flex items-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-primary text-[22px]">photo_library</span>
+                                    Galeri Foto Kegiatan Kursus Bahasa
+                                </h3>
+                                <span class="text-xs text-on-surface-variant">Klik foto untuk memperbesar</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <!-- Foto 1 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-2.jpg', 'Muhadatsah Bahasa Arab Santri', 'Praktik percakapan bahasa Arab berpasangan di lingkungan pondok pesantren dipandu Ustadz pembina.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-2.jpg" alt="Muhadatsah Bahasa Arab"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#004532,#065f46)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                                            Muhadatsah Arab
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Muhadatsah Bahasa Arab</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Santri melatih
+                                            kelancaran lidah berbicara bahasa Arab fushah dalam tema kehidupan santri.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 2 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-4.jpg', 'English Speech Contest & Debate', 'Lomba pidato bahasa Inggris santri melatih keberanian tampil di depan umum dengan intonasi dan argumentasi yang mantap.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-4.jpg" alt="English Club Santri"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#065f46,#1b6b51)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                                            English Conversation
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">English Conversation &amp;
+                                            Speech</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Mengasah kepercayaan
+                                            diri santri berpidato dan berdiskusi menggunakan Bahasa Inggris.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 3 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group sm:col-span-2 lg:col-span-1"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-3.jpg', 'Pemberian Kosakata Pagi (Ilqaul Mufrodat)', 'Setiap pagi santri menghafalkan 3-5 mufrodat & vocabulary baru sebelum memulai aktivitas harian.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-3.jpg" alt="Vocabulary & Mufrodat Harian"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#1b6b51,#004532)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                                            Mufrodat Harian
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Mufrodat &amp; Vocabulary Harian
+                                        </h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Pemberian kosakata baru
+                                            secara konsisten untuk memperkaya perbendaharaan kata santri.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. MAJELIS SHOLAWAT NURUL ULUM -->
+            <section id="sholawat" class="scroll-mt-28 ekskul-section" data-category="sholawat">
+                <div
+                    class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                    <!-- Header Banner -->
+                    <div
+                        class="bg-gradient-to-r from-[#1b6b51] via-[#004532] to-[#735c00] p-8 md:p-10 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div class="flex items-center gap-5">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-white text-primary flex items-center justify-center shadow-xl shrink-0">
+                                <span class="material-symbols-outlined text-4xl">music_note</span>
+                            </div>
+                            <div>
+                                <div
+                                    class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider mb-1">
+                                    Seni Musik Religi &amp; Syi'ar Islam
+                                </div>
+                                <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold">
+                                    Majelis Sholawat Nurul Ulum
+                                </h2>
+                                <p class="text-white/85 text-xs md:text-sm mt-0.5">
+                                    Seni hadroh al-banjari, qasidah islami, dan pembacaan maulid nabi yang menggetarkan
+                                    jiwa.
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="filterGallery('sholawat')"
+                            class="shrink-0 px-4 py-2 rounded-xl bg-tertiary-container text-on-tertiary-container font-bold text-xs shadow-md hover:bg-tertiary-fixed flex items-center gap-1.5 transition-all">
+                            <span class="material-symbols-outlined text-[16px]">photo_camera</span> Tampilkan Foto
+                            Sholawat
+                        </button>
+                    </div>
+
+                    <div class="p-8 md:p-10 space-y-8">
+                        <!-- Penjelasan Kegiatan -->
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                            <div class="lg:col-span-2">
+                                <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                    <strong class="text-primary">Majelis Sholawat Nurul Ulum</strong> adalah wadah
+                                    kecintaan dan mahabbah para santri kepada Baginda Nabi Muhammad SAW melalui lantunan
+                                    nada-nada suci hadroh rebana, qasidah klasik, dan maulid Simthudduror, Ad-Diba'i,
+                                    serta Al-Barzanji.
+                                </p>
+                                <p class="text-sm text-on-surface-variant leading-relaxed">
+                                    Tim hadroh santri rutin berlatih ketukan terbang variasi Al-Banjari, bass habsyi,
+                                    tam, dan vokal nada tinggi. Grup majelis sholawat ini kerap diundang dalam
+                                    peringatan hari besar Islam (PHBI), majelis shalawat akbar, serta perlombaan
+                                    festival banjari di tingkat Jawa Timur.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/20 flex flex-col justify-center space-y-2.5">
+                                <div class="flex items-center gap-2 text-xs font-bold text-tertiary uppercase">
+                                    <span class="material-symbols-outlined text-[18px]">event_repeat</span> Rutinan
+                                    Malam Jumat
+                                </div>
+                                <div class="font-bold text-primary text-base">Pembacaan Maulid Simthudduror</div>
+                                <div class="text-xs text-on-surface-variant">Ba'da Isya' bersama seluruh dewan asatidz
+                                    dan santri</div>
+                                <div
+                                    class="pt-2 border-t border-outline-variant/20 flex items-center gap-2 text-xs text-primary font-semibold">
+                                    <span class="material-symbols-outlined text-[16px]">spatial_audio</span> Latihan
+                                    Vokal &amp; Pukulan Banjari Rutin
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Galeri Foto Sholawat -->
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-headline-sm text-lg font-bold text-primary flex items-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary text-[22px]">photo_library</span>
+                                    Galeri Foto Majelis Sholawat
+                                </h3>
+                                <span class="text-xs text-on-surface-variant">Klik foto untuk memperbesar</span>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <!-- Foto 1 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
+                                    onclick="openLightbox('images/unit-mts/mts-hero-banner.jpg', 'Grup Hadroh Al-Banjari Santri', 'Penampilan grup hadroh santri Nurul Ulum melantunkan qasidah pujian kepada Rasulullah SAW dengan iringan ketukan terbang banjari yang syahdu.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-hero-banner.jpg" alt="Grup Hadroh Al-Banjari"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#004532,#1b6b51)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span> Hadroh
+                                            Al-Banjari
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Penampilan Hadroh Santri</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Harmoni ketukan terbang
+                                            dan suara merdu melantunkan sholawat Nabi.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 2 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-2.jpg', 'Rutinan Maulid Simthudduror', 'Suasana khidmat pembacaan maulid Simthudduror pada malam Jumat berkah diikuti oleh seluruh santri dan asatidz.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-2.jpg" alt="Pembacaan Maulid Santri"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#1b6b51,#735c00)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span> Maulid
+                                            Simthudduror
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Rutinan Maulid Malam Jumat</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Menyemai rasa cinta
+                                            mendalam kepada Rasulullah SAW bersama seluruh keluarga besar pesantren.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Foto 3 -->
+                                <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group sm:col-span-2 lg:col-span-1"
+                                    onclick="openLightbox('images/unit-mts/mts-foto-4.jpg', 'Festival & Lomba Banjari Santri', 'Partisipasi santri dalam festival seni sholawat hadroh dan perlombaan antarmadrasah tingkat kabupaten.')">
+                                    <div class="relative h-56 overflow-hidden">
+                                        <img src="images/unit-mts/mts-foto-4.jpg" alt="Festival Hadroh Santri"
+                                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                            loading="lazy"
+                                            onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#004532)';this.style.display='none';" />
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
+                                            <span class="material-symbols-outlined text-[16px]">fullscreen</span>
+                                            Festival Banjari
+                                        </span>
+                                    </div>
+                                    <div class="p-4">
+                                        <h4 class="font-bold text-sm text-primary mb-1">Prestasi Festival Sholawat</h4>
+                                        <p class="text-xs text-on-surface-variant line-clamp-2">Menunjukkan kualitas
+                                            vokal dan aransemen hadroh santri yang berdaya saing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
+    </main>
 
-        <a href="#kontak" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span class="material-symbols-outlined text-[22px]">contact_support</span> Kontak &amp; Lokasi</a>
-    </nav>
-    <div class="mt-auto px-5 pt-6 border-t border-primary-fixed/20">
-        <a href="https://wa.me/6287866186894" target="_blank" class="w-full flex items-center justify-center gap-2 bg-tertiary-container text-on-tertiary-container font-bold text-sm uppercase py-3 rounded-xl shadow-lg">
-            <span class="material-symbols-outlined text-[20px]">how_to_reg</span> Pendaftaran Santri
-        </a>
-    </div>
-</div>
-
-<main class="flex-1 pt-20">
-    <!-- Hero Banner -->
-    <section class="relative bg-gradient-to-br from-primary via-[#044c37] to-[#012f20] py-20 md:py-28 overflow-hidden">
-        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-tertiary-container/15 blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none"></div>
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
-            <div class="fade-up">
-                <span class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5 shadow-md">
-                    <span class="material-symbols-outlined text-[16px]">stars</span> Minat &amp; Bakat Santri
-                </span>
-                <h1 class="font-headline-md text-3xl md:text-5xl font-extrabold text-on-primary mb-4 tracking-tight leading-tight">
-                    Ekstrakurikuler Santri<br class="hidden md:block"/> Pondok Pesantren Nurul Ulum
-                </h1>
-                <p class="text-on-primary/80 text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-8">
-                    Mengembangkan kecakapan hidup, kemandirian karakter, keahlian bahasa internasional, serta kecintaan syi'ar seni Islam shalawat kepada Nabi Muhammad SAW.
+    <!-- Lightbox Modal untuk melihat foto langsung ketika diklik -->
+    <div id="lightbox-modal"
+        class="fixed inset-0 z-[100] bg-black/85 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300">
+        <div
+            class="relative max-w-4xl w-full bg-surface-container-lowest rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+            <button onclick="closeLightbox()" aria-label="Tutup Foto"
+                class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/80 transition-colors">
+                <span class="material-symbols-outlined text-[24px]">close</span>
+            </button>
+            <div class="relative max-h-[70vh] bg-black flex items-center justify-center overflow-hidden">
+                <img id="lightbox-img" src="" alt="Foto Kegiatan" class="w-full h-full max-h-[70vh] object-contain">
+            </div>
+            <div class="p-6 bg-surface-container-lowest">
+                <div class="flex items-center gap-2 mb-1">
+                    <span id="lightbox-tag"
+                        class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-bold">
+                        <span class="material-symbols-outlined text-[14px]">photo</span> Kegiatan Santri
+                    </span>
+                </div>
+                <h3 id="lightbox-title" class="font-headline-sm text-xl font-bold text-primary mb-2">Judul Foto</h3>
+                <p id="lightbox-desc" class="text-sm text-on-surface-variant leading-relaxed">Deskripsi kegiatan foto...
                 </p>
-
-                <!-- Interactive Quick Click Filters - "ketika di klik itu langsung muncul foto kegiatannya" -->
-                <div class="inline-flex flex-wrap justify-center gap-2 p-1.5 bg-black/25 backdrop-blur-md rounded-2xl border border-white/15 shadow-xl max-w-full">
-                    <button id="tab-btn-all" onclick="filterGallery('all')" class="ekskul-tab active-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-tertiary-container text-on-tertiary-container shadow-md flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-[18px]">grid_view</span> Semua Foto Kegiatan
-                    </button>
-                    <button id="tab-btn-pramuka" onclick="filterGallery('pramuka')" class="ekskul-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-[18px]">emoji_nature</span> 🏕️ Pramuka
-                    </button>
-                    <button id="tab-btn-bahasa" onclick="filterGallery('bahasa')" class="ekskul-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-[18px]">translate</span> 🗣️ Kursus Bahasa
-                    </button>
-                    <button id="tab-btn-sholawat" onclick="filterGallery('sholawat')" class="ekskul-tab px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-[18px]">music_note</span> 🎵 Majelis Sholawat
-                    </button>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Content Sections -->
-    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 space-y-24">
-
-        <!-- 1. PRAMUKA PANGKALAN NURUL ULUM -->
-        <section id="pramuka" class="scroll-mt-28 ekskul-section" data-category="pramuka">
-            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
-                <!-- Header Banner -->
-                <div class="bg-gradient-to-r from-[#735c00] via-[#8c7000] to-[#b88b14] p-8 md:p-10 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 rounded-2xl bg-white text-[#735c00] flex items-center justify-center shadow-xl shrink-0">
-                            <span class="material-symbols-outlined text-4xl">emoji_nature</span>
-                        </div>
-                        <div>
-                            <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider mb-1">
-                                Gerakan Pramuka Santri
-                            </div>
-                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold">
-                                Pramuka Gugus Depan Pangkalan Nurul Ulum
-                            </h2>
-                            <p class="text-white/85 text-xs md:text-sm mt-0.5">
-                                Menumbuhkan kedisiplinan, ketangkasan fisik, jiwa korsa, dan kepemimpinan santri mandiri.
-                            </p>
-                        </div>
-                    </div>
-                    <button onclick="filterGallery('pramuka')" class="shrink-0 px-4 py-2 rounded-xl bg-white text-[#735c00] font-bold text-xs shadow-md hover:bg-white/90 flex items-center gap-1.5 transition-all">
-                        <span class="material-symbols-outlined text-[16px]">photo_camera</span> Tampilkan Foto Pramuka
-                    </button>
-                </div>
-
-                <div class="p-8 md:p-10 space-y-8">
-                    <!-- Penjelasan Kegiatan -->
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <div class="lg:col-span-2">
-                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
-                                <strong class="text-primary">Ekstrakurikuler Pramuka</strong> di Pondok Pesantren Nurul Ulum membina santri dari jenjang MI, MTs, hingga MA. Mengusung nilai Tri Satya dan Dasa Dharma, kegiatan ini dikolaborasikan dengan adab dan akhlakul karimah santri pesantren.
-                            </p>
-                            <p class="text-sm text-on-surface-variant leading-relaxed">
-                                Program rutin mencakup latihan baris-berbaris (PBB), keterampilan tali-temali (pioneering), sandi dan semaphore, survival lapangan, penjelajahan alam (hiking), hingga kemah tahunan santri. Santri Nurul Ulum rutin meraih kejuaraan dalam lomba tingkat kepramukaan.
-                            </p>
-                        </div>
-                        <div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/20 flex flex-col justify-center space-y-2.5">
-                            <div class="flex items-center gap-2 text-xs font-bold text-tertiary uppercase">
-                                <span class="material-symbols-outlined text-[18px]">calendar_month</span> Waktu Latihan
-                            </div>
-                            <div class="font-bold text-primary text-base">Setiap Hari Jumat Siang</div>
-                            <div class="text-xs text-on-surface-variant">Pukul 13.30 - 16.30 WIB di Lapangan Pesantren</div>
-                            <div class="pt-2 border-t border-outline-variant/20 flex items-center gap-2 text-xs text-primary font-semibold">
-                                <span class="material-symbols-outlined text-[16px]">military_tech</span> Pembina Bersertifikasi KMD/KML
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galeri Foto Pramuka -->
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-headline-sm text-lg font-bold text-primary flex items-center gap-2">
-                                <span class="material-symbols-outlined text-tertiary text-[22px]">photo_library</span>
-                                Galeri Foto Kegiatan Pramuka
-                            </h3>
-                            <span class="text-xs text-on-surface-variant">Klik foto untuk memperbesar</span>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                            <!-- Foto 1 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-3.jpg', 'Perkemahan Santri Pramuka', 'Kegiatan perkemahan sabtu-minggu (Persami) melatih kemandirian, kekompakan regu, dan kecintaan pada alam terbuka.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-3.jpg" alt="Perkemahan Santri Pramuka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#b88b14)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Kemah Santri
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Perkemahan Tahunan Santri</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Latihan mendirikan tenda, api unggun inspiratif, dan penjelajahan alam beregu.</p>
-                                </div>
-                            </div>
-
-                            <!-- Foto 2 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-4.jpg', 'Latihan Keterampilan Tali Temali & Pioneering', 'Santri mempraktikkan simpul dan ikatan dalam membuat menara pandang serta jembatan darurat.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-4.jpg" alt="Latihan Pioneering Pramuka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#b88b14,#735c00)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Keterampilan Lapangan
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Pioneering &amp; Tali Temali</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Mengasah kecerdasan spasial dan ketangkasan membuat konstruksi tali dan bambu.</p>
-                                </div>
-                            </div>
-
-                            <!-- Foto 3 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group sm:col-span-2 lg:col-span-1"
-                                 onclick="openLightbox('images/unit-mts/mts-hero-banner.jpg', 'Upacara Pembukaan Latihan & PBB', 'Latihan baris berbaris membiasakan santri untuk sigap, disiplin, dan patuh pada instruksi pemimpin.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-hero-banner.jpg" alt="Upacara & Latihan PBB" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#524200)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Baris-Berbaris (PBB)
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Kedisiplinan Baris Berbaris</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Membentuk postur tegak, kesigapan, dan mental pantang menyerah santri.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 2. KURSUS BAHASA ARAB & BAHASA INGGRIS -->
-        <section id="bahasa" class="scroll-mt-28 ekskul-section" data-category="bahasa">
-            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
-                <!-- Header Banner -->
-                <div class="bg-gradient-to-r from-[#004532] via-[#065f46] to-[#1b6b51] p-8 md:p-10 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-xl shrink-0">
-                            <span class="material-symbols-outlined text-4xl">translate</span>
-                        </div>
-                        <div>
-                            <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider mb-1">
-                                Penguasaan Bahasa Internasional
-                            </div>
-                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold">
-                                Kursus Bahasa Arab &amp; Bahasa Inggris
-                            </h2>
-                            <p class="text-white/85 text-xs md:text-sm mt-0.5">
-                                Muhadatsah harian, English club, pidato tiga bahasa, dan penguasaan literatur global.
-                            </p>
-                        </div>
-                    </div>
-                    <button onclick="filterGallery('bahasa')" class="shrink-0 px-4 py-2 rounded-xl bg-tertiary-container text-on-tertiary-container font-bold text-xs shadow-md hover:bg-tertiary-fixed flex items-center gap-1.5 transition-all">
-                        <span class="material-symbols-outlined text-[16px]">photo_camera</span> Tampilkan Foto Bahasa
-                    </button>
-                </div>
-
-                <div class="p-8 md:p-10 space-y-8">
-                    <!-- Penjelasan Kegiatan -->
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <div class="lg:col-span-2">
-                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
-                                <strong class="text-primary">Kursus Bahasa Arab &amp; Bahasa Inggris (LPB - Lembaga Pengembangan Bahasa)</strong> dirancang khusus untuk membekali santri Nurul Ulum agar mampu berkomunikasi aktif dalam percakapan sehari-hari dan terampil menyampaikan pidato (public speaking) dalam forum resmi.
-                            </p>
-                            <p class="text-sm text-on-surface-variant leading-relaxed">
-                                Metode yang diterapkan memadukan pembiasaan kosakata harian (ilqa'ul mufrodat &amp; vocabulary building), muhadatsah pagi bersama tutor asrama, debat bahasa, hingga storytelling. Bahasa Arab memperdalam akses santri ke kitab turots dan komunikasi Timur Tengah, sedangkan Bahasa Inggris membuka wawasan ilmu pengetahuan global.
-                            </p>
-                        </div>
-                        <div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/20 flex flex-col justify-center space-y-2.5">
-                            <div class="flex items-center gap-2 text-xs font-bold text-primary uppercase">
-                                <span class="material-symbols-outlined text-[18px]">forum</span> Program Harian
-                            </div>
-                            <div class="font-bold text-primary text-base">Muhadatsah &amp; Conversation Club</div>
-                            <div class="text-xs text-on-surface-variant">Pagi setelah subuh &amp; sore sebelum ashar secara bergantian bahasa</div>
-                            <div class="pt-2 border-t border-outline-variant/20 flex items-center gap-2 text-xs text-tertiary font-semibold">
-                                <span class="material-symbols-outlined text-[16px]">record_voice_over</span> Khitobah / Speech 3 Bahasa
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galeri Foto Bahasa -->
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-headline-sm text-lg font-bold text-primary flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-[22px]">photo_library</span>
-                                Galeri Foto Kegiatan Kursus Bahasa
-                            </h3>
-                            <span class="text-xs text-on-surface-variant">Klik foto untuk memperbesar</span>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                            <!-- Foto 1 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-2.jpg', 'Muhadatsah Bahasa Arab Santri', 'Praktik percakapan bahasa Arab berpasangan di lingkungan pondok pesantren dipandu Ustadz pembina.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-2.jpg" alt="Muhadatsah Bahasa Arab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#004532,#065f46)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Muhadatsah Arab
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Muhadatsah Bahasa Arab</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Santri melatih kelancaran lidah berbicara bahasa Arab fushah dalam tema kehidupan santri.</p>
-                                </div>
-                            </div>
-
-                            <!-- Foto 2 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-4.jpg', 'English Speech Contest & Debate', 'Lomba pidato bahasa Inggris santri melatih keberanian tampil di depan umum dengan intonasi dan argumentasi yang mantap.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-4.jpg" alt="English Club Santri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#065f46,#1b6b51)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> English Conversation
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">English Conversation &amp; Speech</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Mengasah kepercayaan diri santri berpidato dan berdiskusi menggunakan Bahasa Inggris.</p>
-                                </div>
-                            </div>
-
-                            <!-- Foto 3 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group sm:col-span-2 lg:col-span-1"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-3.jpg', 'Pemberian Kosakata Pagi (Ilqaul Mufrodat)', 'Setiap pagi santri menghafalkan 3-5 mufrodat & vocabulary baru sebelum memulai aktivitas harian.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-3.jpg" alt="Vocabulary & Mufrodat Harian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#1b6b51,#004532)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Mufrodat Harian
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Mufrodat &amp; Vocabulary Harian</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Pemberian kosakata baru secara konsisten untuk memperkaya perbendaharaan kata santri.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. MAJELIS SHOLAWAT NURUL ULUM -->
-        <section id="sholawat" class="scroll-mt-28 ekskul-section" data-category="sholawat">
-            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
-                <!-- Header Banner -->
-                <div class="bg-gradient-to-r from-[#1b6b51] via-[#004532] to-[#735c00] p-8 md:p-10 text-white flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                    <div class="flex items-center gap-5">
-                        <div class="w-16 h-16 rounded-2xl bg-white text-primary flex items-center justify-center shadow-xl shrink-0">
-                            <span class="material-symbols-outlined text-4xl">music_note</span>
-                        </div>
-                        <div>
-                            <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-white/20 text-xs font-bold uppercase tracking-wider mb-1">
-                                Seni Musik Religi &amp; Syi'ar Islam
-                            </div>
-                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold">
-                                Majelis Sholawat Nurul Ulum
-                            </h2>
-                            <p class="text-white/85 text-xs md:text-sm mt-0.5">
-                                Seni hadroh al-banjari, qasidah islami, dan pembacaan maulid nabi yang menggetarkan jiwa.
-                            </p>
-                        </div>
-                    </div>
-                    <button onclick="filterGallery('sholawat')" class="shrink-0 px-4 py-2 rounded-xl bg-tertiary-container text-on-tertiary-container font-bold text-xs shadow-md hover:bg-tertiary-fixed flex items-center gap-1.5 transition-all">
-                        <span class="material-symbols-outlined text-[16px]">photo_camera</span> Tampilkan Foto Sholawat
-                    </button>
-                </div>
-
-                <div class="p-8 md:p-10 space-y-8">
-                    <!-- Penjelasan Kegiatan -->
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <div class="lg:col-span-2">
-                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
-                                <strong class="text-primary">Majelis Sholawat Nurul Ulum</strong> adalah wadah kecintaan dan mahabbah para santri kepada Baginda Nabi Muhammad SAW melalui lantunan nada-nada suci hadroh rebana, qasidah klasik, dan maulid Simthudduror, Ad-Diba'i, serta Al-Barzanji.
-                            </p>
-                            <p class="text-sm text-on-surface-variant leading-relaxed">
-                                Tim hadroh santri rutin berlatih ketukan terbang variasi Al-Banjari, bass habsyi, tam, dan vokal nada tinggi. Grup majelis sholawat ini kerap diundang dalam peringatan hari besar Islam (PHBI), majelis shalawat akbar, serta perlombaan festival banjari di tingkat Jawa Timur.
-                            </p>
-                        </div>
-                        <div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/20 flex flex-col justify-center space-y-2.5">
-                            <div class="flex items-center gap-2 text-xs font-bold text-tertiary uppercase">
-                                <span class="material-symbols-outlined text-[18px]">event_repeat</span> Rutinan Malam Jumat
-                            </div>
-                            <div class="font-bold text-primary text-base">Pembacaan Maulid Simthudduror</div>
-                            <div class="text-xs text-on-surface-variant">Ba'da Isya' bersama seluruh dewan asatidz dan santri</div>
-                            <div class="pt-2 border-t border-outline-variant/20 flex items-center gap-2 text-xs text-primary font-semibold">
-                                <span class="material-symbols-outlined text-[16px]">spatial_audio</span> Latihan Vokal &amp; Pukulan Banjari Rutin
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galeri Foto Sholawat -->
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="font-headline-sm text-lg font-bold text-primary flex items-center gap-2">
-                                <span class="material-symbols-outlined text-tertiary text-[22px]">photo_library</span>
-                                Galeri Foto Majelis Sholawat
-                            </h3>
-                            <span class="text-xs text-on-surface-variant">Klik foto untuk memperbesar</span>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                            <!-- Foto 1 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
-                                 onclick="openLightbox('images/unit-mts/mts-hero-banner.jpg', 'Grup Hadroh Al-Banjari Santri', 'Penampilan grup hadroh santri Nurul Ulum melantunkan qasidah pujian kepada Rasulullah SAW dengan iringan ketukan terbang banjari yang syahdu.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-hero-banner.jpg" alt="Grup Hadroh Al-Banjari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#004532,#1b6b51)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Hadroh Al-Banjari
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Penampilan Hadroh Santri</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Harmoni ketukan terbang dan suara merdu melantunkan sholawat Nabi.</p>
-                                </div>
-                            </div>
-
-                            <!-- Foto 2 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-2.jpg', 'Rutinan Maulid Simthudduror', 'Suasana khidmat pembacaan maulid Simthudduror pada malam Jumat berkah diikuti oleh seluruh santri dan asatidz.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-2.jpg" alt="Pembacaan Maulid Santri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#1b6b51,#735c00)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Maulid Simthudduror
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Rutinan Maulid Malam Jumat</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Menyemai rasa cinta mendalam kepada Rasulullah SAW bersama seluruh keluarga besar pesantren.</p>
-                                </div>
-                            </div>
-
-                            <!-- Foto 3 -->
-                            <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden shadow-md bg-surface-container-low border border-outline-variant/20 group sm:col-span-2 lg:col-span-1"
-                                 onclick="openLightbox('images/unit-mts/mts-foto-4.jpg', 'Festival & Lomba Banjari Santri', 'Partisipasi santri dalam festival seni sholawat hadroh dan perlombaan antarmadrasah tingkat kabupaten.')">
-                                <div class="relative h-56 overflow-hidden">
-                                    <img src="images/unit-mts/mts-foto-4.jpg" alt="Festival Hadroh Santri" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#004532)';this.style.display='none';"/>
-                                    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                                    <span class="absolute bottom-3 left-3 text-white text-xs font-bold flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[16px]">fullscreen</span> Festival Banjari
-                                    </span>
-                                </div>
-                                <div class="p-4">
-                                    <h4 class="font-bold text-sm text-primary mb-1">Prestasi Festival Sholawat</h4>
-                                    <p class="text-xs text-on-surface-variant line-clamp-2">Menunjukkan kualitas vokal dan aransemen hadroh santri yang berdaya saing.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-</main>
-
-<!-- Lightbox Modal untuk melihat foto langsung ketika diklik -->
-<div id="lightbox-modal" class="fixed inset-0 z-[100] bg-black/85 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300">
-    <div class="relative max-w-4xl w-full bg-surface-container-lowest rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-        <button onclick="closeLightbox()" aria-label="Tutup Foto" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center hover:bg-black/80 transition-colors">
-            <span class="material-symbols-outlined text-[24px]">close</span>
-        </button>
-        <div class="relative max-h-[70vh] bg-black flex items-center justify-center overflow-hidden">
-            <img id="lightbox-img" src="" alt="Foto Kegiatan" class="w-full h-full max-h-[70vh] object-contain">
-        </div>
-        <div class="p-6 bg-surface-container-lowest">
-            <div class="flex items-center gap-2 mb-1">
-                <span id="lightbox-tag" class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-bold">
-                    <span class="material-symbols-outlined text-[14px]">photo</span> Kegiatan Santri
-                </span>
-            </div>
-            <h3 id="lightbox-title" class="font-headline-sm text-xl font-bold text-primary mb-2">Judul Foto</h3>
-            <p id="lightbox-desc" class="text-sm text-on-surface-variant leading-relaxed">Deskripsi kegiatan foto...</p>
         </div>
     </div>
-</div>
 
-<!-- Footer -->
-<footer id="kontak" class="bg-primary text-on-primary pt-16 pb-8 border-t-4 border-tertiary-container">
-    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
-            <div class="flex flex-col gap-4">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">mosque</span></div>
-                    <span class="font-headline-md text-xl font-bold text-tertiary-fixed">NURUL ULUM</span>
+    <!-- Footer -->
+    <footer id="kontak" class="bg-primary text-on-primary pt-16 pb-8 border-t-4 border-tertiary-container">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[24px]">mosque</span></div>
+                        <span class="font-headline-md text-xl font-bold text-tertiary-fixed">NURUL ULUM</span>
+                    </div>
+                    <p class="font-body-md text-sm text-surface-container/90 leading-relaxed">Lembaga Pendidikan Islam
+                        yang memadukan kedalaman ilmu salaf dengan keunggulan ilmu pengetahuan modern berlandaskan
+                        Ahlussunnah wal Jama'ah.</p>
                 </div>
-                <p class="font-body-md text-sm text-surface-container/90 leading-relaxed">Lembaga Pendidikan Islam yang memadukan kedalaman ilmu salaf dengan keunggulan ilmu pengetahuan modern berlandaskan Ahlussunnah wal Jama'ah.</p>
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Unit Pendidikan
+                    </h4>
+                    <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
+                        <li><a href="unit-kb.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> KB Nurul Ulum</a>
+                        </li>
+                        <li><a href="unit-tk.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> TK / RA Nurul
+                                Ulum</a></li>
+                        <li><a href="unit-mi.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> MI Nurul Ulum</a>
+                        </li>
+                        <li><a href="unit-mts.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> MTs Nurul
+                                Ulum</a></li>
+                        <li><a href="unit-ma.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> MA Nurul Ulum</a>
+                        </li>
+                        <li><a href="madrasah-diniyah.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> Madrasah Diniyah
+                                Ta'miliyah</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Kontak</h4>
+                    <ul class="flex flex-col gap-3 font-body-md text-sm text-surface-container/90">
+                        <li class="flex items-start gap-2.5"><span
+                                class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0 mt-0.5">location_on</span><span>Jl.
+                                Raya Desa Banmaleng, PP. Nurul Ulum, Sumenep, Jawa Timur</span></li>
+                        <li class="flex items-center gap-2.5"><span
+                                class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">call</span><span>0878-6618-6894</span>
+                        </li>
+                        <li class="flex items-center gap-2.5"><span
+                                class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">mail</span><span>nurululum1banmaleng@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex flex-col gap-3">
-                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Unit Pendidikan</h4>
-                <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
-                    <li><a href="unit-kb.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> KB Nurul Ulum</a></li>
-                    <li><a href="unit-tk.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> TK / RA Nurul Ulum</a></li>
-                    <li><a href="unit-mi.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MI Nurul Ulum</a></li>
-                    <li><a href="unit-mts.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MTs Nurul Ulum</a></li>
-                    <li><a href="unit-ma.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MA Nurul Ulum</a></li>
-                    <li><a href="madrasah-diniyah.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Madrasah Diniyah Ta'limiyah</a></li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-3">
-                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Kontak</h4>
-                <ul class="flex flex-col gap-3 font-body-md text-sm text-surface-container/90">
-                    <li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0 mt-0.5">location_on</span><span>Jl. Raya Desa Banmaleng, PP. Nurul Ulum, Sumenep, Jawa Timur</span></li>
-                    <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">call</span><span>0878-6618-6894</span></li>
-                    <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">mail</span><span>nurululum1banmaleng@gmail.com</span></li>
-                </ul>
+            <div class="pt-8 border-t border-primary-fixed/20 text-center text-xs text-surface-container/70">
+                © 2026 Pondok Pesantren Nurul Ulum. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
-        <div class="pt-8 border-t border-primary-fixed/20 text-center text-xs text-surface-container/70">
-            © 2026 Pondok Pesantren Nurul Ulum. Hak Cipta Dilindungi Undang-Undang.
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="js/main.js"></script>
-<script>
-    // Interactive filter for immediate display of activity photos
-    function filterGallery(category) {
-        const sections = document.querySelectorAll('.ekskul-section');
-        const buttons = document.querySelectorAll('.ekskul-tab');
-        
-        // Reset tab styling
-        buttons.forEach(btn => {
-            btn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container', 'shadow-md');
-            btn.classList.add('text-white');
+    <script src="js/main.js"></script>
+    <script>
+        // Interactive filter for immediate display of activity photos
+        function filterGallery(category) {
+            const sections = document.querySelectorAll('.ekskul-section');
+            const buttons = document.querySelectorAll('.ekskul-tab');
+
+            // Reset tab styling
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container', 'shadow-md');
+                btn.classList.add('text-white');
+            });
+
+            const activeBtn = document.getElementById('tab-btn-' + category);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-white');
+                activeBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container', 'shadow-md');
+            }
+
+            if (category === 'all') {
+                sections.forEach(sec => sec.style.display = 'block');
+            } else {
+                sections.forEach(sec => {
+                    if (sec.getAttribute('data-category') === category) {
+                        sec.style.display = 'block';
+                        // Scroll smoothly into view
+                        sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                        sec.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        // Lightbox modal logic
+        function openLightbox(src, title, desc) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const titleEl = document.getElementById('lightbox-title');
+            const descEl = document.getElementById('lightbox-desc');
+
+            img.src = src;
+            titleEl.textContent = title;
+            descEl.textContent = desc;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Handle hash on page load (e.g. #pramuka, #bahasa, #sholawat)
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'pramuka' || hash === 'bahasa' || hash === 'sholawat') {
+                filterGallery(hash);
+            }
         });
 
-        const activeBtn = document.getElementById('tab-btn-' + category);
-        if (activeBtn) {
-            activeBtn.classList.remove('text-white');
-            activeBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container', 'shadow-md');
-        }
-
-        if (category === 'all') {
-            sections.forEach(sec => sec.style.display = 'block');
-        } else {
-            sections.forEach(sec => {
-                if (sec.getAttribute('data-category') === category) {
-                    sec.style.display = 'block';
-                    // Scroll smoothly into view
-                    sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                } else {
-                    sec.style.display = 'none';
-                }
-            });
-        }
-    }
-
-    // Lightbox modal logic
-    function openLightbox(src, title, desc) {
-        const modal = document.getElementById('lightbox-modal');
-        const img = document.getElementById('lightbox-img');
-        const titleEl = document.getElementById('lightbox-title');
-        const descEl = document.getElementById('lightbox-desc');
-
-        img.src = src;
-        titleEl.textContent = title;
-        descEl.textContent = desc;
-
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-        const modal = document.getElementById('lightbox-modal');
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
-        document.body.style.overflow = 'auto';
-    }
-
-    // Handle hash on page load (e.g. #pramuka, #bahasa, #sholawat)
-    window.addEventListener('DOMContentLoaded', () => {
-        const hash = window.location.hash.replace('#', '');
-        if (hash === 'pramuka' || hash === 'bahasa' || hash === 'sholawat') {
-            filterGallery(hash);
-        }
-    });
-
-    // Close lightbox when clicking outside container
-    document.getElementById('lightbox-modal').addEventListener('click', (e) => {
-        if (e.target.id === 'lightbox-modal') {
-            closeLightbox();
-        }
-    });
-</script>
+        // Close lightbox when clicking outside container
+        document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox-modal') {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
+
 </html>
