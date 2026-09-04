@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Unit Madrasah Tsanawiyah (MTs) Nurul Ulum - Pondok Pesantren Nurul Ulum</title>
-    <meta name="description" content="Pondok Pesantren Nurul Ulum - Membentuk Generasi Qur'ani, Cerdas, dan Berakhlak Mulia. Pendidikan terpadu Salaf & Modern jenjang TK, MI, MTs, dan MA."/>
+    <meta name="description"
+        content="Pondok Pesantren Nurul Ulum - Membentuk Generasi Qur'ani, Cerdas, dan Berakhlak Mulia. Pendidikan terpadu Salaf & Modern jenjang TK, MI, MTs, dan MA." />
     <!-- Tailwind CSS CDN with plugins -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -104,35 +109,67 @@
         }
     </script>
     <style>
-        .pattern-bg {
-            background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'><path d='M20 0l20 20-20 20L0 20z' fill='rgba(6, 95, 70, 0.03)'/></svg>");
+        @font-face {
+            font-family: 'Material Symbols Outlined';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v368/kJF4BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzBwG-RpA6RzaxHMPdY40KH8nGzv3fzfVJU22ZZLsYEpzC_1ver5Y0.woff2) format('woff2');
         }
-        .pattern-overlay {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23065f46' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
+
         .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined' !important;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: 'liga';
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
             vertical-align: middle;
         }
+
+        .pattern-bg {
+            background-image: url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'><path d='M20 0l20 20-20 20L0 20z' fill='rgba(6, 95, 70, 0.03)'/></svg>");
+        }
+
+        .pattern-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23065f46' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
         .hover-gold-accent:hover {
             border-top: 4px solid #cca730;
             transform: translateY(-2px);
         }
+
         .ambient-shadow {
             box-shadow: 0 10px 25px -3px rgba(6, 95, 70, 0.08), 0 4px 6px -2px rgba(6, 95, 70, 0.04);
         }
+
         .shadow-ambient {
             box-shadow: 0 4px 20px rgba(6, 95, 70, 0.08);
         }
+
         .shadow-ambient-hover:hover {
             box-shadow: 0 10px 30px rgba(6, 95, 70, 0.12);
         }
+
         .text-shadow-sm {
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
         }
+
         .text-shadow-md {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
         .timeline-line::before {
             content: '';
             position: absolute;
@@ -143,6 +180,7 @@
             background-color: #cca730;
             transform: translateX(-50%);
         }
+
         @media (max-width: 768px) {
             .timeline-line::before {
                 left: 20px;
@@ -156,22 +194,44 @@
 
         /* --- Ambient Floating Orbs (Ultra-Slow & Silky) --- */
         @keyframes float-gentle {
-            0%, 100% { transform: translate3d(0, 0px, 0); }
-            50%       { transform: translate3d(0, -12px, 0); }
+
+            0%,
+            100% {
+                transform: translate3d(0, 0px, 0);
+            }
+
+            50% {
+                transform: translate3d(0, -12px, 0);
+            }
         }
+
         @keyframes float-gentle-delay {
-            0%, 100% { transform: translate3d(0, 0px, 0); }
-            50%       { transform: translate3d(0, -8px, 0); }
+
+            0%,
+            100% {
+                transform: translate3d(0, 0px, 0);
+            }
+
+            50% {
+                transform: translate3d(0, -8px, 0);
+            }
         }
-        .float-anim       { animation: float-gentle 8s ease-in-out infinite; }
-        .float-anim-delay { animation: float-gentle-delay 10s ease-in-out 2.5s infinite; }
+
+        .float-anim {
+            animation: float-gentle 8s ease-in-out infinite;
+        }
+
+        .float-anim-delay {
+            animation: float-gentle-delay 10s ease-in-out 2.5s infinite;
+        }
 
         /* --- Fluid Intelligent Header --- */
         header {
             transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-                        box-shadow 0.45s ease,
-                        background-color 0.45s ease;
+                box-shadow 0.45s ease,
+                background-color 0.45s ease;
         }
+
         .header-shrunk {
             box-shadow: 0 4px 20px -2px rgba(0, 69, 50, 0.08), 0 2px 6px -1px rgba(0, 69, 50, 0.04);
             backdrop-filter: blur(24px) saturate(180%);
@@ -185,20 +245,24 @@
                 transform: translate3d(0, 36px, 0) scale(0.98);
                 filter: blur(8px);
             }
+
             to {
                 opacity: 1;
                 transform: translate3d(0, 0, 0) scale(1);
                 filter: blur(0px);
             }
         }
+
         .slide-in-left {
             opacity: 0;
             animation: cinematicFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.08s forwards;
         }
+
         .slide-in-right {
             opacity: 0;
             animation: cinematicFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.22s forwards;
         }
+
         .pop-in {
             opacity: 0;
             animation: cinematicFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.38s forwards;
@@ -206,18 +270,22 @@
 
         /* --- Luxury Ink Ripple --- */
         @keyframes nu-ripple {
-            to { transform: scale(3); opacity: 0; }
+            to {
+                transform: scale(3);
+                opacity: 0;
+            }
         }
 
         /* --- Interactive Spring Card with Spotlight Glow --- */
         .tilt-card {
             transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-                        box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-                        border-color 0.35s ease;
+                box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.35s ease;
             will-change: transform, box-shadow;
             position: relative;
             overflow: hidden;
         }
+
         .tilt-card::before {
             content: '';
             position: absolute;
@@ -233,21 +301,29 @@
             transition: opacity 0.4s ease;
             z-index: 1;
         }
+
         .tilt-card:hover::before {
             opacity: 1;
         }
+
         .tilt-card:hover {
             transform: translate3d(0, -6px, 0);
             box-shadow: 0 20px 45px -10px rgba(0, 69, 50, 0.18),
-                        0 8px 16px -4px rgba(0, 69, 50, 0.08);
+                0 8px 16px -4px rgba(0, 69, 50, 0.08);
             border-color: rgba(204, 167, 48, 0.4) !important;
         }
 
         /* --- Shimmer Sheen on Badges --- */
         @keyframes sheen {
-            0%   { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
         }
+
         .badge-sheen {
             background-size: 200% 100%;
             background-image: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.4) 50%, transparent 65%);
@@ -264,13 +340,17 @@
 
         /* --- Understated Luxury CTA Breathing Glow --- */
         @keyframes subtleBreathe {
-            0%, 100% {
+
+            0%,
+            100% {
                 box-shadow: 0 4px 14px 0 rgba(0, 69, 50, 0.25), 0 0 0 0 rgba(27, 107, 81, 0);
             }
+
             50% {
                 box-shadow: 0 6px 20px 0 rgba(0, 69, 50, 0.35), 0 0 0 6px rgba(204, 167, 48, 0.18);
             }
         }
+
         .pulse-ring {
             animation: subtleBreathe 3.5s ease-in-out infinite;
         }
@@ -279,10 +359,12 @@
         .img-zoom {
             overflow: hidden;
         }
+
         .img-zoom img {
             transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1), filter 0.9s ease;
             will-change: transform;
         }
+
         .img-zoom:hover img {
             transform: scale3d(1.06, 1.06, 1);
         }
@@ -295,7 +377,7 @@
         /* --- Gold Glow Aura --- */
         .gold-glow {
             box-shadow: 0 0 0 2px rgba(204, 167, 48, 0.25),
-                        0 8px 30px rgba(204, 167, 48, 0.15);
+                0 8px 30px rgba(204, 167, 48, 0.15);
         }
 
         /* --- Clean Selection Highlight --- */
@@ -305,7 +387,9 @@
         }
 
         /* --- Global GPU Acceleration & Smoothing --- */
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -314,488 +398,1002 @@
             text-size-adjust: 100%;
             scroll-behavior: smooth;
         }
-
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pattern-bg antialiased selection:bg-primary-container selection:text-on-primary-container">
 
-<!-- TopAppBar (Sticky Navigation) -->
-<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 transition-all duration-300">
-    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
-        <div class="flex items-center gap-3">
-            <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden text-primary p-1.5 rounded-lg hover:bg-primary/5 focus:outline-none transition-colors">
-                <span class="material-symbols-outlined text-[28px]">menu</span>
+<body
+    class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pattern-bg antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopAppBar (Sticky Navigation) -->
+    <header
+        class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 transition-all duration-300">
+        <div
+            class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+            <div class="flex items-center gap-3">
+                <button id="mobile-menu-btn" aria-label="Buka Menu"
+                    class="md:hidden text-primary p-1.5 rounded-lg hover:bg-primary/5 focus:outline-none transition-colors">
+                    <span class="material-symbols-outlined text-[28px]">menu</span>
+                </button>
+                <a href="index.html" class="flex items-center gap-2.5 group">
+                    <div
+                        class="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform overflow-hidden border border-primary/10">
+                        <img src="images/profil/logo-yayasan.png" alt="Logo Yayasan Nurul Ulum"
+                            class="w-full h-full object-contain p-1">
+                    </div>
+                    <div>
+                        <span
+                            class="font-headline-md text-xl md:text-2xl font-bold tracking-tight text-primary block leading-none">NURUL
+                            ULUM</span>
+                        <span
+                            class="text-[10px] md:text-xs text-tertiary font-medium tracking-wider uppercase block">Pesantren
+                            & Madrasah</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-7">
+                <a href="index.html"
+                    class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">
+                    Beranda
+                </a>
+                <a href="profil.html"
+                    class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">
+                    Profil & Sejarah
+                </a>
+
+                <!-- Dropdown Unit Pendidikan -->
+                <div class="relative group py-2">
+                    <button class="font-semibold text-sm flex items-center gap-1.5 text-primary">
+                        Unit Pendidikan <span
+                            class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 mt-1 w-60 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                        <a href="unit-kb.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span class="material-symbols-outlined text-primary text-[20px]">toys</span>
+                            <div>
+                                <div class="font-semibold">Kelompok Bermain (KB)</div>
+                                <div class="text-[11px] text-on-surface-variant">Pendidikan Usia 2-4 Tahun</div>
+                            </div>
+                        </a>
+                        <a href="unit-tk.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span class="material-symbols-outlined text-primary text-[20px]">child_care</span>
+                            <div>
+                                <div class="font-semibold">TK / RA</div>
+                                <div class="text-[11px] text-on-surface-variant">Pendidikan Usia Dini</div>
+                            </div>
+                        </a>
+                        <a href="unit-mi.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span class="material-symbols-outlined text-primary text-[20px]">local_library</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Ibtidaiyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Setingkat SD</div>
+                            </div>
+                        </a>
+                        <a href="unit-mts.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm bg-primary-container/10 text-primary font-semibold">
+                            <span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Tsanawiyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Setingkat SMP</div>
+                            </div>
+                        </a>
+                        <a href="unit-ma.html"
+                            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span class="material-symbols-outlined text-primary text-[20px]">school</span>
+                            <div>
+                                <div class="font-semibold">Madrasah Aliyah</div>
+                                <div class="text-[11px] text-on-surface-variant">Setingkat SMA / Aliyah</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#kontak"
+                    class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">
+                    Kontak
+                </a>
+            </nav>
+
+            <!-- CTA Action -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20Pondok%20Pesantren%20Nurul%20Ulum,%20saya%20ingin%20bertanya%20mengenai%20pendaftaran%20santri%20baru"
+                    target="_blank"
+                    class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:-translate-y-0.5 transition-all">
+                    <span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+                    Pendaftaran (PPDB)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Backdrop -->
+    <div id="drawer-backdrop"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300 md:hidden">
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer"
+        class="fixed inset-y-0 left-0 z-[70] flex flex-col py-6 bg-primary dark:bg-primary-container h-full w-80 shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+        <div class="px-6 pb-5 border-b border-primary-fixed/20 mb-4 flex justify-between items-center">
+            <div class="flex items-center gap-2.5">
+                <div
+                    class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[18px]">mosque</span>
+                </div>
+                <h2 class="font-headline-sm text-lg font-bold text-tertiary-fixed">PP. Nurul Ulum</h2>
+            </div>
+            <button id="mobile-close-btn" class="text-on-primary p-1 rounded-lg hover:bg-white/10"
+                aria-label="Tutup Menu">
+                <span class="material-symbols-outlined text-[24px]">close</span>
             </button>
-            <a href="index.html" class="flex items-center gap-2.5 group">
-                <div class="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform overflow-hidden border border-primary/10">
-                    <img src="images/profil/logo-yayasan.png" alt="Logo Yayasan Nurul Ulum" class="w-full h-full object-contain p-1">
-                </div>
-                <div>
-                    <span class="font-headline-md text-xl md:text-2xl font-bold tracking-tight text-primary block leading-none">NURUL ULUM</span>
-                    <span class="text-[10px] md:text-xs text-tertiary font-medium tracking-wider uppercase block">Pesantren & Madrasah</span>
-                </div>
-            </a>
         </div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-7">
-            <a href="index.html" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">
-                Beranda
+        <nav class="flex flex-col px-3 font-body-lg text-base space-y-1">
+            <a href="index.html"
+                class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                <span class="material-symbols-outlined text-[22px]">home</span> Beranda
             </a>
-            <a href="profil.html" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">
-                Profil & Sejarah
+            <a href="profil.html"
+                class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                <span class="material-symbols-outlined text-[22px]">account_balance</span> Profil & Sejarah
             </a>
 
-            <!-- Dropdown Unit Pendidikan -->
-            <div class="relative group py-2">
-                <button class="font-semibold text-sm flex items-center gap-1.5 text-primary">
-                    Unit Pendidikan <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+            <!-- Mobile Unit Submenu Accordion -->
+            <div>
+                <button id="mobile-unit-btn"
+                    class="w-full flex items-center justify-between px-4 py-3 rounded-lg bg-white/15 text-tertiary-fixed font-semibold">
+                    <div class="flex items-center gap-3.5">
+                        <span class="material-symbols-outlined text-[22px]">school</span> Unit Pendidikan
+                    </div>
+                    <span id="mobile-unit-arrow"
+                        class="material-symbols-outlined text-[20px] transition-transform duration-200 rotate-180">expand_more</span>
                 </button>
-                <div class="absolute top-full left-0 mt-1 w-60 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
-                    <a href="unit-kb.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
-                        <span class="material-symbols-outlined text-primary text-[20px]">toys</span>
-                        <div>
-                            <div class="font-semibold">Kelompok Bermain (KB)</div>
-                            <div class="text-[11px] text-on-surface-variant">Pendidikan Usia 2-4 Tahun</div>
-                        </div>
+                <div id="mobile-unit-submenu" class="pl-6 pr-2 py-1 space-y-1 ">
+                    <a href="unit-kb.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[18px]">toys</span> KB Nurul Ulum
                     </a>
-                    <a href="unit-tk.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
-                        <span class="material-symbols-outlined text-primary text-[20px]">child_care</span>
-                        <div>
-                            <div class="font-semibold">TK / RA</div>
-                            <div class="text-[11px] text-on-surface-variant">Pendidikan Usia Dini</div>
-                        </div>
+                    <a href="unit-tk.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[18px]">child_care</span> TK / RA Nurul Ulum
                     </a>
-                    <a href="unit-mi.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
-                        <span class="material-symbols-outlined text-primary text-[20px]">local_library</span>
-                        <div>
-                            <div class="font-semibold">Madrasah Ibtidaiyah</div>
-                            <div class="text-[11px] text-on-surface-variant">Setingkat SD</div>
-                        </div>
+                    <a href="unit-mi.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[18px]">local_library</span> MI Nurul Ulum
                     </a>
-                    <a href="unit-mts.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm bg-primary-container/10 text-primary font-semibold">
-                        <span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
-                        <div>
-                            <div class="font-semibold">Madrasah Tsanawiyah</div>
-                            <div class="text-[11px] text-on-surface-variant">Setingkat SMP</div>
-                        </div>
+                    <a href="unit-mts.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm bg-tertiary-container text-on-tertiary-container font-semibold">
+                        <span class="material-symbols-outlined text-[18px]">menu_book</span> MTs Nurul Ulum
                     </a>
-                    <a href="unit-ma.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors">
-                        <span class="material-symbols-outlined text-primary text-[20px]">school</span>
-                        <div>
-                            <div class="font-semibold">Madrasah Aliyah</div>
-                            <div class="text-[11px] text-on-surface-variant">Setingkat SMA / Aliyah</div>
-                        </div>
+                    <a href="unit-ma.html"
+                        class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
+                        <span class="material-symbols-outlined text-[18px]">school</span> MA Nurul Ulum
                     </a>
                 </div>
             </div>
 
-            <a href="#kontak" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">
-                Kontak
+            <a href="#kontak"
+                class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                <span class="material-symbols-outlined text-[22px]">contact_support</span> Kontak & Lokasi
             </a>
         </nav>
 
-        <!-- CTA Action -->
-        <div class="hidden md:flex items-center gap-3">
-            <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20Pondok%20Pesantren%20Nurul%20Ulum,%20saya%20ingin%20bertanya%20mengenai%20pendaftaran%20santri%20baru" target="_blank" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:-translate-y-0.5 transition-all">
-                <span class="material-symbols-outlined text-[18px]">how_to_reg</span>
-                Pendaftaran (PPDB)
+        <div class="mt-auto px-5 pt-6 border-t border-primary-fixed/20">
+            <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20Pondok%20Pesantren%20Nurul%20Ulum"
+                target="_blank"
+                class="w-full flex items-center justify-center gap-2 bg-tertiary-container text-on-tertiary-container font-bold text-sm uppercase py-3 rounded-xl shadow-lg">
+                <span class="material-symbols-outlined text-[20px]">how_to_reg</span> Pendaftaran Santri
             </a>
-        </div>
-    </div>
-</header>
 
-<!-- Mobile Navigation Drawer Backdrop -->
-<div id="drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300 md:hidden"></div>
-
-<!-- Mobile Navigation Drawer -->
-<div id="mobile-drawer" class="fixed inset-y-0 left-0 z-[70] flex flex-col py-6 bg-primary dark:bg-primary-container h-full w-80 shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
-    <div class="px-6 pb-5 border-b border-primary-fixed/20 mb-4 flex justify-between items-center">
-        <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
-                <span class="material-symbols-outlined text-[18px]">mosque</span>
+            <div class="flex items-center justify-center gap-3 mt-3">
+                <a href="https://instagram.com/pesantrennurululum" target="_blank" rel="noopener noreferrer"
+                    class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all"
+                    aria-label="Instagram">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://facebook.com/nurululumbanmaleng/?locale=id_ID" target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all"
+                    aria-label="Facebook">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@media_nurul_ulum" target="_blank" rel="noopener noreferrer"
+                    class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all"
+                    aria-label="YouTube">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                </a>
+                <a href="https://tiktok.com/@pesantrennurululum" target="_blank" rel="noopener noreferrer"
+                    class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all"
+                    aria-label="TikTok">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.56-.05 2.89-1.18 3.14-2.73.07-.44.07-.88.07-1.31.01-4.99 0-9.98.01-14.97z" />
+                    </svg>
+                </a>
             </div>
-            <h2 class="font-headline-sm text-lg font-bold text-tertiary-fixed">PP. Nurul Ulum</h2>
+
+            <div class="text-center mt-4 text-xs text-on-primary/60">
+                © 2026 PP. Nurul Ulum
+            </div>
         </div>
-        <button id="mobile-close-btn" class="text-on-primary p-1 rounded-lg hover:bg-white/10" aria-label="Tutup Menu">
-            <span class="material-symbols-outlined text-[24px]">close</span>
-        </button>
     </div>
 
-    <nav class="flex flex-col px-3 font-body-lg text-base space-y-1">
-        <a href="index.html" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
-            <span class="material-symbols-outlined text-[22px]">home</span> Beranda
-        </a>
-        <a href="profil.html" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
-            <span class="material-symbols-outlined text-[22px]">account_balance</span> Profil & Sejarah
-        </a>
+    <main class="pt-28 pb-24">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 
-        <!-- Mobile Unit Submenu Accordion -->
-        <div>
-            <button id="mobile-unit-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg bg-white/15 text-tertiary-fixed font-semibold">
-                <div class="flex items-center gap-3.5">
-                    <span class="material-symbols-outlined text-[22px]">school</span> Unit Pendidikan
+            <!-- Hero Section -->
+            <section class="mb-14 md:mb-20 text-center relative">
+                <!-- Ambient Aura Glow -->
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-tr from-primary-fixed-dim/20 via-tertiary-fixed/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10">
                 </div>
-                <span id="mobile-unit-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200 rotate-180">expand_more</span>
-            </button>
-            <div id="mobile-unit-submenu" class="pl-6 pr-2 py-1 space-y-1 ">
-                <a href="unit-kb.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
-                    <span class="material-symbols-outlined text-[18px]">toys</span> KB Nurul Ulum
-                </a>
-                <a href="unit-tk.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
-                    <span class="material-symbols-outlined text-[18px]">child_care</span> TK / RA Nurul Ulum
-                </a>
-                <a href="unit-mi.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
-                    <span class="material-symbols-outlined text-[18px]">local_library</span> MI Nurul Ulum
-                </a>
-                <a href="unit-mts.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm bg-tertiary-container text-on-tertiary-container font-semibold">
-                    <span class="material-symbols-outlined text-[18px]">menu_book</span> MTs Nurul Ulum
-                </a>
-                <a href="unit-ma.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10">
-                    <span class="material-symbols-outlined text-[18px]">school</span> MA Nurul Ulum
-                </a>
-            </div>
-        </div>
 
-        <a href="#kontak" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
-            <span class="material-symbols-outlined text-[22px]">contact_support</span> Kontak & Lokasi
-        </a>
-    </nav>
-
-    <div class="mt-auto px-5 pt-6 border-t border-primary-fixed/20">
-        <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20Pondok%20Pesantren%20Nurul%20Ulum" target="_blank" class="w-full flex items-center justify-center gap-2 bg-tertiary-container text-on-tertiary-container font-bold text-sm uppercase py-3 rounded-xl shadow-lg">
-            <span class="material-symbols-outlined text-[20px]">how_to_reg</span> Pendaftaran Santri
-        </a>
-        
-<div class="flex items-center justify-center gap-3 mt-3">
-    <a href="https://instagram.com/pesantrennurululum" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all" aria-label="Instagram">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>
-    <a href="https://facebook.com/nurululumbanmaleng/?locale=id_ID" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all" aria-label="Facebook">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>
-    <a href="https://youtube.com/@media_nurul_ulum" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all" aria-label="YouTube">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-    </a>
-    <a href="https://tiktok.com/@pesantrennurululum" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-white/10 text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all" aria-label="TikTok">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.56-.05 2.89-1.18 3.14-2.73.07-.44.07-.88.07-1.31.01-4.99 0-9.98.01-14.97z"/></svg>
-    </a>
-</div>
-
-        <div class="text-center mt-4 text-xs text-on-primary/60">
-            © 2026 PP. Nurul Ulum
-        </div>
-    </div>
-</div>
-
-<main class="pt-28 pb-24">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<!-- Hero Section -->
-<section class="mb-16 md:mb-24 text-center">
-<!-- Logo Unit -->
-<div class="flex justify-center mb-6">
-<img src="images/unit-logos/mts-logo.png" alt="Logo MTS" class="w-24 h-24 object-contain">
-</div>
-<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Madrasah Tsanawiyah (MTs)</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Membentuk generasi qurani yang unggul dalam sains, teknologi, dan berakhlak mulia dengan nilai-nilai kepesantrenan modern.</p>
-</section>
-<!-- Bento Grid Highlights -->
-<section class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-24">
-<!-- Achievement Card (Spans 2 columns on desktop) -->
-<div class="md:col-span-2 bg-surface-container-lowest rounded-xl shadow-ambient border-t-4 border-transparent hover-gold-accent transition-all duration-300 overflow-hidden relative group">
-<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 to-primary-container/40 z-10 p-8 flex flex-col justify-end">
-<span class="material-symbols-outlined text-tertiary-fixed mb-2 text-4xl">emoji_events</span>
-<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Prestasi &amp; Penghargaan</h3>
-<p class="font-body-md text-body-md text-on-primary/80">Jelajahi deretan medali dan penghargaan yang diraih santri MTs kami di tingkat nasional dan internasional.</p>
-</div>
-<img class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A group of Indonesian junior high school students in modern Islamic school uniforms (green and white) proudly holding gold medals and a trophy. They are standing in front of a modern, well-lit school building with subtle geometric Islamic architecture. The mood is joyful, proud, and bright, with natural sunlight highlighting their achievements. The overall aesthetic is professional, inspiring, and high-quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARG6BOKNuw1KsDLPSmlgfhS-ey48Xmrmoggw9MNXqaF5wamleoh_deQ0UOkyOaG2gWBz3uQblQo2kMe7MYsIh_LC-zlnSyCy50AyH7ZCp2kMtgvMzUrj9I43mzCgAbDEuMqvr5ZNwu12J9j-KAPpf-o1tjZvepPoPOtCkAoVf3KDPThkheL2Ac-rPfu_mXDFfv1AnHZgsQzOK1n-RqulqeqOhf5IeMmeYN1Ht-IMPBe3_U2HJ9gHzbJQ"/>
-</div>
-<!-- Facilities Stack -->
-<div class="flex flex-col gap-gutter" style="display: none;">
-<!-- Lab Card -->
-<div class="bg-surface-container-lowest rounded-xl shadow-ambient p-6 flex-1 flex flex-col justify-between border-t-4 border-transparent hover-gold-accent transition-all duration-300">
-<div>
-<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary mb-4">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">science</span>
-</div>
-<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Laboratorium Sains</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Fasilitas lab modern untuk eksplorasi biologi, fisika, dan kimia terapan.</p>
-</div>
-</div>
-<!-- Dorm Card -->
-<div class="bg-surface-container-lowest rounded-xl shadow-ambient p-6 flex-1 flex flex-col justify-between border-t-4 border-transparent hover-gold-accent transition-all duration-300">
-<div>
-<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary mb-4">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bed</span>
-</div>
-<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Asrama Modern</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Lingkungan asrama yang bersih, nyaman, dan mendukung program tahfidz.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Gallery Section -->
-<section class="mb-24" style="display: none;">
-<h2 class="font-headline-md text-headline-md text-primary mb-8 text-center">Fasilitas Unggulan</h2>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<div class="rounded-lg overflow-hidden shadow-ambient">
-<img class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" data-alt="A brightly lit, modern science laboratory in an Islamic junior high school in Indonesia. Students in uniform are looking through microscopes. The room is equipped with modern lab benches and safety equipment. The lighting is clean, bright, and professional, reflecting a high-quality educational environment with a modern color palette of white, steel, and emerald green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZGPJ4Zc9naNUTA_u-giAt74HA6Jry28LgAD5wKG340oM3krhDB0OT9PAEK35r-_K4srUUm9W7A56oAzhEEkgnAHU9RGuwJMugnh8A4NQErzZ4Jhem_cTtI2VNQVODsygqH6x-YeqjnJnYuHm-uZeV58Ia9JUAZFhVZiQlvmmbuAhxqBm2axkAaIDJEXp0x12VccVb95rE4mtidmtoIDD1z2TXrw8zlaYnU8YGEaruCF7sGdSmz5Zz2Q"/>
-</div>
-<div class="rounded-lg overflow-hidden shadow-ambient">
-<img class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" data-alt="A clean, modern dormitory room for students in an Indonesian boarding school. The room features neatly made wooden bunk beds, sturdy study desks, and ample natural light streaming through large windows. The walls are painted a calming light gray, and there are subtle green accents on the bedding. The atmosphere is tidy, serene, and organized." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh9jZtU97OIWx-fYUAMY4Z8rGGpCBfpDRL2J51_eorvvohEC1jQisOnU3obptyL_oPkUz_2vuGTKqQkeeDohLeFMt5YFPIRpDIuuQ6eTnBZcixKr1czSes3XbdwdwqpmdYE5sFNgc-H57eesmK7fLkx2OIHIavvXyhQ2Op2DEpXKpkxPMJ-O6x9-VVvoQz2mCcxwMw7akaVzJuIHy5FaNTjezO8Qof0yH6cHBfU4I7k5IBx3KL5J1Ncg"/>
-</div>
-<div class="rounded-lg overflow-hidden shadow-ambient md:col-span-2">
-<img class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" data-alt="A panoramic view of a spacious, modern school library within an Islamic boarding school. Wide aisles separate tall bookshelves filled with academic and religious texts. Groups of students are sitting at large wooden tables, reading and discussing quietly. The room features high ceilings, modern pendant lighting, and large windows that let in soft, diffused daylight. The dominant colors are warm wood tones, crisp white, and deep emerald green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFq972jj8qD8f1ka4CX5fya9PmDmm5GLAnvtuLD8jxQbNK4XH_Od_ReqyXFhj5o-fB5GTG13B2nZiT7B5WlihrESCUJXBg6CZznXXafRL245cn3Xt8JsnCvOtHvXLol8Vjd_XkXl48CxMiXZBFMPdzglde2JoUVu4V1Bz30IwjmUtLMjqj6u_f5JSEn66cxrFRMxZ2Ae1OQSr-kJ7V2Crwm-tIbCdcB2Ni9CFSmLC3CNbu6o37c9p1Qg"/>
-</div>
-</div>
-</section>
-
-<!-- Profil Kepala Sekolah -->
-<section class="py-20 bg-surface-container-low">
-    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-        <div class="text-center mb-12">
-            <span class="text-tertiary font-bold tracking-wider text-xs uppercase block mb-2">Profil Unit</span>
-            <h2 class="font-headline-md text-headline-md text-primary mb-4">Kepala Sekolah</h2>
-        </div>
-        <div class="flex justify-center">
-            <div class="w-full max-w-md bg-surface rounded-2xl p-6 shadow-ambient border border-outline-variant/30 text-center">
-                <div class="w-44 h-44 mx-auto rounded-full overflow-hidden border-4 border-surface-container shadow-lg mb-6">
-                    <img class="w-full h-full object-cover" src="images/unit-mts/kepala-sekolah.png" alt="Foto Kepala Sekolah Unit MTs" onerror="this.onerror=null;this.src='https://placehold.co/600x600/EAF6F0/0A4D3C?text=Foto+Kepala+Sekolah';"/>
+                <!-- Category Pill Badge -->
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-5 shadow-sm">
+                    <span class="material-symbols-outlined text-[16px] text-tertiary">school</span>
+                    <span>Unit Pendidikan Menengah Pertama (Setingkat SMP)</span>
                 </div>
-                <h3 class="font-headline-sm text-headline-sm text-primary">Nama Kepala Sekolah MTs</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant mt-2">Kepala Sekolah</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Syarat Pendaftaran Standar Section -->
-<section class="py-16 my-8" id="pendaftaran">
-<div class="bg-gradient-to-br from-primary to-primary-container rounded-3xl p-8 md:p-12 text-on-primary shadow-2xl relative overflow-hidden">
-<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none"></div>
-
-<div class="text-center max-w-2xl mx-auto mb-10">
-    <div class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-        <span class="material-symbols-outlined text-[16px]">how_to_reg</span> PPDB MTs 2025/2026
-    </div>
-    <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-tertiary-fixed mb-3">Syarat Pendaftaran Santri Baru</h2>
-    <p class="text-surface-container/90 text-sm md:text-base">Persyaratan penerimaan santri baru untuk unit Madrasah Tsanawiyah (MTs) Nurul Ulum:</p>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">1</div>
-        <div>
-            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Formulir Pendaftaran</h4>
-            <p class="text-xs text-white/80">Mengisi formulir pendaftaran secara online melalui WhatsApp atau langsung di sekretariat MTs.</p>
-        </div>
-    </div>
-
-    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">2</div>
-        <div>
-            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Fotokopi Kartu Keluarga</h4>
-            <p class="text-xs text-white/80">Menyerahkan 2 lembar fotokopi Kartu Keluarga (KK) calon santri yang masih berlaku.</p>
-        </div>
-    </div>
-
-    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">3</div>
-        <div>
-            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Fotokopi KTP Orang Tua</h4>
-            <p class="text-xs text-white/80">Menyerahkan 2 lembar fotokopi KTP kedua orang tua atau wali santri.</p>
-        </div>
-    </div>
-
-    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">4</div>
-        <div>
-            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Fotokopi Akta Kelahiran</h4>
-            <p class="text-xs text-white/80">Menyerahkan 2 lembar fotokopi Akta Kelahiran calon santri.</p>
-        </div>
-    </div>
-
-    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">5</div>
-        <div>
-            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Pas Foto Berwarna</h4>
-            <p class="text-xs text-white/80">Menyerahkan 3 lembar pas foto berwarna terbaru santri ukuran 3x4 cm.</p>
-        </div>
-    </div>
-
-    <div class="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/15 flex items-start gap-4">
-        <div class="w-10 h-10 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold text-lg shrink-0">6</div>
-        <div>
-            <h4 class="font-bold text-tertiary-fixed text-sm mb-1">Ijazah / SKL / Rapor SD/MI</h4>
-            <p class="text-xs text-white/80">Fotokopi Ijazah / Surat Keterangan Lulus / Legalisir Rapor SD/MI kelas 4-6.</p>
-        </div>
-    </div>
-</div>
-
-<!-- Call to action WhatsApp Khusus MTs -->
-<div class="bg-surface-container-lowest text-on-surface rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
-    <div>
-        <span class="text-xs font-bold text-tertiary uppercase tracking-wider block mb-1">Layanan Pendaftaran Cepat</span>
-        <h3 class="text-xl md:text-2xl font-bold text-primary mb-1">Daftar Melalui WhatsApp Unit MTs</h3>
-        <p class="text-sm text-on-surface-variant">Hubungi Admin Unit MTs di <strong>0878-6618-6894</strong> untuk informasi syarat masuk & pendaftaran asrama.</p>
-    </div>
-    <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20MTs%20Nurul%20Ulum,%20saya%20ingin%20mendaftarkan%20putra/putri%20saya%20ke%20Madrasah%20Tsanawiyah" target="_blank" class="shrink-0 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md hover:-translate-y-0.5 transition-all">
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.82 2.796.821 3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.767-5.768-5.767zm7.502 5.765c-.002 4.137-3.364 7.5-7.502 7.5-1.319 0-2.565-.347-3.655-.953l-4.376 1.147 1.168-4.266c-.7-1.156-1.077-2.488-1.077-3.854.002-4.137 3.365-7.5 7.503-7.5 4.138 0 7.501 3.363 7.501 7.5zm-3.666 3.013c-.198-.1-.403-.1-.58-.1-.176 0-.353 0-.53.1-.176.1-.353.3-.53.5-.177.2-.353.4-.53.6-.177.2-.353.4-.53.5-.176.1-.353.2-.53.1-.176-.1-.353-.2-.53-.4-.53-.4-1.06-.9-1.5-1.5-.44-.6-.79-1.2-1.06-1.8-.18-.4-.09-.7.09-.9.18-.2.35-.4.53-.6.18-.2.27-.4.35-.6.09-.2.09-.4 0-.6-.09-.2-.53-1.3-.71-1.7-.18-.4-.35-.4-.53-.4h-.44c-.18 0-.35 0-.53.1-.18.1-.35.3-.53.5-.18.2-.53.6-.53 1.5 0 .9.62 1.8 1.41 2.8 1.06 1.3 2.39 2.4 3.97 3.1.53.2 1.06.4 1.59.4.53 0 1.06-.1 1.5-.4.44-.3.71-.7.71-1.2.09-.5.09-.9 0-1.1-.09-.1-.27-.2-.44-.3z"/></svg>
-        Hubungi WhatsApp MTs (0878-6618-6894)
-    </a>
-</div>
-</div>
-</section>
-
-<!-- Contact Section -->
-<section class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl shadow-ambient p-8 md:p-12 border border-surface-variant mb-16">
-<div class="flex flex-col md:flex-row gap-10">
-<div class="flex-1">
-<span class="text-tertiary font-bold tracking-wider text-xs uppercase block mb-1">Kontak Langsung</span>
-<h2 class="font-headline-md text-2xl font-bold text-primary mb-3">Hubungi Unit MTs</h2>
-<p class="font-body-md text-sm text-on-surface-variant mb-6">Punya pertanyaan seputar kurikulum, fasilitas asrama, atau pendaftaran santri MTs? Kami siap membantu.</p>
-<div class="space-y-4 text-sm">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary-container mt-0.5">phone_iphone</span>
-<div>
-<strong class="text-primary block">WhatsApp Admin MTs:</strong>
-<span class="text-on-surface-variant font-semibold">+62 878-6618-6894</span>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary-container mt-0.5">mail</span>
-<div>
-<strong class="text-primary block">Email MTs:</strong>
-<span class="text-on-surface-variant">mts@pesantrennurululum.sch.id</span>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-tertiary-container mt-0.5">location_on</span>
-<div>
-<strong class="text-primary block">Lokasi:</strong>
-<span class="text-on-surface-variant">Kompleks Pendidikan Nurul Ulum, Gedung D Lantai 1-3</span>
-</div>
-</div>
-</div>
-</div>
-
-<div class="flex-1">
-<form class="space-y-4">
-<div>
-<label class="block font-label-caps text-xs font-semibold text-on-surface-variant mb-1">NAMA LENGKAP</label>
-<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary" type="text" placeholder="Masukkan nama lengkap"/>
-</div>
-<div>
-<label class="block font-label-caps text-xs font-semibold text-on-surface-variant mb-1">NOMOR WHATSAPP</label>
-<input class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary" type="tel" placeholder="Contoh: 08123456789"/>
-</div>
-<div>
-<label class="block font-label-caps text-xs font-semibold text-on-surface-variant mb-1">PESAN / PERTANYAAN</label>
-<textarea class="w-full bg-surface-container-low border border-outline-variant rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-primary resize-none" rows="3" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
-</div>
-<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary rounded-lg py-3 font-semibold text-sm shadow-md hover:-translate-y-0.5 transition-transform duration-200 flex items-center justify-center gap-2" type="button">
-<span>KIRIM PESAN</span>
-<span class="material-symbols-outlined text-sm">send</span>
-</button>
-</form>
-</div>
-</div>
-</section>
-</div>
-</main>
-
-<!-- Global Footer -->
-<footer id="kontak" class="bg-primary text-on-primary pt-16 pb-8 border-t-4 border-tertiary-container">
-    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-            <!-- Brand & Info -->
-            <div class="flex flex-col gap-4">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
-                        <span class="material-symbols-outlined text-[24px]">mosque</span>
+                <!-- Logo Unit -->
+                <div class="flex justify-center mb-6">
+                    <div
+                        class="relative w-28 h-28 p-2 rounded-2xl bg-surface-container-lowest shadow-xl border border-primary/15 flex items-center justify-center group hover:scale-105 transition-all duration-300">
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 via-transparent to-tertiary/20 pointer-events-none">
+                        </div>
+                        <img src="images/unit-logos/mts-logo.png" alt="Logo MTs Nurul Ulum"
+                            class="w-full h-full object-contain relative z-10 p-1">
                     </div>
-                    <span class="font-headline-md text-xl font-bold text-tertiary-fixed">NURUL ULUM</span>
                 </div>
-                <p class="font-body-md text-sm text-surface-container/90 leading-relaxed">
-                    Lembaga Pendidikan Islam yang memadukan kedalaman ilmu salaf dengan keunggulan ilmu pengetahuan modern berlandaskan Ahlussunnah wal Jama'ah.
+
+                <h1
+                    class="font-headline-md text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-4 tracking-tight">
+                    Madrasah Tsanawiyah <span class="text-tertiary-container">(MTs)</span>
+                </h1>
+                <p
+                    class="font-body-lg text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed mb-6">
+                    Membentuk generasi qurani yang unggul dalam sains, teknologi, dan berakhlak mulia dengan nilai-nilai
+                    kepesantrenan modern.
                 </p>
-                <div class="flex items-center gap-2.5 mt-2">
-    <a href="https://www.instagram.com/medianurululum1?igsi=YWtlODFkNTluZnRy" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm" aria-label="Instagram Nurul Ulum" title="Instagram Resmi">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>
-    <a href="https://facebook.com/nurululumbanmaleng/?locale=id_ID" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm" aria-label="Facebook Nurul Ulum" title="Facebook Resmi">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>
-    <a href="https://youtube.com/@media_nurul_ulum" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm" aria-label="YouTube Nurul Ulum" title="YouTube Resmi">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-    </a>
-    <a href="https://www.tiktok.com/@media_nurululum" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm" aria-label="TikTok Nurul Ulum" title="TikTok Resmi">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.56-.05 2.89-1.18 3.14-2.73.07-.44.07-.88.07-1.31.01-4.99 0-9.98.01-14.97z"/></svg>
-    </a>
-</div>
+
+                <!-- Key Highlights Badges -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5 max-w-3xl mx-auto mb-8">
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-primary shadow-sm hover:border-primary/40 transition-colors">
+                        <span class="material-symbols-outlined text-[16px] text-tertiary">verified</span> Kurikulum
+                        Kemenag & Salaf
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-primary shadow-sm hover:border-primary/40 transition-colors">
+                        <span class="material-symbols-outlined text-[16px] text-tertiary">auto_stories</span> Program
+                        Tahfidz Al-Qur'an
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-primary shadow-sm hover:border-primary/40 transition-colors">
+                        <span class="material-symbols-outlined text-[16px] text-tertiary">science</span> Eksplorasi
+                        Sains & Riset
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/30 text-xs font-semibold text-primary shadow-sm hover:border-primary/40 transition-colors">
+                        <span class="material-symbols-outlined text-[16px] text-tertiary">domain</span> Asrama Santri
+                        Terpadu
+                    </span>
+                </div>
+
+                <!-- Quick Action Links -->
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <a href="#pendaftaran"
+                        class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-semibold text-xs md:text-sm uppercase tracking-wider px-6 py-3 rounded-xl shadow-md hover:-translate-y-0.5 transition-all duration-200">
+                        <span class="material-symbols-outlined text-[18px]">how_to_reg</span> Syarat Pendaftaran PPDB
+                    </a>
+                    <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20MTs%20Nurul%20Ulum,%20saya%20ingin%20konsultasi%20pendaftaran"
+                        target="_blank"
+                        class="inline-flex items-center gap-2 bg-surface-container-lowest hover:bg-surface-container text-primary font-semibold text-xs md:text-sm border border-primary/20 px-5 py-3 rounded-xl shadow-sm hover:-translate-y-0.5 transition-all duration-200">
+                        <span class="material-symbols-outlined text-[18px] text-[#25D366]">chat</span> Hubungi Admin MTs
+                    </a>
+                </div>
+            </section>
+
+            <!-- Bento Grid Highlights -->
+            <section class="max-w-5xl mx-auto mb-20">
+                <!-- Achievement Card (Spans beautifully across container) -->
+                <div
+                    class="w-full bg-surface-container-lowest rounded-3xl shadow-ambient border-t-4 border-tertiary-container hover-gold-accent transition-all duration-300 overflow-hidden relative group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary-container/70 to-transparent z-10 p-8 md:p-12 flex flex-col justify-end">
+                        <div class="flex items-center justify-between gap-4 mb-3">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-tertiary-container/90 backdrop-blur-md text-on-tertiary-container flex items-center justify-center shadow-lg">
+                                <span
+                                    class="material-symbols-outlined text-3xl text-on-tertiary-container">emoji_events</span>
+                            </div>
+                            <span
+                                class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-tertiary-fixed text-xs font-semibold tracking-wider uppercase border border-white/20">
+                                <span class="material-symbols-outlined text-[14px]">stars</span> Prestasi Santri MTs
+                            </span>
+                        </div>
+                        <h3 class="font-headline-md text-2xl md:text-3xl text-on-primary font-bold mb-2">Prestasi &amp;
+                            Penghargaan</h3>
+                        <p class="font-body-md text-sm md:text-base text-on-primary/85 max-w-2xl leading-relaxed mb-4">
+                            Jelajahi deretan medali dan penghargaan yang diraih santri MTs kami di tingkat nasional dan
+                            internasional.</p>
+
+                        <!-- Achievement Tags -->
+                        <div class="flex flex-wrap items-center gap-2 pt-2 border-t border-white/15">
+                            <span
+                                class="text-xs text-tertiary-fixed font-medium bg-white/10 backdrop-blur-sm px-3 py-1 rounded-lg">🏆
+                                Juara Kompetisi Sains Madrasah</span>
+                            <span
+                                class="text-xs text-tertiary-fixed font-medium bg-white/10 backdrop-blur-sm px-3 py-1 rounded-lg">🥇
+                                Juara Musabaqah Hifdzil Qur'an</span>
+                            <span
+                                class="text-xs text-tertiary-fixed font-medium bg-white/10 backdrop-blur-sm px-3 py-1 rounded-lg">🎖️
+                                Riset &amp; Robotik Madrasah</span>
+                        </div>
+                    </div>
+                    <img class="w-full h-80 md:h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        data-alt="A group of Indonesian junior high school students in modern Islamic school uniforms (green and white) proudly holding gold medals and a trophy. They are standing in front of a modern, well-lit school building with subtle geometric Islamic architecture. The mood is joyful, proud, and bright, with natural sunlight highlighting their achievements. The overall aesthetic is professional, inspiring, and high-quality."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuARG6BOKNuw1KsDLPSmlgfhS-ey48Xmrmoggw9MNXqaF5wamleoh_deQ0UOkyOaG2gWBz3uQblQo2kMe7MYsIh_LC-zlnSyCy50AyH7ZCp2kMtgvMzUrj9I43mzCgAbDEuMqvr5ZNwu12J9j-KAPpf-o1tjZvepPoPOtCkAoVf3KDPThkheL2Ac-rPfu_mXDFfv1AnHZgsQzOK1n-RqulqeqOhf5IeMmeYN1Ht-IMPBe3_U2HJ9gHzbJQ"
+                        onerror="this.onerror=null;this.src='images/unit-mts/mts-hero-banner.jpg';" />
+                </div>
+
+                <!-- Facilities Stack -->
+                <div class="flex flex-col gap-gutter" style="display: none;">
+                    <!-- Lab Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl shadow-ambient p-6 flex-1 flex flex-col justify-between border-t-4 border-transparent hover-gold-accent transition-all duration-300">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary mb-4">
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1;">science</span>
+                            </div>
+                            <h4 class="font-headline-sm text-headline-sm text-primary mb-2">Laboratorium Sains</h4>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Fasilitas lab modern untuk
+                                eksplorasi biologi, fisika, dan kimia terapan.</p>
+                        </div>
+                    </div>
+                    <!-- Dorm Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl shadow-ambient p-6 flex-1 flex flex-col justify-between border-t-4 border-transparent hover-gold-accent transition-all duration-300">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary mb-4">
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1;">bed</span>
+                            </div>
+                            <h4 class="font-headline-sm text-headline-sm text-primary mb-2">Asrama Modern</h4>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Lingkungan asrama yang bersih,
+                                nyaman, dan mendukung program tahfidz.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Galeri Kegiatan MTs Section (4 Foto Utama) -->
+            <section class="mb-24" id="galeri">
+                <div class="text-center mb-12">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-tertiary font-bold tracking-widest text-xs uppercase block mb-2">
+                        <span class="material-symbols-outlined text-[16px]">photo_library</span> Dokumentasi Aktivitas
+                    </span>
+                    <h2 class="font-headline-md text-2xl md:text-4xl text-primary font-bold mb-3">Galeri Kegiatan &amp;
+                        Fasilitas MTs</h2>
+                    <p
+                        class="font-body-md text-xs md:text-sm text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                        Melihat lebih dekat potret aktivitas belajar, praktikum sains di laboratorium, kenyamanan
+                        asrama, dan fasilitas perpustakaan santri Madrasah Tsanawiyah Nurul Ulum.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Foto 1: Prestasi Santri MTs -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient border border-outline-variant/25 hover:border-tertiary-container hover:shadow-xl transition-all duration-300 group flex flex-col hover:-translate-y-1">
+                        <div class="relative h-56 overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                                src="images/unit-mts/mts-hero-banner.jpg" alt="Prestasi Santri MTs Nurul Ulum"
+                                loading="lazy" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 opacity-80 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-tertiary-fixed text-[11px] font-bold shadow-md border border-white/15">
+                                    <span class="material-symbols-outlined text-[14px]">emoji_events</span> Prestasi
+                                    Santri
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="font-headline-sm text-base font-bold text-primary mb-1.5 group-hover:text-primary-container transition-colors">
+                                    Prestasi &amp; Karakter</h3>
+                                <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">Santri MTs
+                                    berprestasi meraih medali dan piala kejuaraan akademik maupun keagamaan.</p>
+                            </div>
+                            <div
+                                class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center justify-between text-[11px] text-tertiary font-semibold">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-[14px]">verified</span> Terbina
+                                    Optimal</span>
+                                <span class="text-primary text-xs">PP. Nurul Ulum</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 2: Laboratorium Sains MTs -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient border border-outline-variant/25 hover:border-tertiary-container hover:shadow-xl transition-all duration-300 group flex flex-col hover:-translate-y-1">
+                        <div class="relative h-56 overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                                src="images/unit-mts/mts-foto-2.jpg" alt="Laboratorium Sains MTs Nurul Ulum"
+                                loading="lazy" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 opacity-80 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-tertiary-fixed text-[11px] font-bold shadow-md border border-white/15">
+                                    <span class="material-symbols-outlined text-[14px]">science</span> Lab Sains &amp;
+                                    Riset
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="font-headline-sm text-base font-bold text-primary mb-1.5 group-hover:text-primary-container transition-colors">
+                                    Praktikum Laboratorium</h3>
+                                <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">Eksplorasi ilmu
+                                    sains, biologi, fisika, dan kimia terapan dengan peralatan mikroskop modern.</p>
+                            </div>
+                            <div
+                                class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center justify-between text-[11px] text-tertiary font-semibold">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-[14px]">biotech</span> Sains
+                                    Terapan</span>
+                                <span class="text-primary text-xs">Fasilitas Lab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 3: Asrama Modern MTs -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient border border-outline-variant/25 hover:border-tertiary-container hover:shadow-xl transition-all duration-300 group flex flex-col hover:-translate-y-1">
+                        <div class="relative h-56 overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                                src="images/unit-mts/mts-foto-3.jpg" alt="Asrama Santri MTs Nurul Ulum"
+                                loading="lazy" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 opacity-80 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-tertiary-fixed text-[11px] font-bold shadow-md border border-white/15">
+                                    <span class="material-symbols-outlined text-[14px]">bed</span> Asrama Santri
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="font-headline-sm text-base font-bold text-primary mb-1.5 group-hover:text-primary-container transition-colors">
+                                    Asrama yang Nyaman</h3>
+                                <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">Kamar hunian
+                                    asrama yang rapi, bersih, dan kondusif untuk istirahat serta halaqah tahfidz.</p>
+                            </div>
+                            <div
+                                class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center justify-between text-[11px] text-tertiary font-semibold">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-[14px]">home</span> Pesantren Salaf</span>
+                                <span class="text-primary text-xs">Hunian Asri</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Foto 4: Perpustakaan MTs -->
+                    <div
+                        class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient border border-outline-variant/25 hover:border-tertiary-container hover:shadow-xl transition-all duration-300 group flex flex-col hover:-translate-y-1">
+                        <div class="relative h-56 overflow-hidden bg-surface-container">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                                src="images/unit-mts/mts-foto-4.jpg" alt="Perpustakaan MTs Nurul Ulum" loading="lazy" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 opacity-80 group-hover:opacity-60 transition-opacity">
+                            </div>
+                            <div class="absolute top-3 left-3">
+                                <span
+                                    class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md text-tertiary-fixed text-[11px] font-bold shadow-md border border-white/15">
+                                    <span class="material-symbols-outlined text-[14px]">local_library</span>
+                                    Perpustakaan
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3
+                                    class="font-headline-sm text-base font-bold text-primary mb-1.5 group-hover:text-primary-container transition-colors">
+                                    Perpustakaan &amp; Literasi</h3>
+                                <p class="font-body-md text-xs text-on-surface-variant leading-relaxed">Pusat referensi
+                                    buku kurikulum nasional dan literatur kitab kuning salaf berarsitektur asri.</p>
+                            </div>
+                            <div
+                                class="mt-4 pt-3 border-t border-outline-variant/15 flex items-center justify-between text-[11px] text-tertiary font-semibold">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-[14px]">menu_book</span> Literasi
+                                    Santri</span>
+                                <span class="text-primary text-xs">Koleksi Lengkap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profil Kepala Sekolah -->
+            <section
+                class="py-16 md:py-20 bg-surface-container-low rounded-3xl mb-20 relative overflow-hidden border border-outline-variant/20 shadow-sm">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                    <div class="text-center mb-10">
+                        <span
+                            class="inline-flex items-center gap-1.5 text-tertiary font-bold tracking-widest text-xs uppercase block mb-2">
+                            <span class="material-symbols-outlined text-[15px]">verified_user</span> Kepemimpinan
+                            Madrasah
+                        </span>
+                        <h2 class="font-headline-md text-2xl md:text-3xl text-primary font-bold">Kepala Sekolah</h2>
+                        <p class="font-body-md text-xs md:text-sm text-on-surface-variant max-w-md mx-auto mt-1">
+                            Dedikasi dan keteladanan dalam membina generasi santri MTs Nurul Ulum yang cerdas dan
+                            berakhlakul karimah.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <div
+                            class="w-full max-w-md bg-surface-container-lowest rounded-2xl p-7 md:p-8 shadow-xl border border-outline-variant/30 text-center relative group hover:shadow-2xl transition-all duration-300">
+                            <!-- Decorative Top Border Accent -->
+                            <div
+                                class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-primary via-tertiary-container to-primary rounded-t-2xl">
+                            </div>
+
+                            <!-- Avatar Frame -->
+                            <div
+                                class="relative w-44 h-44 mx-auto rounded-full p-1.5 bg-gradient-to-tr from-primary via-tertiary-container to-primary shadow-xl mb-6 group-hover:scale-105 transition-transform duration-300">
+                                <div class="w-full h-full rounded-full overflow-hidden bg-white border-2 border-white">
+                                    <img class="w-full h-full object-cover" src="images/unit-mts/kepala-sekolah.png"
+                                        alt="Foto Kepala Sekolah Unit MTs"
+                                        onerror="this.onerror=null;this.src='https://placehold.co/600x600/EAF6F0/0A4D3C?text=Foto+Kepala+Sekolah';" />
+                                </div>
+                                <div
+                                    class="absolute bottom-1 right-2 w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-md border-2 border-white">
+                                    <span class="material-symbols-outlined text-[16px]">school</span>
+                                </div>
+                            </div>
+
+                            <h3 class="font-headline-sm text-xl md:text-2xl font-bold text-primary">Nama Kepala Sekolah
+                                MTs</h3>
+                            <div
+                                class="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mt-2 mb-4">
+                                Kepala Sekolah MTs Nurul Ulum
+                            </div>
+
+                            <!-- Dignified Quote -->
+                            <blockquote
+                                class="text-xs md:text-sm text-on-surface-variant italic leading-relaxed bg-surface-container-low/60 rounded-xl p-4 border-l-2 border-tertiary-container">
+                                "Membimbing santri dengan keteladanan, mengasah keilmuan dengan kesungguhan, serta
+                                menanamkan akhlakul karimah demi kejayaan umat."
+                            </blockquote>
+
+                            <div
+                                class="mt-5 pt-4 border-t border-outline-variant/20 flex items-center justify-center gap-2 text-[11px] text-on-surface-variant/80 font-medium">
+                                <span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+                                <span>Madrasah Terakreditasi | PP. Nurul Ulum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Syarat Pendaftaran Standar Section -->
+            <section class="py-16 my-10" id="pendaftaran">
+                <div
+                    class="bg-gradient-to-br from-primary via-primary-container to-[#003322] rounded-3xl p-8 md:p-14 text-on-primary shadow-2xl relative overflow-hidden border border-white/10">
+                    <div
+                        class="absolute -right-16 -bottom-16 w-80 h-80 bg-tertiary-container/15 rounded-full blur-3xl pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute -left-16 -top-16 w-80 h-80 bg-primary-fixed/10 rounded-full blur-3xl pointer-events-none">
+                    </div>
+
+                    <div class="text-center max-w-2xl mx-auto mb-12 relative z-10">
+                        <div
+                            class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-3 shadow-md">
+                            <span class="material-symbols-outlined text-[16px]">how_to_reg</span> PPDB MTs 2025/2026
+                        </div>
+                        <h2
+                            class="font-headline-md text-2xl md:text-4xl font-extrabold text-tertiary-fixed mb-3 tracking-tight">
+                            Syarat Pendaftaran Santri Baru</h2>
+                        <p class="text-surface-container/90 text-sm md:text-base leading-relaxed">Persyaratan penerimaan
+                            santri baru untuk unit Madrasah Tsanawiyah (MTs) Nurul Ulum:</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10 relative z-10">
+                        <div
+                            class="bg-white/10 hover:bg-white/15 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:border-tertiary-fixed/60 flex items-start gap-4 transition-all duration-300 shadow-md hover:-translate-y-1">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary-container flex items-center justify-center font-bold text-base shrink-0 shadow">
+                                1</div>
+                            <div>
+                                <div class="flex items-center gap-1.5 mb-1">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary-fixed text-[18px]">edit_document</span>
+                                    <h4 class="font-bold text-tertiary-fixed text-sm">Formulir Pendaftaran</h4>
+                                </div>
+                                <p class="text-xs text-white/85 leading-relaxed">Mengisi formulir pendaftaran secara
+                                    online melalui WhatsApp atau langsung di sekretariat MTs.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white/10 hover:bg-white/15 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:border-tertiary-fixed/60 flex items-start gap-4 transition-all duration-300 shadow-md hover:-translate-y-1">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary-container flex items-center justify-center font-bold text-base shrink-0 shadow">
+                                2</div>
+                            <div>
+                                <div class="flex items-center gap-1.5 mb-1">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary-fixed text-[18px]">family_restroom</span>
+                                    <h4 class="font-bold text-tertiary-fixed text-sm">Fotokopi Kartu Keluarga</h4>
+                                </div>
+                                <p class="text-xs text-white/85 leading-relaxed">Menyerahkan 2 lembar fotokopi Kartu
+                                    Keluarga (KK) calon santri yang masih berlaku.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white/10 hover:bg-white/15 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:border-tertiary-fixed/60 flex items-start gap-4 transition-all duration-300 shadow-md hover:-translate-y-1">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary-container flex items-center justify-center font-bold text-base shrink-0 shadow">
+                                3</div>
+                            <div>
+                                <div class="flex items-center gap-1.5 mb-1">
+                                    <span class="material-symbols-outlined text-tertiary-fixed text-[18px]">badge</span>
+                                    <h4 class="font-bold text-tertiary-fixed text-sm">Fotokopi KTP Orang Tua</h4>
+                                </div>
+                                <p class="text-xs text-white/85 leading-relaxed">Menyerahkan 2 lembar fotokopi KTP kedua
+                                    orang tua atau wali santri.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white/10 hover:bg-white/15 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:border-tertiary-fixed/60 flex items-start gap-4 transition-all duration-300 shadow-md hover:-translate-y-1">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary-container flex items-center justify-center font-bold text-base shrink-0 shadow">
+                                4</div>
+                            <div>
+                                <div class="flex items-center gap-1.5 mb-1">
+                                    <span class="material-symbols-outlined text-tertiary-fixed text-[18px]">cake</span>
+                                    <h4 class="font-bold text-tertiary-fixed text-sm">Fotokopi Akta Kelahiran</h4>
+                                </div>
+                                <p class="text-xs text-white/85 leading-relaxed">Menyerahkan 2 lembar fotokopi Akta
+                                    Kelahiran calon santri.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white/10 hover:bg-white/15 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:border-tertiary-fixed/60 flex items-start gap-4 transition-all duration-300 shadow-md hover:-translate-y-1">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary-container flex items-center justify-center font-bold text-base shrink-0 shadow">
+                                5</div>
+                            <div>
+                                <div class="flex items-center gap-1.5 mb-1">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary-fixed text-[18px]">photo_camera</span>
+                                    <h4 class="font-bold text-tertiary-fixed text-sm">Pas Foto Berwarna</h4>
+                                </div>
+                                <p class="text-xs text-white/85 leading-relaxed">Menyerahkan 3 lembar pas foto berwarna
+                                    terbaru santri ukuran 3x4 cm.</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="bg-white/10 hover:bg-white/15 backdrop-blur-md rounded-2xl p-5 border border-white/20 hover:border-tertiary-fixed/60 flex items-start gap-4 transition-all duration-300 shadow-md hover:-translate-y-1">
+                            <div
+                                class="w-10 h-10 rounded-xl bg-gradient-to-br from-tertiary-container to-tertiary text-on-tertiary-container flex items-center justify-center font-bold text-base shrink-0 shadow">
+                                6</div>
+                            <div>
+                                <div class="flex items-center gap-1.5 mb-1">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary-fixed text-[18px]">school</span>
+                                    <h4 class="font-bold text-tertiary-fixed text-sm">Ijazah / SKL / Rapor SD/MI</h4>
+                                </div>
+                                <p class="text-xs text-white/85 leading-relaxed">Fotokopi Ijazah / Surat Keterangan
+                                    Lulus / Legalisir Rapor SD/MI kelas 4-6.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to action WhatsApp Khusus MTs -->
+                    <div
+                        class="bg-surface-container-lowest text-on-surface rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-outline-variant/20 relative z-10">
+                        <div>
+                            <div
+                                class="inline-flex items-center gap-1.5 text-xs font-bold text-tertiary uppercase tracking-wider mb-1.5">
+                                <span class="material-symbols-outlined text-[16px]">support_agent</span> Layanan
+                                Pendaftaran Cepat
+                            </div>
+                            <h3 class="text-xl md:text-2xl font-bold text-primary mb-1.5">Daftar Melalui WhatsApp Unit
+                                MTs</h3>
+                            <p class="text-xs md:text-sm text-on-surface-variant leading-relaxed">Hubungi Admin Unit MTs
+                                di <strong class="text-primary">0878-6618-6894</strong> untuk informasi syarat masuk
+                                &amp; pendaftaran asrama.</p>
+                        </div>
+                        <a href="https://wa.me/6287866186894?text=Assalamu'alaikum%20Admin%20MTs%20Nurul%20Ulum,%20saya%20ingin%20mendaftarkan%20putra/putri%20saya%20ke%20Madrasah%20Tsanawiyah"
+                            target="_blank"
+                            class="shrink-0 inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-lg hover:-translate-y-0.5 transition-all">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.82 2.796.821 3.18 0 5.767-2.587 5.768-5.766.001-3.182-2.585-5.767-5.768-5.767zm7.502 5.765c-.002 4.137-3.364 7.5-7.502 7.5-1.319 0-2.565-.347-3.655-.953l-4.376 1.147 1.168-4.266c-.7-1.156-1.077-2.488-1.077-3.854.002-4.137 3.365-7.5 7.503-7.5 4.138 0 7.501 3.363 7.501 7.5zm-3.666 3.013c-.198-.1-.403-.1-.58-.1-.176 0-.353 0-.53.1-.176.1-.353.3-.53.5-.177.2-.353.4-.53.6-.177.2-.353.4-.53.5-.176.1-.353.2-.53.1-.176-.1-.353-.2-.53-.4-.53-.4-1.06-.9-1.5-1.5-.44-.6-.79-1.2-1.06-1.8-.18-.4-.09-.7.09-.9.18-.2.35-.4.53-.6.18-.2.27-.4.35-.6.09-.2.09-.4 0-.6-.09-.2-.53-1.3-.71-1.7-.18-.4-.35-.4-.53-.4h-.44c-.18 0-.35 0-.53.1-.18.1-.35.3-.53.5-.18.2-.53.6-.53 1.5 0 .9.62 1.8 1.41 2.8 1.06 1.3 2.39 2.4 3.97 3.1.53.2 1.06.4 1.59.4.53 0 1.06-.1 1.5-.4.44-.3.71-.7.71-1.2.09-.5.09-.9 0-1.1-.09-.1-.27-.2-.44-.3z" />
+                            </svg>
+                            <span>Hubungi WhatsApp MTs (0878-6618-6894)</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section
+                class="max-w-4xl mx-auto bg-surface-container-lowest rounded-3xl shadow-xl p-8 md:p-12 border border-outline-variant/25 mb-16 relative overflow-hidden">
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="flex-1">
+                        <span
+                            class="inline-flex items-center gap-1.5 text-tertiary font-bold tracking-wider text-xs uppercase block mb-1">
+                            <span class="material-symbols-outlined text-[15px]">mail</span> Kontak Langsung
+                        </span>
+                        <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-primary mb-3">Hubungi Unit MTs
+                        </h2>
+                        <p class="font-body-md text-sm text-on-surface-variant mb-6 leading-relaxed">Punya pertanyaan
+                            seputar kurikulum, fasilitas asrama, atau pendaftaran santri MTs? Kami siap membantu.</p>
+                        <div class="space-y-4 text-sm">
+                            <div
+                                class="flex items-start gap-3.5 p-3 rounded-xl bg-surface-container-low/60 border border-outline-variant/20 hover:border-primary/30 transition-colors">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+                                </div>
+                                <div>
+                                    <strong class="text-primary block text-xs">WhatsApp Admin MTs:</strong>
+                                    <a href="https://wa.me/6287866186894" target="_blank"
+                                        class="text-on-surface hover:text-primary font-semibold text-sm transition-colors">+62
+                                        878-6618-6894</a>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-3.5 p-3 rounded-xl bg-surface-container-low/60 border border-outline-variant/20 hover:border-primary/30 transition-colors">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-[20px]">mail</span>
+                                </div>
+                                <div>
+                                    <strong class="text-primary block text-xs">Email MTs:</strong>
+                                    <span
+                                        class="text-on-surface-variant font-medium text-sm">mts@pesantrennurululum.sch.id</span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-3.5 p-3 rounded-xl bg-surface-container-low/60 border border-outline-variant/20 hover:border-primary/30 transition-colors">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-[20px]">location_on</span>
+                                </div>
+                                <div>
+                                    <strong class="text-primary block text-xs">Lokasi:</strong>
+                                    <span class="text-on-surface-variant text-xs md:text-sm">Kompleks Pendidikan Nurul
+                                        Ulum, Gedung D Lantai 1-3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 bg-surface-container-low/40 p-6 rounded-2xl border border-outline-variant/20">
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block font-label-caps text-xs font-semibold text-on-surface mb-1.5">NAMA
+                                    LENGKAP</label>
+                                <input
+                                    class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all"
+                                    type="text" placeholder="Masukkan nama lengkap" />
+                            </div>
+                            <div>
+                                <label class="block font-label-caps text-xs font-semibold text-on-surface mb-1.5">NOMOR
+                                    WHATSAPP</label>
+                                <input
+                                    class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all"
+                                    type="tel" placeholder="Contoh: 08123456789" />
+                            </div>
+                            <div>
+                                <label class="block font-label-caps text-xs font-semibold text-on-surface mb-1.5">PESAN
+                                    / PERTANYAAN</label>
+                                <textarea
+                                    class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all resize-none"
+                                    rows="3" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..."></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-primary hover:bg-primary-container text-on-primary rounded-xl py-3 font-semibold text-sm shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2"
+                                type="button">
+                                <span>KIRIM PESAN</span>
+                                <span class="material-symbols-outlined text-sm">send</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="kontak" class="bg-primary text-on-primary pt-16 pb-8 border-t-4 border-tertiary-container">
+        <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <!-- Brand & Info -->
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+                            <span class="material-symbols-outlined text-[24px]">mosque</span>
+                        </div>
+                        <span class="font-headline-md text-xl font-bold text-tertiary-fixed">NURUL ULUM</span>
+                    </div>
+                    <p class="font-body-md text-sm text-surface-container/90 leading-relaxed">
+                        Lembaga Pendidikan Islam yang memadukan kedalaman ilmu salaf dengan keunggulan ilmu pengetahuan
+                        modern berlandaskan Ahlussunnah wal Jama'ah.
+                    </p>
+                    <div class="flex items-center gap-2.5 mt-2">
+                        <a href="https://www.instagram.com/medianurululum1?igsi=YWtlODFkNTluZnRy" target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm"
+                            aria-label="Instagram Nurul Ulum" title="Instagram Resmi">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/nurululumbanmaleng/?locale=id_ID" target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm"
+                            aria-label="Facebook Nurul Ulum" title="Facebook Resmi">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@media_nurul_ulum" target="_blank" rel="noopener noreferrer"
+                            class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm"
+                            aria-label="YouTube Nurul Ulum" title="YouTube Resmi">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@media_nurululum" target="_blank" rel="noopener noreferrer"
+                            class="w-9 h-9 rounded-full bg-primary-container text-tertiary-fixed hover:bg-tertiary-container hover:text-on-tertiary-container flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-sm"
+                            aria-label="TikTok Nurul Ulum" title="TikTok Resmi">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.75 1.56-.05 2.89-1.18 3.14-2.73.07-.44.07-.88.07-1.31.01-4.99 0-9.98.01-14.97z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Navigasi Cepat
+                    </h4>
+                    <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
+                        <li><a href="index.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> Beranda Utama</a>
+                        </li>
+                        <li><a href="profil.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> Profil &
+                                Sejarah</a></li>
+                        <li><a href="profil.html#visi-misi"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> Visi & Misi</a>
+                        </li>
+                        <li><a href="profil.html#masyayikh"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> Dewan
+                                Masyayikh</a></li>
+                    </ul>
+                </div>
+
+                <!-- Unit Pendidikan -->
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Unit Pendidikan
+                    </h4>
+                    <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
+                        <li><a href="unit-kb.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> KB Nurul Ulum</a>
+                        </li>
+                        <li><a href="unit-tk.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> TK / RA Nurul
+                                Ulum</a></li>
+                        <li><a href="unit-mi.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> MI Nurul Ulum</a>
+                        </li>
+                        <li><a href="unit-mts.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> MTs Nurul
+                                Ulum</a></li>
+                        <li><a href="unit-ma.html"
+                                class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span
+                                    class="material-symbols-outlined text-[16px]">chevron_right</span> MA Nurul Ulum</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="flex flex-col gap-3">
+                    <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Kontak &
+                        Informasi</h4>
+                    <ul class="flex flex-col gap-3 font-body-md text-sm text-surface-container/90">
+                        <li class="flex items-start gap-2.5">
+                            <span
+                                class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0 mt-0.5">location_on</span>
+                            <span>Jl. Raya Desa Banmaleng PP. Nurul Ulum, Sumenep, Indonesia, East Java</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">call</span>
+                            <span>0878-6618-6894</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">mail</span>
+                            <span>nurululum1banmaleng@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span
+                                class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">schedule</span>
+                            <span>Selalu Buka</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Quick Links -->
-            <div class="flex flex-col gap-3">
-                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Navigasi Cepat</h4>
-                <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
-                    <li><a href="index.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Beranda Utama</a></li>
-                    <li><a href="profil.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Profil & Sejarah</a></li>
-                    <li><a href="profil.html#visi-misi" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Visi & Misi</a></li>
-                    <li><a href="profil.html#masyayikh" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Dewan Masyayikh</a></li>
-                </ul>
-            </div>
-
-            <!-- Unit Pendidikan -->
-            <div class="flex flex-col gap-3">
-                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Unit Pendidikan</h4>
-                <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
-                    <li><a href="unit-kb.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> KB Nurul Ulum</a></li>
-                    <li><a href="unit-tk.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> TK / RA Nurul Ulum</a></li>
-                    <li><a href="unit-mi.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MI Nurul Ulum</a></li>
-                    <li><a href="unit-mts.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MTs Nurul Ulum</a></li>
-                    <li><a href="unit-ma.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MA Nurul Ulum</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="flex flex-col gap-3">
-                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Kontak & Informasi</h4>
-                <ul class="flex flex-col gap-3 font-body-md text-sm text-surface-container/90">
-                    <li class="flex items-start gap-2.5">
-                        <span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0 mt-0.5">location_on</span>
-                        <span>Jl. Raya Desa Banmaleng PP. Nurul Ulum, Sumenep, Indonesia, East Java</span>
-                    </li>
-                    <li class="flex items-center gap-2.5">
-                        <span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">call</span>
-                        <span>0878-6618-6894</span>
-                    </li>
-                    <li class="flex items-center gap-2.5">
-                        <span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">mail</span>
-                        <span>nurululum1banmaleng@gmail.com</span>
-                    </li>
-                    <li class="flex items-center gap-2.5">
-                        <span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">schedule</span>
-                        <span>Selalu Buka</span>
-                    </li>
-                </ul>
+            <div
+                class="pt-8 border-t border-primary-fixed/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-surface-container/70">
+                <div>
+                    © 2026 Pondok Pesantren Nurul Ulum. Hak Cipta Dilindungi Undang-Undang.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:underline">Kebijakan Privasi</a>
+                    <a href="#" class="hover:underline">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:underline">Peta Situs</a>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <div class="pt-8 border-t border-primary-fixed/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-surface-container/70">
-            <div>
-                © 2026 Pondok Pesantren Nurul Ulum. Hak Cipta Dilindungi Undang-Undang.
-            </div>
-            <div class="flex gap-6">
-                <a href="#" class="hover:underline">Kebijakan Privasi</a>
-                <a href="#" class="hover:underline">Syarat & Ketentuan</a>
-                <a href="#" class="hover:underline">Peta Situs</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<!-- Interactive Scripts -->
-<script src="js/main.js"></script>
+    <!-- Interactive Scripts -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
