@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Organisasi - Pondok Pesantren Nurul Ulum</title>
+    <meta name="description" content="Organisasi Santri dan Alumni Pondok Pesantren Nurul Ulum - IKANU, OSIM MTs, OSIM MA, dan Pramuka Pangkalan Nurul Ulum."/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#004532","primary-container": "#065f46","primary-fixed": "#a6f2d1",
+                        "primary-fixed-dim": "#8bd6b6","on-primary": "#ffffff","on-primary-container": "#8bd6b7",
+                        "tertiary": "#735c00","tertiary-container": "#cca730","tertiary-fixed": "#ffe088",
+                        "tertiary-fixed-dim": "#e9c349","on-tertiary": "#ffffff","on-tertiary-container": "#4f3d00",
+                        "surface": "#f8f9fb","surface-container-lowest": "#ffffff","surface-container-low": "#f3f4f6",
+                        "surface-container": "#edeef0","on-surface": "#191c1e","on-surface-variant": "#3f4944",
+                        "outline-variant": "#bec9c2"
+                    },
+                    spacing: { "margin-desktop": "40px","container-max": "1280px","margin-mobile": "16px" },
+                    fontFamily: {
+                        "headline-sm": ["Montserrat","sans-serif"],"headline-md": ["Montserrat","sans-serif"],
+                        "body-md": ['"Source Sans 3"',"sans-serif"],"label-caps": ['"Source Sans 3"',"sans-serif"]
+                    },
+                    fontSize: {
+                        "headline-sm": ["24px",{"lineHeight":"32px","fontWeight":"600"}],
+                        "headline-md": ["30px",{"lineHeight":"38px","fontWeight":"600"}],
+                        "body-md": ["16px",{"lineHeight":"24px","fontWeight":"400"}]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;vertical-align:middle}
+        .shadow-ambient{box-shadow:0 4px 20px rgba(6,95,70,.08)}
+        .pattern-bg{background-image:url("data:image/svg+xml;utf8,<svg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'><path d='M20 0l20 20-20 20L0 20z' fill='rgba(6,95,70,0.03)'/></svg>")}
+        header{transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s ease}
+        .header-shrunk{box-shadow:0 4px 20px -2px rgba(0,69,50,.08);backdrop-filter:blur(24px) saturate(180%)}
+        @keyframes fadeUp{from{opacity:0;transform:translateY(32px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+        .fade-up{opacity:0;animation:fadeUp .9s cubic-bezier(.16,1,.3,1) .1s forwards}
+        *, *::before, *::after{-webkit-font-smoothing:antialiased}
+        html{scroll-behavior:smooth}
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col pattern-bg antialiased">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/20 transition-all duration-300">
+    <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+        <div class="flex items-center gap-3">
+            <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden text-primary p-1.5 rounded-lg hover:bg-primary/5 focus:outline-none transition-colors">
+                <span class="material-symbols-outlined text-[28px]">menu</span>
+            </button>
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div class="w-10 h-10 rounded-full bg-white/90 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform overflow-hidden border border-primary/10">
+                    <img src="images/profil/logo-yayasan.png" alt="Logo Nurul Ulum" class="w-full h-full object-contain p-1">
+                </div>
+                <div>
+                    <span class="font-headline-md text-xl md:text-2xl font-bold tracking-tight text-primary block leading-none">NURUL ULUM</span>
+                    <span class="text-[10px] md:text-xs text-tertiary font-medium tracking-wider uppercase block">Pesantren &amp; Madrasah</span>
+                </div>
+            </a>
+        </div>
+        <nav class="hidden md:flex items-center gap-6">
+            <a href="index.html" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Beranda</a>
+            <a href="profil.html" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Profil &amp; Sejarah</a>
+            <!-- Unit Pendidikan -->
+            <div class="relative group py-2">
+                <button class="font-semibold text-sm flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
+                    Unit Pendidikan <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                </button>
+                <div class="absolute top-full left-0 mt-1 w-64 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                    <a href="unit-kb.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">toys</span><div><div class="font-semibold">Kelompok Bermain (KB)</div><div class="text-[11px] text-on-surface-variant">Pendidikan Usia 2-4 Tahun</div></div></a>
+                    <a href="unit-tk.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">child_care</span><div><div class="font-semibold">TK / RA</div><div class="text-[11px] text-on-surface-variant">Pendidikan Usia Dini</div></div></a>
+                    <a href="unit-mi.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">local_library</span><div><div class="font-semibold">Madrasah Ibtidaiyah</div><div class="text-[11px] text-on-surface-variant">Setingkat SD</div></div></a>
+                    <a href="unit-mts.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">menu_book</span><div><div class="font-semibold">Madrasah Tsanawiyah</div><div class="text-[11px] text-on-surface-variant">Setingkat SMP</div></div></a>
+                    <a href="unit-ma.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">school</span><div><div class="font-semibold">Madrasah Aliyah</div><div class="text-[11px] text-on-surface-variant">Setingkat SMA / Aliyah</div></div></a>
+                    <div class="border-t border-outline-variant/20 my-1"></div>
+                    <a href="madrasah-diniyah.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">mosque</span><div><div class="font-semibold">Madrasah Diniyah Ta'limiyah</div><div class="text-[11px] text-on-surface-variant">Pendidikan Keagamaan</div></div></a>
+                </div>
+            </div>
+            <!-- Organisasi (Active) -->
+            <div class="relative group py-2">
+                <button class="font-semibold text-sm flex items-center gap-1.5 text-primary">
+                    Organisasi <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                </button>
+                <div class="absolute top-full left-0 mt-1 w-72 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                    <a href="#ikanu" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">groups</span><div><div class="font-semibold">IKANU</div><div class="text-[11px] text-on-surface-variant">Ikatan Santri &amp; Alumni Nurul Ulum</div></div></a>
+                    <a href="#osim-mts" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">account_balance</span><div><div class="font-semibold">OSIM MTs Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Org. Siswa Intra Madrasah MTs</div></div></a>
+                    <a href="#osim-ma" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">account_balance</span><div><div class="font-semibold">OSIM MA Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Org. Siswa Intra Madrasah MA</div></div></a>
+                    <a href="#pramuka" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">emoji_nature</span><div><div class="font-semibold">Pramuka Pangkalan Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Gerakan Pramuka Santri</div></div></a>
+                </div>
+            </div>
+            <!-- Ekstrakurikuler -->
+            <div class="relative group py-2">
+                <button class="font-semibold text-sm flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors">
+                    Ekstrakurikuler <span class="material-symbols-outlined text-[18px] group-hover:rotate-180 transition-transform duration-200">expand_more</span>
+                </button>
+                <div class="absolute top-full left-0 mt-1 w-72 bg-surface-container-lowest rounded-xl shadow-xl border border-outline-variant/30 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2 z-50">
+                    <a href="ekstrakurikuler.html#pramuka" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">emoji_nature</span><div><div class="font-semibold">Pramuka</div><div class="text-[11px] text-on-surface-variant">Kegiatan Kepramukaan Santri</div></div></a>
+                    <a href="ekstrakurikuler.html#bahasa" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">translate</span><div><div class="font-semibold">Kursus Bahasa Arab &amp; Inggris</div><div class="text-[11px] text-on-surface-variant">Penguasaan Bahasa Internasional</div></div></a>
+                    <a href="ekstrakurikuler.html#sholawat" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">music_note</span><div><div class="font-semibold">Majelis Sholawat Nurul Ulum</div><div class="text-[11px] text-on-surface-variant">Kegiatan Seni Islam &amp; Sholawat</div></div></a>
+                </div>
+            </div>
+            <a href="#kontak" class="font-semibold text-sm text-on-surface-variant hover:text-primary transition-colors">Kontak</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+            <a href="https://wa.me/6287866186894" target="_blank" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-semibold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:-translate-y-0.5 transition-all">
+                <span class="material-symbols-outlined text-[18px]">how_to_reg</span> Pendaftaran (PPDB)
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Backdrop -->
+<div id="drawer-backdrop" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] hidden opacity-0 transition-opacity duration-300 md:hidden"></div>
+<!-- Mobile Drawer -->
+<div id="mobile-drawer" class="fixed inset-y-0 left-0 z-[70] flex flex-col py-6 bg-primary h-full w-80 shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+    <div class="px-6 pb-5 border-b border-primary-fixed/20 mb-4 flex justify-between items-center">
+        <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">mosque</span></div>
+            <h2 class="font-headline-sm text-lg font-bold text-tertiary-fixed">PP. Nurul Ulum</h2>
+        </div>
+        <button id="mobile-close-btn" class="text-on-primary p-1 rounded-lg hover:bg-white/10" aria-label="Tutup Menu"><span class="material-symbols-outlined text-[24px]">close</span></button>
+    </div>
+    <nav class="flex flex-col px-3 font-body-md text-base space-y-1">
+        <a href="index.html" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span class="material-symbols-outlined text-[22px]">home</span> Beranda</a>
+        <a href="profil.html" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span class="material-symbols-outlined text-[22px]">account_balance</span> Profil &amp; Sejarah</a>
+        <div>
+            <button id="mobile-unit-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                <div class="flex items-center gap-3.5"><span class="material-symbols-outlined text-[22px]">school</span> Unit Pendidikan</div>
+                <span id="mobile-unit-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div id="mobile-unit-submenu" class="pl-6 pr-2 py-1 space-y-1 hidden">
+                <a href="unit-kb.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">toys</span> KB Nurul Ulum</a>
+                <a href="unit-tk.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">child_care</span> TK / RA</a>
+                <a href="unit-mi.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">local_library</span> MI Nurul Ulum</a>
+                <a href="unit-mts.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">menu_book</span> MTs Nurul Ulum</a>
+                <a href="unit-ma.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">school</span> MA Nurul Ulum</a>
+                <a href="madrasah-diniyah.html" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">mosque</span> Madrasah Diniyah Ta'limiyah</a>
+            </div>
+        </div>
+        <div>
+            <button id="mobile-org-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg bg-white/15 text-tertiary-fixed font-semibold">
+                <div class="flex items-center gap-3.5"><span class="material-symbols-outlined text-[22px]">groups</span> Organisasi</div>
+                <span id="mobile-org-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200 rotate-180">expand_more</span>
+            </button>
+            <div id="mobile-org-submenu" class="pl-6 pr-2 py-1 space-y-1">
+                <a href="#ikanu" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">groups</span> IKANU</a>
+                <a href="#osim-mts" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MTs</a>
+                <a href="#osim-ma" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MA</a>
+                <a href="#pramuka" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka Pangkalan</a>
+            </div>
+        </div>
+        <div>
+            <button id="mobile-ekskul-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10">
+                <div class="flex items-center gap-3.5"><span class="material-symbols-outlined text-[22px]">star</span> Ekstrakurikuler</div>
+                <span id="mobile-ekskul-arrow" class="material-symbols-outlined text-[20px] transition-transform duration-200">expand_more</span>
+            </button>
+            <div id="mobile-ekskul-submenu" class="pl-6 pr-2 py-1 space-y-1 hidden">
+                <a href="ekstrakurikuler.html#pramuka" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka</a>
+                <a href="ekstrakurikuler.html#bahasa" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">translate</span> Kursus Bahasa</a>
+                <a href="ekstrakurikuler.html#sholawat" class="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-on-primary/80 hover:bg-white/10"><span class="material-symbols-outlined text-[18px]">music_note</span> Majelis Sholawat</a>
+            </div>
+        </div>
+        <a href="#kontak" class="flex items-center gap-3.5 px-4 py-3 rounded-lg text-on-primary/90 hover:bg-white/10"><span class="material-symbols-outlined text-[22px]">contact_support</span> Kontak &amp; Lokasi</a>
+    </nav>
+    <div class="mt-auto px-5 pt-6 border-t border-primary-fixed/20">
+        <a href="https://wa.me/6287866186894" target="_blank" class="w-full flex items-center justify-center gap-2 bg-tertiary-container text-on-tertiary-container font-bold text-sm uppercase py-3 rounded-xl shadow-lg">
+            <span class="material-symbols-outlined text-[20px]">how_to_reg</span> Pendaftaran Santri
+        </a>
+    </div>
+</div>
+
+<main class="flex-1 pt-20">
+    <!-- Hero -->
+    <section class="relative bg-gradient-to-br from-primary via-primary-container to-[#003322] py-20 md:py-28 overflow-hidden">
+        <div class="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-tertiary-container/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-primary-fixed/5 blur-3xl pointer-events-none"></div>
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+            <div class="fade-up">
+                <span class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5 shadow-md">
+                    <span class="material-symbols-outlined text-[16px]">groups</span> Lembaga Kemasyarakatan Santri
+                </span>
+                <h1 class="font-headline-md text-3xl md:text-5xl font-extrabold text-on-primary mb-4 tracking-tight leading-tight">
+                    Organisasi Santri &amp; Alumni<br class="hidden md:block"/> Nurul Ulum
+                </h1>
+                <p class="text-on-primary/80 text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-8">
+                    Wadah persatuan, pemberdayaan, dan silaturahmi bagi seluruh santri aktif dan alumni di lingkungan Pondok Pesantren Nurul Ulum.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="#ikanu" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-on-primary px-5 py-2.5 rounded-xl text-sm font-semibold transition-all border border-white/20 backdrop-blur-sm"><span class="material-symbols-outlined text-[18px]">groups</span> IKANU</a>
+                    <a href="#osim-mts" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-on-primary px-5 py-2.5 rounded-xl text-sm font-semibold transition-all border border-white/20 backdrop-blur-sm"><span class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MTs</a>
+                    <a href="#osim-ma" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 text-on-primary px-5 py-2.5 rounded-xl text-sm font-semibold transition-all border border-white/20 backdrop-blur-sm"><span class="material-symbols-outlined text-[18px]">account_balance</span> OSIM MA</a>
+                    <a href="#pramuka" class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-md hover:-translate-y-0.5"><span class="material-symbols-outlined text-[18px]">emoji_nature</span> Pramuka Pangkalan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 space-y-20">
+
+        <!-- IKANU -->
+        <section id="ikanu" class="scroll-mt-24">
+            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                <div class="bg-gradient-to-r from-primary to-primary-container p-8 md:p-10">
+                    <div class="flex items-center gap-5">
+                        <div class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-xl flex-shrink-0">
+                            <span class="material-symbols-outlined text-4xl">groups</span>
+                        </div>
+                        <div>
+                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold text-on-primary">IKANU</h2>
+                            <p class="text-on-primary/80 text-sm md:text-base">Ikatan Santri &amp; Alumni Nurul Ulum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                <strong class="text-primary">IKANU</strong> (Ikatan Santri &amp; Alumni Nurul Ulum) adalah wadah persatuan dan silaturahmi bagi seluruh santri aktif dan alumni Pondok Pesantren Nurul Ulum. Organisasi ini hadir untuk mempererat ukhuwah Islamiyah antar generasi, menjaga identitas keilmuan pesantren, serta berkontribusi dalam pengembangan lembaga pesantren yang lebih baik.
+                            </p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                                IKANU menjalankan berbagai program seperti halaqah alumni, bakti sosial, reuni tahunan, dan pengembangan jaringan alumni di berbagai daerah. Bersama IKANU, para alumni tetap terhubung dengan akar keilmuan dan nilai-nilai pesantren yang telah membentuk karakter mereka.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">handshake</span> Silaturahmi Alumni</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">volunteer_activism</span> Pengembangan Pesantren</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">diversity_3</span> Ukhuwah Islamiyah</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-hero-banner.jpg" alt="Kegiatan IKANU" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#004532,#1b6b51)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🤝 Halaqah Alumni</span>
+                            </div>
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-foto-2.jpg" alt="Reuni IKANU" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#065f46,#004532)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🌟 Reuni Tahunan</span>
+                            </div>
+                            <div class="relative h-32 rounded-xl overflow-hidden group shadow-md col-span-2 bg-gradient-to-br from-primary/10 to-primary-container/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-5xl opacity-30">photo_camera</span>
+                                <span class="absolute bottom-2 left-2 text-primary text-xs font-semibold">📸 Tambahkan Foto Kegiatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OSIM MTs -->
+        <section id="osim-mts" class="scroll-mt-24">
+            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                <div class="bg-gradient-to-r from-[#1b6b51] to-primary-container p-8 md:p-10">
+                    <div class="flex items-center gap-5">
+                        <div class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-xl flex-shrink-0">
+                            <span class="material-symbols-outlined text-4xl">account_balance</span>
+                        </div>
+                        <div>
+                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold text-on-primary">OSIM MTs Nurul Ulum</h2>
+                            <p class="text-on-primary/80 text-sm md:text-base">Organisasi Siswa Intra Madrasah Tsanawiyah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                <strong class="text-primary">OSIM MTs</strong> (Organisasi Siswa Intra Madrasah) adalah organisasi resmi internal yang mewadahi seluruh aspirasi, kreativitas, dan kegiatan kesiswaan di tingkat Madrasah Tsanawiyah Nurul Ulum. OSIM berfungsi sebagai jembatan komunikasi antara siswa dengan pihak madrasah sekaligus menjadi laboratorium kepemimpinan bagi para santri MTs.
+                            </p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                                OSIM MTs aktif menyelenggarakan berbagai kegiatan: olimpiade sains, festival seni, kegiatan PHBI (Peringatan Hari Besar Islam), olahraga santri, dan program pengembangan potensi siswa lainnya. Melalui OSIM, santri belajar mengelola organisasi, mengambil keputusan bersama, dan bertanggung jawab atas program yang mereka rancang.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">manage_accounts</span> Kepemimpinan Siswa</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">workspace_premium</span> Kesiswaan MTs</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">celebration</span> Event &amp; Kegiatan</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-foto-3.jpg" alt="Kegiatan OSIM MTs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#1b6b51,#004532)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🏛️ Sidang OSIM MTs</span>
+                            </div>
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-foto-4.jpg" alt="Kegiatan OSIM MTs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#065f46,#1b6b51)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🎓 Kegiatan Siswa</span>
+                            </div>
+                            <div class="relative h-32 rounded-xl overflow-hidden group shadow-md col-span-2 bg-gradient-to-br from-primary/10 to-primary-container/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-5xl opacity-30">photo_camera</span>
+                                <span class="absolute bottom-2 left-2 text-primary text-xs font-semibold">📸 Tambahkan Foto Kegiatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OSIM MA -->
+        <section id="osim-ma" class="scroll-mt-24">
+            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                <div class="bg-gradient-to-r from-[#004532] to-[#1b6b51] p-8 md:p-10">
+                    <div class="flex items-center gap-5">
+                        <div class="w-16 h-16 rounded-2xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center shadow-xl flex-shrink-0">
+                            <span class="material-symbols-outlined text-4xl">account_balance</span>
+                        </div>
+                        <div>
+                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold text-on-primary">OSIM MA Nurul Ulum</h2>
+                            <p class="text-on-primary/80 text-sm md:text-base">Organisasi Siswa Intra Madrasah Aliyah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                <strong class="text-primary">OSIM MA</strong> (Organisasi Siswa Intra Madrasah) adalah organisasi internal resmi yang menaungi seluruh kegiatan dan aspirasi siswa di tingkat Madrasah Aliyah Nurul Ulum. Sebagai organisasi tertinggi di tingkat MA, OSIM MA mendorong pengembangan potensi kepemimpinan, kreativitas seni budaya Islam, dan pemberdayaan seluruh warga madrasah.
+                            </p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                                OSIM MA mengkoordinasikan berbagai kegiatan lintas bidang: PHBI, festival seni santri, olimpiade, perlombaan antarmadrasah, hingga program pengabdian masyarakat. OSIM MA menjadi tempat para santri MA berlatih menjadi pemimpin yang visioner dan bertanggung jawab.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">manage_accounts</span> Kepemimpinan Siswa</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">workspace_premium</span> Kesiswaan MA</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">celebration</span> Festival &amp; Olimpiade</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-hero-banner.jpg" alt="OSIM MA kegiatan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#004532,#065f46)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🏛️ Sidang OSIM MA</span>
+                            </div>
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-foto-2.jpg" alt="Festival OSIM MA" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#065f46,#004532)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🎭 Festival Santri</span>
+                            </div>
+                            <div class="relative h-32 rounded-xl overflow-hidden group shadow-md col-span-2 bg-gradient-to-br from-tertiary/10 to-tertiary-container/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-tertiary text-5xl opacity-30">photo_camera</span>
+                                <span class="absolute bottom-2 left-2 text-tertiary text-xs font-semibold">📸 Tambahkan Foto Kegiatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pramuka Pangkalan -->
+        <section id="pramuka" class="scroll-mt-24">
+            <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-ambient border border-outline-variant/20">
+                <div class="bg-gradient-to-r from-[#735c00] to-[#b88b14] p-8 md:p-10">
+                    <div class="flex items-center gap-5">
+                        <div class="w-16 h-16 rounded-2xl bg-surface-container-lowest text-tertiary flex items-center justify-center shadow-xl flex-shrink-0">
+                            <span class="material-symbols-outlined text-4xl">emoji_nature</span>
+                        </div>
+                        <div>
+                            <h2 class="font-headline-md text-2xl md:text-3xl font-extrabold text-white">Pramuka Pangkalan Nurul Ulum</h2>
+                            <p class="text-white/80 text-sm md:text-base">Gugus Depan Pramuka Pondok Pesantren Nurul Ulum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <p class="text-base text-on-surface-variant leading-relaxed mb-4">
+                                <strong class="text-primary">Pramuka Pangkalan Nurul Ulum</strong> adalah gugus depan pramuka yang aktif membina karakter, kedisiplinan, dan jiwa kepemimpinan para santri. Berpedoman pada Tri Satya dan Dasa Dharma Pramuka, organisasi ini mengintegrasikan nilai kepramukaan dengan semangat keislaman pesantren.
+                            </p>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                                Melalui kegiatan seperti kemah pramuka, lomba tingkat, latihan PBB (Peraturan Baris-Berbaris), keterampilan tali-temali, pertolongan pertama, dan bakti sosial, Pramuka Pangkalan membentuk generasi santri yang tangguh, mandiri, disiplin, dan cinta tanah air. Gugus depan ini juga aktif berprestasi di tingkat kabupaten, provinsi, dan nasional.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">forest</span> Kepramukaan</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">military_tech</span> Karakter &amp; Disiplin</span>
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-semibold"><span class="material-symbols-outlined text-[15px]">social_leaderboard</span> Prestasi Nasional</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-foto-3.jpg" alt="Kemah Pramuka" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#735c00,#b88b14)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🏕️ Kemah Pramuka</span>
+                            </div>
+                            <div class="relative h-48 rounded-xl overflow-hidden group shadow-md">
+                                <img src="images/unit-mts/mts-foto-4.jpg" alt="Latihan Pramuka" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" onerror="this.onerror=null;this.parentElement.style.background='linear-gradient(135deg,#b88b14,#735c00)';this.style.display='none';" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                <span class="absolute bottom-2 left-2 text-white text-xs font-semibold">🪢 Latihan Keterampilan</span>
+                            </div>
+                            <div class="relative h-32 rounded-xl overflow-hidden group shadow-md col-span-2 bg-gradient-to-br from-tertiary/10 to-tertiary-container/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-tertiary text-5xl opacity-30">photo_camera</span>
+                                <span class="absolute bottom-2 left-2 text-tertiary text-xs font-semibold">📸 Tambahkan Foto Kegiatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer id="kontak" class="bg-primary text-on-primary pt-16 pb-8 border-t-4 border-tertiary-container">
+    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">mosque</span></div>
+                    <span class="font-headline-md text-xl font-bold text-tertiary-fixed">NURUL ULUM</span>
+                </div>
+                <p class="font-body-md text-sm text-surface-container/90 leading-relaxed">Lembaga Pendidikan Islam yang memadukan kedalaman ilmu salaf dengan keunggulan ilmu pengetahuan modern berlandaskan Ahlussunnah wal Jama'ah.</p>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Unit Pendidikan</h4>
+                <ul class="flex flex-col gap-2 font-body-md text-sm text-surface-container/80">
+                    <li><a href="unit-kb.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> KB Nurul Ulum</a></li>
+                    <li><a href="unit-tk.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> TK / RA Nurul Ulum</a></li>
+                    <li><a href="unit-mi.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MI Nurul Ulum</a></li>
+                    <li><a href="unit-mts.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MTs Nurul Ulum</a></li>
+                    <li><a href="unit-ma.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> MA Nurul Ulum</a></li>
+                    <li><a href="madrasah-diniyah.html" class="hover:text-tertiary-fixed transition-colors flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">chevron_right</span> Madrasah Diniyah Ta'limiyah</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h4 class="font-headline-sm text-base font-bold text-tertiary-fixed tracking-wide">Kontak</h4>
+                <ul class="flex flex-col gap-3 font-body-md text-sm text-surface-container/90">
+                    <li class="flex items-start gap-2.5"><span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0 mt-0.5">location_on</span><span>Jl. Raya Desa Banmaleng, PP. Nurul Ulum, Sumenep, Jawa Timur</span></li>
+                    <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">call</span><span>0878-6618-6894</span></li>
+                    <li class="flex items-center gap-2.5"><span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">mail</span><span>nurululum1banmaleng@gmail.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-primary-fixed/20 text-center text-xs text-surface-container/70">
+            © 2026 Pondok Pesantren Nurul Ulum. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

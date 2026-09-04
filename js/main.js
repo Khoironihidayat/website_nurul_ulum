@@ -50,6 +50,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobile Organisasi Accordion
+    const mobileOrgBtn     = document.getElementById('mobile-org-btn');
+    const mobileOrgSubmenu = document.getElementById('mobile-org-submenu');
+    const mobileOrgArrow   = document.getElementById('mobile-org-arrow');
+
+    if (mobileOrgBtn && mobileOrgSubmenu) {
+        mobileOrgBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileOrgSubmenu.classList.toggle('hidden');
+            if (mobileOrgArrow) mobileOrgArrow.classList.toggle('rotate-180');
+        });
+    }
+
+    // Mobile Ekstrakurikuler Accordion
+    const mobileEkskulBtn     = document.getElementById('mobile-ekskul-btn');
+    const mobileEkskulSubmenu = document.getElementById('mobile-ekskul-submenu');
+    const mobileEkskulArrow   = document.getElementById('mobile-ekskul-arrow');
+
+    if (mobileEkskulBtn && mobileEkskulSubmenu) {
+        mobileEkskulBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            mobileEkskulSubmenu.classList.toggle('hidden');
+            if (mobileEkskulArrow) mobileEkskulArrow.classList.toggle('rotate-180');
+        });
+    }
+
     // ============================================================
     // 2. Intelligent Fluid Navbar Header
     // ============================================================
