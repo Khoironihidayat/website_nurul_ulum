@@ -2,5 +2,19 @@
 
 Foto-foto untuk Halaman Profil & Sejarah (Gedung, Sejarah, Pengasuh/Masyayikh, Visi Misi).
 
-Cara mengganti:
-Cukup masukkan foto baru Anda ke dalam folder ini dengan nama file yang sama (atau sesuaikan namanya di file HTML terkait).
+File Foto Riwayat Pengasuh (Format PNG):
+1. pengasuh-1.png -> Foto Pengasuh Pertama / Pendiri Pondok Pesantren
+2. pengasuh-2.png -> Foto Pengasuh Kedua
+3. pengasuh-3.png -> Foto Pengasuh Saat Ini (KH. FAUZI MA'IED)
+
+Cara Mengganti / Upload:
+1. Siapkan file foto Kiai / Pengasuh Anda dalam format PNG.
+2. Beri nama file sesuai daftar di atas:
+   - pengasuh-1.png
+   - pengasuh-2.png
+   - pengasuh-3.png
+3. Masukkan file tersebut ke folder ini: images/profil/ (timpa/overwrite file yang ada).
+4. Refresh browser pada halaman profil.html (Profil & Sejarah).
+
+Catatan:
+- Rekomendasi rasio foto: Persegi (1:1), resolusi min. 500x500 px.
