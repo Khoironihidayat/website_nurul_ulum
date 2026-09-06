@@ -347,7 +347,7 @@ const renderNavbar = (activeKey) => {
         : isUnit
             ? `<img src="${unitLogos[activeKey]}" alt="Logo Unit ${activeKey.toUpperCase()}" class="w-full h-full object-contain p-1"/>`
         : '<span class="material-symbols-outlined text-[22px]">mosque</span>';
-    const contactNumber = whatsappNumbers[activeKey] || '6281234567890';
+    const contactNumber = whatsappNumbers[activeKey] || '6287720243241';
 
     return `
 <!-- TopAppBar (Sticky Navigation) -->
@@ -443,8 +443,8 @@ const renderNavbar = (activeKey) => {
 <div id="mobile-drawer" class="fixed inset-y-0 left-0 z-[70] flex flex-col py-6 bg-primary dark:bg-primary-container h-full w-80 shadow-2xl transform -translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
     <div class="px-6 pb-5 border-b border-primary-fixed/20 mb-4 flex justify-between items-center">
         <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
-                <span class="material-symbols-outlined text-[18px]">mosque</span>
+            <div class="w-8 h-8 rounded-full bg-white/90 text-on-tertiary-container flex items-center justify-center overflow-hidden border border-primary/10">
+                <img src="images/profil/logo-yayasan.png" alt="Logo Yayasan Nurul Ulum" class="w-full h-full object-contain p-0.5"/>
             </div>
             <h2 class="font-headline-sm text-lg font-bold text-tertiary-fixed">PP. Nurul Ulum</h2>
         </div>
@@ -623,14 +623,14 @@ function patchMainContent(html, pageKey) {
     }
 
     if (pageKey === 'profil') {
-        main = main.replace(/href="#"([^>]*>Daftar Sekarang)/gi, 'href="https://wa.me/6281234567890?text=Assalamu\'alaikum%20Admin%20Pesantren%20Nurul%20Ulum"$1');
+        main = main.replace(/href="#"([^>]*>Daftar Sekarang)/gi, 'href="https://wa.me/6287720243241?text=Assalamu\'alaikum%20Admin%20Pesantren%20Nurul%20Ulum"$1');
         main = main.replace(/href="#"([^>]*>Unduh Brosur)/gi, 'href="#kontak"$1');
     }
 
     // Fix other general links to WhatsApp
-    main = main.replace(/href="#"([^>]*>Daftar Online)/gi, 'href="https://wa.me/6281234567890?text=Assalamu\'alaikum%20Admin%20Pendaftaran"$1');
-    main = main.replace(/href="#"([^>]*>Hubungi Kami)/gi, 'href="https://wa.me/6281234567890"$1');
-    main = main.replace(/href="#"([^>]*>Konsultasi)/gi, 'href="https://wa.me/6281234567890"$1');
+    main = main.replace(/href="#"([^>]*>Daftar Online)/gi, 'href="https://wa.me/6287720243241?text=Assalamu\'alaikum%20Admin%20Pendaftaran"$1');
+    main = main.replace(/href="#"([^>]*>Hubungi Kami)/gi, 'href="https://wa.me/6287720243241"$1');
+    main = main.replace(/href="#"([^>]*>Konsultasi)/gi, 'href="https://wa.me/6287720243241"$1');
 
     return main;
 }
